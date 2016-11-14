@@ -1,0 +1,7 @@
+﻿CREATE (r:ForumRoot)
+MERGE (r:ForumRoot)
+WITH r, ["Trying To Conceive", "Pregnancy", "Baby", "Toddler", "School"] AS channels
+FOREACH(channel IN channels |
+	CREATE (c:ForumChannel { name: channel })
+	MERGE (r)-[:CHILD]->(c)
+	)

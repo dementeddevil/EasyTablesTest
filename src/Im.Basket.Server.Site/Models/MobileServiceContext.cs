@@ -1,9 +1,8 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
-using Microsoft.WindowsAzure.Mobile.Service;
-using Microsoft.WindowsAzure.Mobile.Service.Tables;
 using Im.Basket.Server.Site.DataObjects;
+using Microsoft.Azure.Mobile.Server.Tables;
 
 namespace Im.Basket.Server.Site.Models
 {
@@ -31,11 +30,11 @@ namespace Im.Basket.Server.Site.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            var schema = ServiceSettingsDictionary.GetSchemaName();
+            /*var schema = ServiceSettingsDictionary.GetSchemaName();
             if (!string.IsNullOrEmpty(schema))
             {
                 modelBuilder.HasDefaultSchema(schema);
-            }
+            }*/
 
             modelBuilder.Conventions.Add(
                 new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(

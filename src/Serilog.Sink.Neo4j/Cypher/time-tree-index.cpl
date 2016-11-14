@@ -1,0 +1,24 @@
+﻿MATCH (root:TimeTreeRoot)-[:CHILD]->(year:Year)
+WITH collect(year) AS years UNWIND years AS y
+	SET y.sortableSearch = toString(y.value)
+	WITH y
+	MATCH (y)-[:CHILD]->(month:Month)
+	WITH y, collect(month) AS months UNWIND months AS m
+		SET m.sortableSearch = y.value + '/' +
+			CASE
+			  WHEN length(m.value) = 1 THEN '0' + m.value
+			  ELSE m.value
+			END
+		WITH y, m
+		MATCH (m)-[:CHILD]->(day:Day)
+		WITH y, m, collect(day) AS days UNWIND days AS d
+			SET d.sortableSearch = y.value + '/' + 
+				CASE
+				  WHEN length(m.value) = 1 THEN '0' + m.value
+				  ELSE m.value
+				END + '/' + 
+				CASE
+				  WHEN length(d.value) = 1 THEN '0' + d.value
+				  ELSE d.value
+				END
+;

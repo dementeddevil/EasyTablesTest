@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.OData;
-using Microsoft.WindowsAzure.Mobile.Service;
 using Im.Basket.Server.Site.DataObjects;
 using Im.Basket.Server.Site.Models;
+using Microsoft.Azure.Mobile.Server;
 
 namespace Im.Basket.Server.Site.Controllers
 {
@@ -15,7 +15,7 @@ namespace Im.Basket.Server.Site.Controllers
         {
             base.Initialize(controllerContext);
             var context = new MobileServiceContext();
-            DomainManager = new EntityDomainManager<TodoItem>(context, Request, Services);
+            DomainManager = new EntityDomainManager<TodoItem>(context, Request, true);
         }
 
         // GET tables/TodoItem
