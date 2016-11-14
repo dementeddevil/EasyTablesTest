@@ -5,6 +5,7 @@ using System.Web.Http;
 using Autofac;
 using Autofac.Integration.WebApi;
 using Microsoft.Azure.Mobile.Server.Config;
+using Microsoft.Azure.Mobile.Server.Tables.Config;
 using Microsoft.Owin;
 using Owin;
 
@@ -16,28 +17,38 @@ namespace Im.Basket.Server.Site
     {
         public void Configuration(IAppBuilder app)
         {
-            // Use this class to set configuration options for your mobile service
-            var provider = new MobileAppSettingsProvider();
-            var options = provider.GetMobileAppSettings();
-            options.HostName = "http://localhost:24933/";
-
             // TODO: Create autofac container
             var builder = new ContainerBuilder();
             var container = builder.Build();
 
-            // Apply configuration to WebApi
+            // Apply configuration to WebApi configuration
             var httpConfig =
                 new HttpConfiguration
                 {
                     DependencyResolver = new AutofacWebApiDependencyResolver(container),
                     IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always,
                 };
-            httpConfig.GetMobileAppConfiguration()
+
+            // Setup mobile application app settings
+            var provider = httpConfig.GetMobileAppSettingsProvider();
+            var options = provider.GetMobileAppSettings();
+            options.HostName = "http://localhost:24933/";
+
+            // Setup mobile app configuration settings
+            var mobileAppConfig = new MobileAppConfiguration()
                 .MapApiControllers()
+                .AddMobileAppHomeController()
                 .AddPushNotifications()
-                .AddTables();
+                .AddTables(
+                    new MobileAppTableConfiguration()
+                        .MapTableControllers()
+                        .AddEntityFramework());
+            mobileAppConfig.ApplyTo(httpConfig);
+
+            // Enable attribute routing for everything else we expose
             httpConfig.MapHttpAttributeRoutes();
 
+            // Hook up autofac webapi controller dependency injection
             app.UseAutofacWebApi(httpConfig);
             app.UseWebApi(httpConfig);
 
