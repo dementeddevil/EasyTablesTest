@@ -17,8 +17,9 @@ namespace Im.Basket.Server.Site
     {
         public void Configuration(IAppBuilder app)
         {
-            // TODO: Create autofac container
+            // Create autofac container
             var builder = new ContainerBuilder();
+            builder.RegisterModule<IocModule>();
             var container = builder.Build();
 
             // Apply configuration to WebApi configuration

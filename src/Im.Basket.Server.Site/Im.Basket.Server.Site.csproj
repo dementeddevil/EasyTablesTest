@@ -253,6 +253,7 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IocModule.cs" />
     <Compile Include="MobileServiceInitializer.cs" />
     <Compile Include="Controllers\TodoItemController.cs" />
     <Compile Include="DataObjects\TodoItem.cs" />
