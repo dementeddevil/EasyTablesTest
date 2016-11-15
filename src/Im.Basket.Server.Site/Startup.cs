@@ -33,7 +33,6 @@ namespace Im.Basket.Server.Site
             // Setup mobile application app settings
             var provider = httpConfig.GetMobileAppSettingsProvider();
             var options = provider.GetMobileAppSettings();
-            options.HostName = "http://localhost:24933/";
 
             // Setup mobile app configuration settings
             var mobileAppConfig = new MobileAppConfiguration()
