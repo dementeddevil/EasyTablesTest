@@ -17,18 +17,20 @@ namespace Im.Basket.Server.Site
     {
         public void Configuration(IAppBuilder app)
         {
-            // Create autofac container
-            var builder = new ContainerBuilder();
-            builder.RegisterModule<IocModule>();
-            var container = builder.Build();
-
-            // Apply configuration to WebApi configuration
+            // Create HTTP configuration object
             var httpConfig =
                 new HttpConfiguration
                 {
-                    DependencyResolver = new AutofacWebApiDependencyResolver(container),
-                    IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always,
+                    IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always
                 };
+
+            // Create autofac container (it may need to update the HTTP configuration)
+            var builder = new ContainerBuilder();
+            builder.RegisterModule(new IocModule(httpConfig));
+            var container = builder.Build();
+
+            // Setup WEBAPI dependency resolver
+            httpConfig.DependencyResolver = new AutofacWebApiDependencyResolver(container);
 
             // Setup mobile application app settings
             var provider = httpConfig.GetMobileAppSettingsProvider();

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "562423358534",
+    "firebase_url": "https://im-basket-35c6e.firebaseio.com",
+    "project_id": "im-basket-35c6e",
+    "storage_bucket": "im-basket-35c6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562423358534:android:a9b0ede008240468",
+        "android_client_info": {
+          "package_name": "com.zenglobal.imbasket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562423358534-2t1gp0394omq5srjlqtvdabb791ri4cq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCED0z2nA-3umtZ_ryH0tN3uzQN3qKwZNc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

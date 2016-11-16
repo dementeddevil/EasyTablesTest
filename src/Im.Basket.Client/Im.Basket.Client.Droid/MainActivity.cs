@@ -25,7 +25,7 @@ namespace Im.Basket.Client.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             var azureClient = EasyMobileServiceClient.Create();
-            azureClient.Initialize("http://imbasket.azurewebsites.net");
+            azureClient.Initialize("http://im-basket-site.azurewebsites.net");
             azureClient.RegisterTable<TodoItem>();
             azureClient.FinalizeSchema();
 
