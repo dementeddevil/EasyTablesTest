@@ -1,5 +1,7 @@
-﻿using System.Web.Http;
+﻿using System.Configuration;
+using System.Web.Http;
 using Autofac;
+using Microsoft.ApplicationInsights;
 using Microsoft.Azure.Mobile.Server.Notifications;
 
 namespace Im.Basket.Server.Site
@@ -15,7 +17,13 @@ namespace Im.Basket.Server.Site
 
         protected override void Load(ContainerBuilder builder)
         {
-            base.Load(builder);
+            // Setup application insights tracking
+            var tc = 
+                new TelemetryClient
+                {
+                    InstrumentationKey = ConfigurationManager.AppSettings["InstrumentationKey"]
+                };
+            builder.RegisterInstance(tc);
 
             // Ensure push client is added to IoC container
             var pushClient = new PushClient(_httpConfig);

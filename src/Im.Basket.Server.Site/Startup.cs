@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using Autofac;
 using Autofac.Integration.WebApi;
+using Microsoft.ApplicationInsights;
 using Microsoft.Azure.Mobile.Server.Config;
 using Microsoft.Azure.Mobile.Server.Tables.Config;
 using Microsoft.Owin;
@@ -28,6 +29,10 @@ namespace Im.Basket.Server.Site
             var builder = new ContainerBuilder();
             builder.RegisterModule(new IocModule(httpConfig));
             var container = builder.Build();
+
+            // Get telemetry client and log
+            var telemetryClient = container.Resolve<TelemetryClient>();
+            telemetryClient.TrackEvent("Service startup");
 
             // Setup WEBAPI dependency resolver
             httpConfig.DependencyResolver = new AutofacWebApiDependencyResolver(container);
