@@ -98,7 +98,7 @@ namespace Im.Basket.Client.ViewModels
             {
                 return _isBusy;
             }
-            set
+            private set
             {
                 SetProperty(ref _isBusy, value, "IsBusy");
             }
