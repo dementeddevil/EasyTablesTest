@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using AppServiceHelpers;
 using AppServiceHelpers.Models;
+using Im.Basket.Client.Entities;
 using Newtonsoft.Json;
 
 namespace Im.Basket.Client.Droid
@@ -24,19 +25,15 @@ namespace Im.Basket.Client.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+
             var azureClient = EasyMobileServiceClient.Create();
             azureClient.Initialize("http://im-basket-site.azurewebsites.net");
             azureClient.RegisterTable<TodoItem>();
             azureClient.FinalizeSchema();
 
-            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
-
             LoadApplication(new App());
         }
-    }
-
-    public class TodoItem : EntityData
-    {
     }
 }
 

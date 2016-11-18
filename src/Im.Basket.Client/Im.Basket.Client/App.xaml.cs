@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using Autofac;
 using Xamarin.Forms;
 
 namespace Im.Basket.Client
@@ -13,8 +13,15 @@ namespace Im.Basket.Client
         {
             InitializeComponent();
 
+            // Setup autofac container
+            var builder = new ContainerBuilder();
+            builder.RegisterModule<CoreModule>();
+            Container = builder.Build();
+
             MainPage = new Im.Basket.Client.MainPage();
         }
+
+        public ILifetimeScope Container { get; }
 
         protected override void OnStart()
         {
