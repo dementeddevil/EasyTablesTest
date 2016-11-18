@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Threading;
 using System.Threading.Tasks;
 using AppServiceHelpers.Models;
 using Xamarin.Forms;
@@ -25,8 +26,10 @@ namespace Im.Basket.Client.ViewModels
         private string _subTitle = string.Empty;
         private bool _canLoadMore = true;
         private Command _refreshCommand;
+        private Command _cancelCommand;
         private string _icon;
         private bool _isBusy;
+        private CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -49,13 +52,9 @@ namespace Im.Basket.Client.ViewModels
             }
         }
 
-        public Command RefreshCommand
-        {
-            get
-            {
-                return _refreshCommand ?? (_refreshCommand = new Command(async () => await ExecuteRefreshCommand()));
-            }
-        }
+        public Command RefreshCommand => _refreshCommand ?? (_refreshCommand = new Command(async () => await ExecuteRefreshCommand()));
+
+        public Command CancelCommand => _cancelCommand ?? (_cancelCommand = new Command(ExecuteCancelCommand));
 
         public string Title
         {
@@ -119,17 +118,17 @@ namespace Im.Basket.Client.ViewModels
 
         public Task AddItemAsync(TEntity item)
         {
-            return _table.AddAsync(item);
+            return _table.AddAsync(item, _cancellationTokenSource.Token);
         }
 
         public Task DeleteItemAsync(TEntity item)
         {
-            return _table.DeleteAsync(item);
+            return _table.DeleteAsync(item, _cancellationTokenSource.Token);
         }
 
         public Task UpdateItemAsync(TEntity item)
         {
-            return _table.UpdateAsync(item);
+            return _table.UpdateAsync(item, _cancellationTokenSource.Token);
         }
 
         private async Task ExecuteRefreshCommand()
@@ -141,12 +140,19 @@ namespace Im.Basket.Client.ViewModels
             Exception exceptionToDisplay = null;
             try
             {
-                var items = await _table.GetAllAsync();
-                Items.Clear();
-                foreach (var item in items)
+                var cancellationToken = _cancellationTokenSource.Token;
+                var items = await _table.GetAllAsync(cancellationToken).ConfigureAwait(true);
+                if (!cancellationToken.IsCancellationRequested)
                 {
-                    Items.Add(item);
+                    Items.Clear();
+                    foreach (var item in items)
+                    {
+                        Items.Add(item);
+                    }
                 }
+            }
+            catch (OperationCanceledException)
+            {
             }
             catch (Exception ex)
             {
@@ -161,6 +167,12 @@ namespace Im.Basket.Client.ViewModels
             {
                 await Application.Current.MainPage.DisplayAlert("Error", exceptionToDisplay.Message, "OK");
             }
+        }
+
+        private void ExecuteCancelCommand()
+        {
+            _cancellationTokenSource.Cancel();
+            _cancellationTokenSource = new CancellationTokenSource();
         }
 
         protected void SetProperty<TPropertyType>(ref TPropertyType backingStore, TPropertyType value, string propertyName, Action onChanged = null)
