@@ -32,5 +32,11 @@ namespace Im.Basket.Client.Entities
         Task DeleteAsync(TEntity entity);
 
         Task DeleteAsync(TEntity entity, CancellationToken cancellationToken);
+
+        Task PurgeAsync(bool force = false);
+
+        Task PurgeAsync(CancellationToken cancellationToken);
+
+        Task PurgeAsync(bool force, CancellationToken cancellationToken);
     }
 }

@@ -24,6 +24,8 @@ namespace Im.Basket.Client.Entities
 
         protected IMobileServiceSyncTable<TEntity> Table => _table ?? (_table = _tableClient.MobileService.GetSyncTable<TEntity>());
 
+        private string AllItemsQueryId => $"allitems-{nameof(TEntity)}".ToLower();
+
         public void Initialize(IAzureDataTableClient tableClient)
         {
             _tableClient = tableClient;
@@ -36,12 +38,10 @@ namespace Im.Basket.Client.Entities
 
         public async Task SyncAsync(CancellationToken cancellationToken)
         {
-            var queryId = $"allitems-{nameof(TEntity)}".ToLower();
-
             // Pull changes from the server
             await Table
                 .PullAsync(
-                    queryId,
+                    AllItemsQueryId,
                     Table.CreateQuery(),
                     false,
                     cancellationToken,
@@ -128,6 +128,28 @@ namespace Im.Basket.Client.Entities
 
             // Sync changes
             await SyncAsync(cancellationToken).ConfigureAwait(false);
+        }
+
+        public Task PurgeAsync(bool force = false)
+        {
+            return PurgeAsync(force, CancellationToken.None);    
+        }
+
+        public Task PurgeAsync(CancellationToken cancellationToken)
+        {
+            return PurgeAsync(false, cancellationToken);
+        }
+
+        public async Task PurgeAsync(bool force, CancellationToken cancellationToken)
+        {
+            // Sync changes
+            await SyncAsync(cancellationToken).ConfigureAwait(false);
+
+            // Purge as necessary
+            await Table.PurgeAsync(
+                AllItemsQueryId,
+                Table.CreateQuery(),
+                cancellationToken);
         }
 
         protected virtual IMobileServiceTableQuery<TEntity> GetAllOrderBy(IMobileServiceSyncTable<TEntity> table)
