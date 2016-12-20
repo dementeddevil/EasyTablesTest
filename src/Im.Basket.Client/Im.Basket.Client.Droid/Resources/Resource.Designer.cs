@@ -26,6 +26,392 @@ namespace Im.Basket.Client.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Intersoft.Crosslight.Android.Resource.Animation.dialog_fade_in = global::Im.Basket.Client.Droid.Resource.Animation.dialog_fade_in;
+			global::Intersoft.Crosslight.Android.Resource.Animation.dialog_fade_out = global::Im.Basket.Client.Droid.Resource.Animation.dialog_fade_out;
+			global::Intersoft.Crosslight.Android.Resource.Animation.dialog_push_in_down = global::Im.Basket.Client.Droid.Resource.Animation.dialog_push_in_down;
+			global::Intersoft.Crosslight.Android.Resource.Animation.dialog_push_in_up = global::Im.Basket.Client.Droid.Resource.Animation.dialog_push_in_up;
+			global::Intersoft.Crosslight.Android.Resource.Animation.dialog_push_out_down = global::Im.Basket.Client.Droid.Resource.Animation.dialog_push_out_down;
+			global::Intersoft.Crosslight.Android.Resource.Animation.dialog_push_out_up = global::Im.Basket.Client.Droid.Resource.Animation.dialog_push_out_up;
+			global::Intersoft.Crosslight.Android.Resource.Animation.dialog_slide_in_left = global::Im.Basket.Client.Droid.Resource.Animation.dialog_slide_in_left;
+			global::Intersoft.Crosslight.Android.Resource.Animation.dialog_slide_in_right = global::Im.Basket.Client.Droid.Resource.Animation.dialog_slide_in_right;
+			global::Intersoft.Crosslight.Android.Resource.Animation.dialog_slide_out_left = global::Im.Basket.Client.Droid.Resource.Animation.dialog_slide_out_left;
+			global::Intersoft.Crosslight.Android.Resource.Animation.dialog_slide_out_right = global::Im.Basket.Client.Droid.Resource.Animation.dialog_slide_out_right;
+			global::Intersoft.Crosslight.Android.Resource.Animation.slide_in_top = global::Im.Basket.Client.Droid.Resource.Animation.slide_in_top;
+			global::Intersoft.Crosslight.Android.Resource.Animation.slide_out_top = global::Im.Basket.Client.Droid.Resource.Animation.slide_out_top;
+			global::Intersoft.Crosslight.Android.Resource.Animation.toast_enter = global::Im.Basket.Client.Droid.Resource.Animation.toast_enter;
+			global::Intersoft.Crosslight.Android.Resource.Animation.toast_exit = global::Im.Basket.Client.Droid.Resource.Animation.toast_exit;
+			global::Intersoft.Crosslight.Android.Resource.Animation.transition_bottomtop = global::Im.Basket.Client.Droid.Resource.Animation.transition_bottomtop;
+			global::Intersoft.Crosslight.Android.Resource.Animation.transition_fadein = global::Im.Basket.Client.Droid.Resource.Animation.transition_fadein;
+			global::Intersoft.Crosslight.Android.Resource.Animation.transition_fadeout = global::Im.Basket.Client.Droid.Resource.Animation.transition_fadeout;
+			global::Intersoft.Crosslight.Android.Resource.Animation.transition_leftright = global::Im.Basket.Client.Droid.Resource.Animation.transition_leftright;
+			global::Intersoft.Crosslight.Android.Resource.Animation.transition_rightleft = global::Im.Basket.Client.Droid.Resource.Animation.transition_rightleft;
+			global::Intersoft.Crosslight.Android.Resource.Animation.transition_topbottom = global::Im.Basket.Client.Droid.Resource.Animation.transition_topbottom;
+			global::Intersoft.Crosslight.Android.Resource.Array.select_image_dialog = global::Im.Basket.Client.Droid.Resource.Array.select_image_dialog;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.centered = global::Im.Basket.Client.Droid.Resource.Attribute.centered;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.@checked = global::Im.Basket.Client.Droid.Resource.Attribute.@checked;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.contentStyle = global::Im.Basket.Client.Droid.Resource.Attribute.contentStyle;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.fadeDelay = global::Im.Basket.Client.Droid.Resource.Attribute.fadeDelay;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.fadeLength = global::Im.Basket.Client.Droid.Resource.Attribute.fadeLength;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.fades = global::Im.Basket.Client.Droid.Resource.Attribute.fades;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.fillColor = global::Im.Basket.Client.Droid.Resource.Attribute.fillColor;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.imageBackground = global::Im.Basket.Client.Droid.Resource.Attribute.imageBackground;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.imageSrc = global::Im.Basket.Client.Droid.Resource.Attribute.imageSrc;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.isToggle = global::Im.Basket.Client.Droid.Resource.Attribute.isToggle;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.maxValue = global::Im.Basket.Client.Droid.Resource.Attribute.maxValue;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.minValue = global::Im.Basket.Client.Droid.Resource.Attribute.minValue;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.orientation = global::Im.Basket.Client.Droid.Resource.Attribute.orientation;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.pageColor = global::Im.Basket.Client.Droid.Resource.Attribute.pageColor;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.ptrHeaderBackground = global::Im.Basket.Client.Droid.Resource.Attribute.ptrHeaderBackground;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.ptrHeaderHeight = global::Im.Basket.Client.Droid.Resource.Attribute.ptrHeaderHeight;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.ptrHeaderStyle = global::Im.Basket.Client.Droid.Resource.Attribute.ptrHeaderStyle;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.ptrHeaderTitleTextAppearance = global::Im.Basket.Client.Droid.Resource.Attribute.ptrHeaderTitleTextAppearance;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.ptrProgressBarColor = global::Im.Basket.Client.Droid.Resource.Attribute.ptrProgressBarColor;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.ptrProgressBarHeight = global::Im.Basket.Client.Droid.Resource.Attribute.ptrProgressBarHeight;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.ptrProgressBarStyle = global::Im.Basket.Client.Droid.Resource.Attribute.ptrProgressBarStyle;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.ptrPullText = global::Im.Basket.Client.Droid.Resource.Attribute.ptrPullText;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.ptrRefreshingText = global::Im.Basket.Client.Droid.Resource.Attribute.ptrRefreshingText;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.ptrReleaseText = global::Im.Basket.Client.Droid.Resource.Attribute.ptrReleaseText;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.ptrViewDelegateClass = global::Im.Basket.Client.Droid.Resource.Attribute.ptrViewDelegateClass;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.radius = global::Im.Basket.Client.Droid.Resource.Attribute.radius;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.selectedColor = global::Im.Basket.Client.Droid.Resource.Attribute.selectedColor;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.snap = global::Im.Basket.Client.Droid.Resource.Attribute.snap;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.spbStyle = global::Im.Basket.Client.Droid.Resource.Attribute.spbStyle;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.spb_color = global::Im.Basket.Client.Droid.Resource.Attribute.spb_color;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.spb_colors = global::Im.Basket.Client.Droid.Resource.Attribute.spb_colors;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.spb_interpolator = global::Im.Basket.Client.Droid.Resource.Attribute.spb_interpolator;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.spb_mirror_mode = global::Im.Basket.Client.Droid.Resource.Attribute.spb_mirror_mode;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.spb_reversed = global::Im.Basket.Client.Droid.Resource.Attribute.spb_reversed;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.spb_sections_count = global::Im.Basket.Client.Droid.Resource.Attribute.spb_sections_count;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.spb_speed = global::Im.Basket.Client.Droid.Resource.Attribute.spb_speed;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.spb_stroke_separator_length = global::Im.Basket.Client.Droid.Resource.Attribute.spb_stroke_separator_length;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.spb_stroke_width = global::Im.Basket.Client.Droid.Resource.Attribute.spb_stroke_width;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.step = global::Im.Basket.Client.Droid.Resource.Attribute.step;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.strokeColor = global::Im.Basket.Client.Droid.Resource.Attribute.strokeColor;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.strokeWidth = global::Im.Basket.Client.Droid.Resource.Attribute.strokeWidth;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.subtitle = global::Im.Basket.Client.Droid.Resource.Attribute.subtitle;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.subtitleColor = global::Im.Basket.Client.Droid.Resource.Attribute.subtitleColor;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.subtitleTextSize = global::Im.Basket.Client.Droid.Resource.Attribute.subtitleTextSize;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.title = global::Im.Basket.Client.Droid.Resource.Attribute.title;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.titleColor = global::Im.Basket.Client.Droid.Resource.Attribute.titleColor;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.titleTextSize = global::Im.Basket.Client.Droid.Resource.Attribute.titleTextSize;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.vpiBulletPageIndicatorStyle = global::Im.Basket.Client.Droid.Resource.Attribute.vpiBulletPageIndicatorStyle;
+			global::Intersoft.Crosslight.Android.Resource.Attribute.vpiStripPageIndicatorStyle = global::Im.Basket.Client.Droid.Resource.Attribute.vpiStripPageIndicatorStyle;
+			global::Intersoft.Crosslight.Android.Resource.Boolean.default_bullet_indicator_centered = global::Im.Basket.Client.Droid.Resource.Boolean.default_bullet_indicator_centered;
+			global::Intersoft.Crosslight.Android.Resource.Boolean.default_bullet_indicator_snap = global::Im.Basket.Client.Droid.Resource.Boolean.default_bullet_indicator_snap;
+			global::Intersoft.Crosslight.Android.Resource.Boolean.default_strip_indicator_fades = global::Im.Basket.Client.Droid.Resource.Boolean.default_strip_indicator_fades;
+			global::Intersoft.Crosslight.Android.Resource.Boolean.spb_default_mirror_mode = global::Im.Basket.Client.Droid.Resource.Boolean.spb_default_mirror_mode;
+			global::Intersoft.Crosslight.Android.Resource.Boolean.spb_default_reversed = global::Im.Basket.Client.Droid.Resource.Boolean.spb_default_reversed;
+			global::Intersoft.Crosslight.Android.Resource.Color.bright_foreground_dark = global::Im.Basket.Client.Droid.Resource.Color.bright_foreground_dark;
+			global::Intersoft.Crosslight.Android.Resource.Color.default_bullet_indicator_fill_color = global::Im.Basket.Client.Droid.Resource.Color.default_bullet_indicator_fill_color;
+			global::Intersoft.Crosslight.Android.Resource.Color.default_bullet_indicator_page_color = global::Im.Basket.Client.Droid.Resource.Color.default_bullet_indicator_page_color;
+			global::Intersoft.Crosslight.Android.Resource.Color.default_bullet_indicator_stroke_color = global::Im.Basket.Client.Droid.Resource.Color.default_bullet_indicator_stroke_color;
+			global::Intersoft.Crosslight.Android.Resource.Color.default_progress_bar_color = global::Im.Basket.Client.Droid.Resource.Color.default_progress_bar_color;
+			global::Intersoft.Crosslight.Android.Resource.Color.default_strip_indicator_selected_color = global::Im.Basket.Client.Droid.Resource.Color.default_strip_indicator_selected_color;
+			global::Intersoft.Crosslight.Android.Resource.Color.gridviewbackgroundselector = global::Im.Basket.Client.Droid.Resource.Color.gridviewbackgroundselector;
+			global::Intersoft.Crosslight.Android.Resource.Color.holo_dark_green = global::Im.Basket.Client.Droid.Resource.Color.holo_dark_green;
+			global::Intersoft.Crosslight.Android.Resource.Color.listviewbackgroundselector = global::Im.Basket.Client.Droid.Resource.Color.listviewbackgroundselector;
+			global::Intersoft.Crosslight.Android.Resource.Color.spb_default_color = global::Im.Basket.Client.Droid.Resource.Color.spb_default_color;
+			global::Intersoft.Crosslight.Android.Resource.Color.vpi__background_holo_dark = global::Im.Basket.Client.Droid.Resource.Color.vpi__background_holo_dark;
+			global::Intersoft.Crosslight.Android.Resource.Color.vpi__background_holo_light = global::Im.Basket.Client.Droid.Resource.Color.vpi__background_holo_light;
+			global::Intersoft.Crosslight.Android.Resource.Color.vpi__bright_foreground_disabled_holo_dark = global::Im.Basket.Client.Droid.Resource.Color.vpi__bright_foreground_disabled_holo_dark;
+			global::Intersoft.Crosslight.Android.Resource.Color.vpi__bright_foreground_disabled_holo_light = global::Im.Basket.Client.Droid.Resource.Color.vpi__bright_foreground_disabled_holo_light;
+			global::Intersoft.Crosslight.Android.Resource.Color.vpi__bright_foreground_holo_dark = global::Im.Basket.Client.Droid.Resource.Color.vpi__bright_foreground_holo_dark;
+			global::Intersoft.Crosslight.Android.Resource.Color.vpi__bright_foreground_holo_light = global::Im.Basket.Client.Droid.Resource.Color.vpi__bright_foreground_holo_light;
+			global::Intersoft.Crosslight.Android.Resource.Color.vpi__bright_foreground_inverse_holo_dark = global::Im.Basket.Client.Droid.Resource.Color.vpi__bright_foreground_inverse_holo_dark;
+			global::Intersoft.Crosslight.Android.Resource.Color.vpi__bright_foreground_inverse_holo_light = global::Im.Basket.Client.Droid.Resource.Color.vpi__bright_foreground_inverse_holo_light;
+			global::Intersoft.Crosslight.Android.Resource.Color.vpi__dark_theme = global::Im.Basket.Client.Droid.Resource.Color.vpi__dark_theme;
+			global::Intersoft.Crosslight.Android.Resource.Dimension.default_bullet_indicator_radius = global::Im.Basket.Client.Droid.Resource.Dimension.default_bullet_indicator_radius;
+			global::Intersoft.Crosslight.Android.Resource.Dimension.default_bullet_indicator_stroke_width = global::Im.Basket.Client.Droid.Resource.Dimension.default_bullet_indicator_stroke_width;
+			global::Intersoft.Crosslight.Android.Resource.Dimension.ptr_progress_bar_stroke_width = global::Im.Basket.Client.Droid.Resource.Dimension.ptr_progress_bar_stroke_width;
+			global::Intersoft.Crosslight.Android.Resource.Dimension.spb_default_stroke_separator_length = global::Im.Basket.Client.Droid.Resource.Dimension.spb_default_stroke_separator_length;
+			global::Intersoft.Crosslight.Android.Resource.Dimension.spb_default_stroke_width = global::Im.Basket.Client.Droid.Resource.Dimension.spb_default_stroke_width;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.btn_check_off_focused_holo_dark = global::Im.Basket.Client.Droid.Resource.Drawable.btn_check_off_focused_holo_dark;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.btn_check_on_pressed_holo_dark = global::Im.Basket.Client.Droid.Resource.Drawable.btn_check_on_pressed_holo_dark;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.ic_drawer = global::Im.Basket.Client.Droid.Resource.Drawable.ic_drawer;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.leftdrawershadow = global::Im.Basket.Client.Droid.Resource.Drawable.leftdrawershadow;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.rightdrawershadow = global::Im.Basket.Client.Droid.Resource.Drawable.rightdrawershadow;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.roundedcorner_checked = global::Im.Basket.Client.Droid.Resource.Drawable.roundedcorner_checked;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.roundedcorner_default = global::Im.Basket.Client.Droid.Resource.Drawable.roundedcorner_default;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.roundedcorner_pressed = global::Im.Basket.Client.Droid.Resource.Drawable.roundedcorner_pressed;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.roundedselector = global::Im.Basket.Client.Droid.Resource.Drawable.roundedselector;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.toast_frame_holo = global::Im.Basket.Client.Droid.Resource.Drawable.toast_frame_holo;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.vpi__tab_indicator = global::Im.Basket.Client.Droid.Resource.Drawable.vpi__tab_indicator;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.vpi__tab_selected_focused_holo = global::Im.Basket.Client.Droid.Resource.Drawable.vpi__tab_selected_focused_holo;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.vpi__tab_selected_holo = global::Im.Basket.Client.Droid.Resource.Drawable.vpi__tab_selected_holo;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.vpi__tab_selected_pressed_holo = global::Im.Basket.Client.Droid.Resource.Drawable.vpi__tab_selected_pressed_holo;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.vpi__tab_unselected_focused_holo = global::Im.Basket.Client.Droid.Resource.Drawable.vpi__tab_unselected_focused_holo;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.vpi__tab_unselected_holo = global::Im.Basket.Client.Droid.Resource.Drawable.vpi__tab_unselected_holo;
+			global::Intersoft.Crosslight.Android.Resource.Drawable.vpi__tab_unselected_pressed_holo = global::Im.Basket.Client.Droid.Resource.Drawable.vpi__tab_unselected_pressed_holo;
+			global::Intersoft.Crosslight.Android.Resource.Id.BulletPageIndicator = global::Im.Basket.Client.Droid.Resource.Id.BulletPageIndicator;
+			global::Intersoft.Crosslight.Android.Resource.Id.ButtonContainer = global::Im.Basket.Client.Droid.Resource.Id.ButtonContainer;
+			global::Intersoft.Crosslight.Android.Resource.Id.ButtonWidget = global::Im.Basket.Client.Droid.Resource.Id.ButtonWidget;
+			global::Intersoft.Crosslight.Android.Resource.Id.CheckBoxWidget = global::Im.Basket.Client.Droid.Resource.Id.CheckBoxWidget;
+			global::Intersoft.Crosslight.Android.Resource.Id.ChildNavigationDetail = global::Im.Basket.Client.Droid.Resource.Id.ChildNavigationDetail;
+			global::Intersoft.Crosslight.Android.Resource.Id.ChildNavigationImage = global::Im.Basket.Client.Droid.Resource.Id.ChildNavigationImage;
+			global::Intersoft.Crosslight.Android.Resource.Id.ChildNavigationLayout = global::Im.Basket.Client.Droid.Resource.Id.ChildNavigationLayout;
+			global::Intersoft.Crosslight.Android.Resource.Id.ChildNavigationText = global::Im.Basket.Client.Droid.Resource.Id.ChildNavigationText;
+			global::Intersoft.Crosslight.Android.Resource.Id.ContentContainer = global::Im.Basket.Client.Droid.Resource.Id.ContentContainer;
+			global::Intersoft.Crosslight.Android.Resource.Id.ContentSeparator = global::Im.Basket.Client.Droid.Resource.Id.ContentSeparator;
+			global::Intersoft.Crosslight.Android.Resource.Id.ControlsPlaceholder = global::Im.Basket.Client.Droid.Resource.Id.ControlsPlaceholder;
+			global::Intersoft.Crosslight.Android.Resource.Id.DatePickerWidget = global::Im.Basket.Client.Droid.Resource.Id.DatePickerWidget;
+			global::Intersoft.Crosslight.Android.Resource.Id.DateTimePickerDateWidget = global::Im.Basket.Client.Droid.Resource.Id.DateTimePickerDateWidget;
+			global::Intersoft.Crosslight.Android.Resource.Id.DateTimePickerTextView = global::Im.Basket.Client.Droid.Resource.Id.DateTimePickerTextView;
+			global::Intersoft.Crosslight.Android.Resource.Id.DateTimePickerTimeWidget = global::Im.Basket.Client.Droid.Resource.Id.DateTimePickerTimeWidget;
+			global::Intersoft.Crosslight.Android.Resource.Id.DialogFirstSeparator = global::Im.Basket.Client.Droid.Resource.Id.DialogFirstSeparator;
+			global::Intersoft.Crosslight.Android.Resource.Id.DialogNegativeButton = global::Im.Basket.Client.Droid.Resource.Id.DialogNegativeButton;
+			global::Intersoft.Crosslight.Android.Resource.Id.DialogNeutralButton = global::Im.Basket.Client.Droid.Resource.Id.DialogNeutralButton;
+			global::Intersoft.Crosslight.Android.Resource.Id.DialogPositiveButton = global::Im.Basket.Client.Droid.Resource.Id.DialogPositiveButton;
+			global::Intersoft.Crosslight.Android.Resource.Id.DialogRoot = global::Im.Basket.Client.Droid.Resource.Id.DialogRoot;
+			global::Intersoft.Crosslight.Android.Resource.Id.DialogSecondSeparator = global::Im.Basket.Client.Droid.Resource.Id.DialogSecondSeparator;
+			global::Intersoft.Crosslight.Android.Resource.Id.EditorContainer = global::Im.Basket.Client.Droid.Resource.Id.EditorContainer;
+			global::Intersoft.Crosslight.Android.Resource.Id.FloatingLayout = global::Im.Basket.Client.Droid.Resource.Id.FloatingLayout;
+			global::Intersoft.Crosslight.Android.Resource.Id.FooterLayout = global::Im.Basket.Client.Droid.Resource.Id.FooterLayout;
+			global::Intersoft.Crosslight.Android.Resource.Id.FooterText = global::Im.Basket.Client.Droid.Resource.Id.FooterText;
+			global::Intersoft.Crosslight.Android.Resource.Id.FormContainer = global::Im.Basket.Client.Droid.Resource.Id.FormContainer;
+			global::Intersoft.Crosslight.Android.Resource.Id.FormPlaceholder = global::Im.Basket.Client.Droid.Resource.Id.FormPlaceholder;
+			global::Intersoft.Crosslight.Android.Resource.Id.FormScrollView = global::Im.Basket.Client.Droid.Resource.Id.FormScrollView;
+			global::Intersoft.Crosslight.Android.Resource.Id.GridView = global::Im.Basket.Client.Droid.Resource.Id.GridView;
+			global::Intersoft.Crosslight.Android.Resource.Id.HeaderLayout = global::Im.Basket.Client.Droid.Resource.Id.HeaderLayout;
+			global::Intersoft.Crosslight.Android.Resource.Id.HeaderSeparator = global::Im.Basket.Client.Droid.Resource.Id.HeaderSeparator;
+			global::Intersoft.Crosslight.Android.Resource.Id.HeaderText = global::Im.Basket.Client.Droid.Resource.Id.HeaderText;
+			global::Intersoft.Crosslight.Android.Resource.Id.HyperlinkDetail = global::Im.Basket.Client.Droid.Resource.Id.HyperlinkDetail;
+			global::Intersoft.Crosslight.Android.Resource.Id.HyperlinkImage = global::Im.Basket.Client.Droid.Resource.Id.HyperlinkImage;
+			global::Intersoft.Crosslight.Android.Resource.Id.HyperlinkLayout = global::Im.Basket.Client.Droid.Resource.Id.HyperlinkLayout;
+			global::Intersoft.Crosslight.Android.Resource.Id.HyperlinkText = global::Im.Basket.Client.Droid.Resource.Id.HyperlinkText;
+			global::Intersoft.Crosslight.Android.Resource.Id.ImageContainer = global::Im.Basket.Client.Droid.Resource.Id.ImageContainer;
+			global::Intersoft.Crosslight.Android.Resource.Id.ImagePlaceholder = global::Im.Basket.Client.Droid.Resource.Id.ImagePlaceholder;
+			global::Intersoft.Crosslight.Android.Resource.Id.ImageTextView = global::Im.Basket.Client.Droid.Resource.Id.ImageTextView;
+			global::Intersoft.Crosslight.Android.Resource.Id.ImageView = global::Im.Basket.Client.Droid.Resource.Id.ImageView;
+			global::Intersoft.Crosslight.Android.Resource.Id.InnerLayout = global::Im.Basket.Client.Droid.Resource.Id.InnerLayout;
+			global::Intersoft.Crosslight.Android.Resource.Id.InternalSeekBar = global::Im.Basket.Client.Droid.Resource.Id.InternalSeekBar;
+			global::Intersoft.Crosslight.Android.Resource.Id.NumericStepper = global::Im.Basket.Client.Droid.Resource.Id.NumericStepper;
+			global::Intersoft.Crosslight.Android.Resource.Id.PageIndicatorContainer = global::Im.Basket.Client.Droid.Resource.Id.PageIndicatorContainer;
+			global::Intersoft.Crosslight.Android.Resource.Id.PagerTabStrip = global::Im.Basket.Client.Droid.Resource.Id.PagerTabStrip;
+			global::Intersoft.Crosslight.Android.Resource.Id.SelectionWidget = global::Im.Basket.Client.Droid.Resource.Id.SelectionWidget;
+			global::Intersoft.Crosslight.Android.Resource.Id.SpinnerWidget = global::Im.Basket.Client.Droid.Resource.Id.SpinnerWidget;
+			global::Intersoft.Crosslight.Android.Resource.Id.StripPageIndicator = global::Im.Basket.Client.Droid.Resource.Id.StripPageIndicator;
+			global::Intersoft.Crosslight.Android.Resource.Id.SubtitleTextView = global::Im.Basket.Client.Droid.Resource.Id.SubtitleTextView;
+			global::Intersoft.Crosslight.Android.Resource.Id.Switch = global::Im.Basket.Client.Droid.Resource.Id.Switch;
+			global::Intersoft.Crosslight.Android.Resource.Id.TabContainer = global::Im.Basket.Client.Droid.Resource.Id.TabContainer;
+			global::Intersoft.Crosslight.Android.Resource.Id.TabIcon = global::Im.Basket.Client.Droid.Resource.Id.TabIcon;
+			global::Intersoft.Crosslight.Android.Resource.Id.TabPageIndicator = global::Im.Basket.Client.Droid.Resource.Id.TabPageIndicator;
+			global::Intersoft.Crosslight.Android.Resource.Id.TabTitle = global::Im.Basket.Client.Droid.Resource.Id.TabTitle;
+			global::Intersoft.Crosslight.Android.Resource.Id.Text1 = global::Im.Basket.Client.Droid.Resource.Id.Text1;
+			global::Intersoft.Crosslight.Android.Resource.Id.Text2 = global::Im.Basket.Client.Droid.Resource.Id.Text2;
+			global::Intersoft.Crosslight.Android.Resource.Id.TimePickerWidget = global::Im.Basket.Client.Droid.Resource.Id.TimePickerWidget;
+			global::Intersoft.Crosslight.Android.Resource.Id.TitleContainer = global::Im.Basket.Client.Droid.Resource.Id.TitleContainer;
+			global::Intersoft.Crosslight.Android.Resource.Id.TitleText = global::Im.Basket.Client.Droid.Resource.Id.TitleText;
+			global::Intersoft.Crosslight.Android.Resource.Id.TitleTextView = global::Im.Basket.Client.Droid.Resource.Id.TitleTextView;
+			global::Intersoft.Crosslight.Android.Resource.Id.ViewPager = global::Im.Basket.Client.Droid.Resource.Id.ViewPager;
+			global::Intersoft.Crosslight.Android.Resource.Id.ViewSlider = global::Im.Basket.Client.Droid.Resource.Id.ViewSlider;
+			global::Intersoft.Crosslight.Android.Resource.Id.center_frame = global::Im.Basket.Client.Droid.Resource.Id.center_frame;
+			global::Intersoft.Crosslight.Android.Resource.Id.decrease_button = global::Im.Basket.Client.Droid.Resource.Id.decrease_button;
+			global::Intersoft.Crosslight.Android.Resource.Id.detailFrame = global::Im.Basket.Client.Droid.Resource.Id.detailFrame;
+			global::Intersoft.Crosslight.Android.Resource.Id.drawer_layout = global::Im.Basket.Client.Droid.Resource.Id.drawer_layout;
+			global::Intersoft.Crosslight.Android.Resource.Id.fragmentActivityLayout = global::Im.Basket.Client.Droid.Resource.Id.fragmentActivityLayout;
+			global::Intersoft.Crosslight.Android.Resource.Id.fragmentBody = global::Im.Basket.Client.Droid.Resource.Id.fragmentBody;
+			global::Intersoft.Crosslight.Android.Resource.Id.fragmentFooter = global::Im.Basket.Client.Droid.Resource.Id.fragmentFooter;
+			global::Intersoft.Crosslight.Android.Resource.Id.fragmentHeader = global::Im.Basket.Client.Droid.Resource.Id.fragmentHeader;
+			global::Intersoft.Crosslight.Android.Resource.Id.horizontal = global::Im.Basket.Client.Droid.Resource.Id.horizontal;
+			global::Intersoft.Crosslight.Android.Resource.Id.image = global::Im.Basket.Client.Droid.Resource.Id.image;
+			global::Intersoft.Crosslight.Android.Resource.Id.increase_button = global::Im.Basket.Client.Droid.Resource.Id.increase_button;
+			global::Intersoft.Crosslight.Android.Resource.Id.inside = global::Im.Basket.Client.Droid.Resource.Id.inside;
+			global::Intersoft.Crosslight.Android.Resource.Id.left_frame = global::Im.Basket.Client.Droid.Resource.Id.left_frame;
+			global::Intersoft.Crosslight.Android.Resource.Id.left_navdrawer = global::Im.Basket.Client.Droid.Resource.Id.left_navdrawer;
+			global::Intersoft.Crosslight.Android.Resource.Id.listContainer = global::Im.Basket.Client.Droid.Resource.Id.listContainer;
+			global::Intersoft.Crosslight.Android.Resource.Id.listViewFooter = global::Im.Basket.Client.Droid.Resource.Id.listViewFooter;
+			global::Intersoft.Crosslight.Android.Resource.Id.listViewHeader = global::Im.Basket.Client.Droid.Resource.Id.listViewHeader;
+			global::Intersoft.Crosslight.Android.Resource.Id.listViewProgressbar = global::Im.Basket.Client.Droid.Resource.Id.listViewProgressbar;
+			global::Intersoft.Crosslight.Android.Resource.Id.maincontent_navdrawer = global::Im.Basket.Client.Droid.Resource.Id.maincontent_navdrawer;
+			global::Intersoft.Crosslight.Android.Resource.Id.masterFrame = global::Im.Basket.Client.Droid.Resource.Id.masterFrame;
+			global::Intersoft.Crosslight.Android.Resource.Id.message_box = global::Im.Basket.Client.Droid.Resource.Id.message_box;
+			global::Intersoft.Crosslight.Android.Resource.Id.numeric_box = global::Im.Basket.Client.Droid.Resource.Id.numeric_box;
+			global::Intersoft.Crosslight.Android.Resource.Id.outside = global::Im.Basket.Client.Droid.Resource.Id.outside;
+			global::Intersoft.Crosslight.Android.Resource.Id.progressContainer = global::Im.Basket.Client.Droid.Resource.Id.progressContainer;
+			global::Intersoft.Crosslight.Android.Resource.Id.progress_bar = global::Im.Basket.Client.Droid.Resource.Id.progress_bar;
+			global::Intersoft.Crosslight.Android.Resource.Id.ptr_content = global::Im.Basket.Client.Droid.Resource.Id.ptr_content;
+			global::Intersoft.Crosslight.Android.Resource.Id.ptr_progress = global::Im.Basket.Client.Droid.Resource.Id.ptr_progress;
+			global::Intersoft.Crosslight.Android.Resource.Id.ptr_text = global::Im.Basket.Client.Droid.Resource.Id.ptr_text;
+			global::Intersoft.Crosslight.Android.Resource.Id.right_button = global::Im.Basket.Client.Droid.Resource.Id.right_button;
+			global::Intersoft.Crosslight.Android.Resource.Id.right_frame = global::Im.Basket.Client.Droid.Resource.Id.right_frame;
+			global::Intersoft.Crosslight.Android.Resource.Id.right_navdrawer = global::Im.Basket.Client.Droid.Resource.Id.right_navdrawer;
+			global::Intersoft.Crosslight.Android.Resource.Id.spb_interpolator_accelerate = global::Im.Basket.Client.Droid.Resource.Id.spb_interpolator_accelerate;
+			global::Intersoft.Crosslight.Android.Resource.Id.spb_interpolator_acceleratedecelerate = global::Im.Basket.Client.Droid.Resource.Id.spb_interpolator_acceleratedecelerate;
+			global::Intersoft.Crosslight.Android.Resource.Id.spb_interpolator_decelerate = global::Im.Basket.Client.Droid.Resource.Id.spb_interpolator_decelerate;
+			global::Intersoft.Crosslight.Android.Resource.Id.spb_interpolator_linear = global::Im.Basket.Client.Droid.Resource.Id.spb_interpolator_linear;
+			global::Intersoft.Crosslight.Android.Resource.Id.subtitle = global::Im.Basket.Client.Droid.Resource.Id.subtitle;
+			global::Intersoft.Crosslight.Android.Resource.Id.title = global::Im.Basket.Client.Droid.Resource.Id.title;
+			global::Intersoft.Crosslight.Android.Resource.Id.vertical = global::Im.Basket.Client.Droid.Resource.Id.vertical;
+			global::Intersoft.Crosslight.Android.Resource.Integer.default_bullet_indicator_orientation = global::Im.Basket.Client.Droid.Resource.Integer.default_bullet_indicator_orientation;
+			global::Intersoft.Crosslight.Android.Resource.Integer.default_strip_indicator_fade_delay = global::Im.Basket.Client.Droid.Resource.Integer.default_strip_indicator_fade_delay;
+			global::Intersoft.Crosslight.Android.Resource.Integer.default_strip_indicator_fade_length = global::Im.Basket.Client.Droid.Resource.Integer.default_strip_indicator_fade_length;
+			global::Intersoft.Crosslight.Android.Resource.Integer.spb_default_interpolator = global::Im.Basket.Client.Droid.Resource.Integer.spb_default_interpolator;
+			global::Intersoft.Crosslight.Android.Resource.Integer.spb_default_sections_count = global::Im.Basket.Client.Droid.Resource.Integer.spb_default_sections_count;
+			global::Intersoft.Crosslight.Android.Resource.Interpolator.accelerate_quad = global::Im.Basket.Client.Droid.Resource.Interpolator.accelerate_quad;
+			global::Intersoft.Crosslight.Android.Resource.Interpolator.decelerate_quad = global::Im.Basket.Client.Droid.Resource.Interpolator.decelerate_quad;
+			global::Intersoft.Crosslight.Android.Resource.Layout.activitylargeindicator = global::Im.Basket.Client.Droid.Resource.Layout.activitylargeindicator;
+			global::Intersoft.Crosslight.Android.Resource.Layout.activitysmallindicator = global::Im.Basket.Client.Droid.Resource.Layout.activitysmallindicator;
+			global::Intersoft.Crosslight.Android.Resource.Layout.activitytranslucentindicator = global::Im.Basket.Client.Droid.Resource.Layout.activitytranslucentindicator;
+			global::Intersoft.Crosslight.Android.Resource.Layout.bulletpageindicator = global::Im.Basket.Client.Droid.Resource.Layout.bulletpageindicator;
+			global::Intersoft.Crosslight.Android.Resource.Layout.buttonwidget = global::Im.Basket.Client.Droid.Resource.Layout.buttonwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.checkboxwidget = global::Im.Basket.Client.Droid.Resource.Layout.checkboxwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.childnavigationwidget = global::Im.Basket.Client.Droid.Resource.Layout.childnavigationwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.datepickerwidget = global::Im.Basket.Client.Droid.Resource.Layout.datepickerwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.datetimepickerlayout = global::Im.Basket.Client.Droid.Resource.Layout.datetimepickerlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.datetimepickerwidget = global::Im.Basket.Client.Droid.Resource.Layout.datetimepickerwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.default_header = global::Im.Basket.Client.Droid.Resource.Layout.default_header;
+			global::Intersoft.Crosslight.Android.Resource.Layout.dialoglayout = global::Im.Basket.Client.Droid.Resource.Layout.dialoglayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.dialoglayout_edge = global::Im.Basket.Client.Droid.Resource.Layout.dialoglayout_edge;
+			global::Intersoft.Crosslight.Android.Resource.Layout.dialoglayout_fullscreen = global::Im.Basket.Client.Droid.Resource.Layout.dialoglayout_fullscreen;
+			global::Intersoft.Crosslight.Android.Resource.Layout.form = global::Im.Basket.Client.Droid.Resource.Layout.form;
+			global::Intersoft.Crosslight.Android.Resource.Layout.formlayout = global::Im.Basket.Client.Droid.Resource.Layout.formlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.formlayoutdetailonly = global::Im.Basket.Client.Droid.Resource.Layout.formlayoutdetailonly;
+			global::Intersoft.Crosslight.Android.Resource.Layout.formlayoutleftdetail = global::Im.Basket.Client.Droid.Resource.Layout.formlayoutleftdetail;
+			global::Intersoft.Crosslight.Android.Resource.Layout.formlayoutrightdetail = global::Im.Basket.Client.Droid.Resource.Layout.formlayoutrightdetail;
+			global::Intersoft.Crosslight.Android.Resource.Layout.formlayoutrowdetail = global::Im.Basket.Client.Droid.Resource.Layout.formlayoutrowdetail;
+			global::Intersoft.Crosslight.Android.Resource.Layout.formsectionlayout = global::Im.Basket.Client.Droid.Resource.Layout.formsectionlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.fragmentactivitylayout = global::Im.Basket.Client.Droid.Resource.Layout.fragmentactivitylayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.gridcontent = global::Im.Basket.Client.Droid.Resource.Layout.gridcontent;
+			global::Intersoft.Crosslight.Android.Resource.Layout.hyperlinkwidget = global::Im.Basket.Client.Droid.Resource.Layout.hyperlinkwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.imagepickerwidget = global::Im.Basket.Client.Droid.Resource.Layout.imagepickerwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.imageviewwidget = global::Im.Basket.Client.Droid.Resource.Layout.imageviewwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.listgroupsectionheaderlayout = global::Im.Basket.Client.Droid.Resource.Layout.listgroupsectionheaderlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.listgroupsectionlayout = global::Im.Basket.Client.Droid.Resource.Layout.listgroupsectionlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.listviewfooterlayout = global::Im.Basket.Client.Droid.Resource.Layout.listviewfooterlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.listviewheaderlayout = global::Im.Basket.Client.Droid.Resource.Layout.listviewheaderlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.listviewprogressbarlayout = global::Im.Basket.Client.Droid.Resource.Layout.listviewprogressbarlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.listviewwidgetlayout = global::Im.Basket.Client.Droid.Resource.Layout.listviewwidgetlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.maincontainer = global::Im.Basket.Client.Droid.Resource.Layout.maincontainer;
+			global::Intersoft.Crosslight.Android.Resource.Layout.masterdetailfragmentlayout = global::Im.Basket.Client.Droid.Resource.Layout.masterdetailfragmentlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.messageinputviewlayout = global::Im.Basket.Client.Droid.Resource.Layout.messageinputviewlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.navigationdrawerlayout = global::Im.Basket.Client.Droid.Resource.Layout.navigationdrawerlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.numericstepperlayout = global::Im.Basket.Client.Droid.Resource.Layout.numericstepperlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.numericstepperwidget = global::Im.Basket.Client.Droid.Resource.Layout.numericstepperwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.radiobuttonwidget = global::Im.Basket.Client.Droid.Resource.Layout.radiobuttonwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.roundedbuttonlayout = global::Im.Basket.Client.Droid.Resource.Layout.roundedbuttonlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.sectionimageswithfieldslayout = global::Im.Basket.Client.Droid.Resource.Layout.sectionimageswithfieldslayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.sectionlayout = global::Im.Basket.Client.Droid.Resource.Layout.sectionlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.seekbarwidget = global::Im.Basket.Client.Droid.Resource.Layout.seekbarwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.selectionwidget = global::Im.Basket.Client.Droid.Resource.Layout.selectionwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.simplegriditem = global::Im.Basket.Client.Droid.Resource.Layout.simplegriditem;
+			global::Intersoft.Crosslight.Android.Resource.Layout.simpleimageitem = global::Im.Basket.Client.Droid.Resource.Layout.simpleimageitem;
+			global::Intersoft.Crosslight.Android.Resource.Layout.simplelistviewwidget1 = global::Im.Basket.Client.Droid.Resource.Layout.simplelistviewwidget1;
+			global::Intersoft.Crosslight.Android.Resource.Layout.simplelistviewwidget2 = global::Im.Basket.Client.Droid.Resource.Layout.simplelistviewwidget2;
+			global::Intersoft.Crosslight.Android.Resource.Layout.simplelistviewwidgetimage = global::Im.Basket.Client.Droid.Resource.Layout.simplelistviewwidgetimage;
+			global::Intersoft.Crosslight.Android.Resource.Layout.spinnerdropdownitemlayout = global::Im.Basket.Client.Droid.Resource.Layout.spinnerdropdownitemlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.spinnerlayout = global::Im.Basket.Client.Droid.Resource.Layout.spinnerlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.spinnerwidget = global::Im.Basket.Client.Droid.Resource.Layout.spinnerwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.strippageindicator = global::Im.Basket.Client.Droid.Resource.Layout.strippageindicator;
+			global::Intersoft.Crosslight.Android.Resource.Layout.switchwidget = global::Im.Basket.Client.Droid.Resource.Layout.switchwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.tabcontainer = global::Im.Basket.Client.Droid.Resource.Layout.tabcontainer;
+			global::Intersoft.Crosslight.Android.Resource.Layout.tabfragmentlayout = global::Im.Basket.Client.Droid.Resource.Layout.tabfragmentlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.tablecellleftdetail = global::Im.Basket.Client.Droid.Resource.Layout.tablecellleftdetail;
+			global::Intersoft.Crosslight.Android.Resource.Layout.tablecellrightdetail = global::Im.Basket.Client.Droid.Resource.Layout.tablecellrightdetail;
+			global::Intersoft.Crosslight.Android.Resource.Layout.tablecellsubtitle = global::Im.Basket.Client.Droid.Resource.Layout.tablecellsubtitle;
+			global::Intersoft.Crosslight.Android.Resource.Layout.tablecellsubtitlewithimage = global::Im.Basket.Client.Droid.Resource.Layout.tablecellsubtitlewithimage;
+			global::Intersoft.Crosslight.Android.Resource.Layout.textfieldview = global::Im.Basket.Client.Droid.Resource.Layout.textfieldview;
+			global::Intersoft.Crosslight.Android.Resource.Layout.timepickerwidget = global::Im.Basket.Client.Droid.Resource.Layout.timepickerwidget;
+			global::Intersoft.Crosslight.Android.Resource.Layout.toast = global::Im.Basket.Client.Droid.Resource.Layout.toast;
+			global::Intersoft.Crosslight.Android.Resource.Layout.toastlayout = global::Im.Basket.Client.Droid.Resource.Layout.toastlayout;
+			global::Intersoft.Crosslight.Android.Resource.Layout.toastshadow = global::Im.Basket.Client.Droid.Resource.Layout.toastshadow;
+			global::Intersoft.Crosslight.Android.Resource.Layout.toastshape = global::Im.Basket.Client.Droid.Resource.Layout.toastshape;
+			global::Intersoft.Crosslight.Android.Resource.Layout.viewpagerindicatortab = global::Im.Basket.Client.Droid.Resource.Layout.viewpagerindicatortab;
+			global::Intersoft.Crosslight.Android.Resource.Layout.viewpagerwithtab = global::Im.Basket.Client.Droid.Resource.Layout.viewpagerwithtab;
+			global::Intersoft.Crosslight.Android.Resource.Layout.viewpagerwithtabstrip = global::Im.Basket.Client.Droid.Resource.Layout.viewpagerwithtabstrip;
+			global::Intersoft.Crosslight.Android.Resource.Layout.viewslider = global::Im.Basket.Client.Droid.Resource.Layout.viewslider;
+			global::Intersoft.Crosslight.Android.Resource.String.Add = global::Im.Basket.Client.Droid.Resource.String.Add;
+			global::Intersoft.Crosslight.Android.Resource.String.Cancel = global::Im.Basket.Client.Droid.Resource.String.Cancel;
+			global::Intersoft.Crosslight.Android.Resource.String.CheckAll = global::Im.Basket.Client.Droid.Resource.String.CheckAll;
+			global::Intersoft.Crosslight.Android.Resource.String.ChooseFromGallery = global::Im.Basket.Client.Droid.Resource.String.ChooseFromGallery;
+			global::Intersoft.Crosslight.Android.Resource.String.CloseDrawer = global::Im.Basket.Client.Droid.Resource.String.CloseDrawer;
+			global::Intersoft.Crosslight.Android.Resource.String.Delete = global::Im.Basket.Client.Droid.Resource.String.Delete;
+			global::Intersoft.Crosslight.Android.Resource.String.DeleteImage = global::Im.Basket.Client.Droid.Resource.String.DeleteImage;
+			global::Intersoft.Crosslight.Android.Resource.String.More = global::Im.Basket.Client.Droid.Resource.String.More;
+			global::Intersoft.Crosslight.Android.Resource.String.OK = global::Im.Basket.Client.Droid.Resource.String.OK;
+			global::Intersoft.Crosslight.Android.Resource.String.OpenDrawer = global::Im.Basket.Client.Droid.Resource.String.OpenDrawer;
+			global::Intersoft.Crosslight.Android.Resource.String.Save = global::Im.Basket.Client.Droid.Resource.String.Save;
+			global::Intersoft.Crosslight.Android.Resource.String.SelectImage = global::Im.Basket.Client.Droid.Resource.String.SelectImage;
+			global::Intersoft.Crosslight.Android.Resource.String.TakePhoto = global::Im.Basket.Client.Droid.Resource.String.TakePhoto;
+			global::Intersoft.Crosslight.Android.Resource.String.UncheckAll = global::Im.Basket.Client.Droid.Resource.String.UncheckAll;
+			global::Intersoft.Crosslight.Android.Resource.String.pull_to_refresh_pull_label = global::Im.Basket.Client.Droid.Resource.String.pull_to_refresh_pull_label;
+			global::Intersoft.Crosslight.Android.Resource.String.pull_to_refresh_refreshing_label = global::Im.Basket.Client.Droid.Resource.String.pull_to_refresh_refreshing_label;
+			global::Intersoft.Crosslight.Android.Resource.String.pull_to_refresh_release_label = global::Im.Basket.Client.Droid.Resource.String.pull_to_refresh_release_label;
+			global::Intersoft.Crosslight.Android.Resource.String.spb_default_speed = global::Im.Basket.Client.Droid.Resource.String.spb_default_speed;
+			global::Intersoft.Crosslight.Android.Resource.Style.BulletPageIndicator = global::Im.Basket.Client.Droid.Resource.Style.BulletPageIndicator;
+			global::Intersoft.Crosslight.Android.Resource.Style.GridItem = global::Im.Basket.Client.Droid.Resource.Style.GridItem;
+			global::Intersoft.Crosslight.Android.Resource.Style.ListItem = global::Im.Basket.Client.Droid.Resource.Style.ListItem;
+			global::Intersoft.Crosslight.Android.Resource.Style.PageIndicator = global::Im.Basket.Client.Droid.Resource.Style.PageIndicator;
+			global::Intersoft.Crosslight.Android.Resource.Style.SmoothProgressBar = global::Im.Basket.Client.Droid.Resource.Style.SmoothProgressBar;
+			global::Intersoft.Crosslight.Android.Resource.Style.StripPageIndicator = global::Im.Basket.Client.Droid.Resource.Style.StripPageIndicator;
+			global::Intersoft.Crosslight.Android.Resource.Style.TextAppearance_Custom_PtrHeader_Title = global::Im.Basket.Client.Droid.Resource.Style.TextAppearance_Custom_PtrHeader_Title;
+			global::Intersoft.Crosslight.Android.Resource.Style.TextAppearance_Small = global::Im.Basket.Client.Droid.Resource.Style.TextAppearance_Small;
+			global::Intersoft.Crosslight.Android.Resource.Style.TextViewStyle = global::Im.Basket.Client.Droid.Resource.Style.TextViewStyle;
+			global::Intersoft.Crosslight.Android.Resource.Style.Theme_Holo_CustomPtrHeader = global::Im.Basket.Client.Droid.Resource.Style.Theme_Holo_CustomPtrHeader;
+			global::Intersoft.Crosslight.Android.Resource.Style.Theme_PageIndicatorDefaults = global::Im.Basket.Client.Droid.Resource.Style.Theme_PageIndicatorDefaults;
+			global::Intersoft.Crosslight.Android.Resource.Style.Theme_SmoothProgressBarDefaults = global::Im.Basket.Client.Droid.Resource.Style.Theme_SmoothProgressBarDefaults;
+			global::Intersoft.Crosslight.Android.Resource.Style.ThemeHoloLightDockEdge = global::Im.Basket.Client.Droid.Resource.Style.ThemeHoloLightDockEdge;
+			global::Intersoft.Crosslight.Android.Resource.Style.Widget_Custom_PtrHeader = global::Im.Basket.Client.Droid.Resource.Style.Widget_Custom_PtrHeader;
+			global::Intersoft.Crosslight.Android.Resource.Style.Widget_ProgressBar_PullToRefresh = global::Im.Basket.Client.Droid.Resource.Style.Widget_ProgressBar_PullToRefresh;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.BulletPageIndicator = global::Im.Basket.Client.Droid.Resource.Styleable.BulletPageIndicator;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.BulletPageIndicator_centered = global::Im.Basket.Client.Droid.Resource.Styleable.BulletPageIndicator_centered;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.BulletPageIndicator_fillColor = global::Im.Basket.Client.Droid.Resource.Styleable.BulletPageIndicator_fillColor;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.BulletPageIndicator_orientation = global::Im.Basket.Client.Droid.Resource.Styleable.BulletPageIndicator_orientation;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.BulletPageIndicator_pageColor = global::Im.Basket.Client.Droid.Resource.Styleable.BulletPageIndicator_pageColor;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.BulletPageIndicator_radius = global::Im.Basket.Client.Droid.Resource.Styleable.BulletPageIndicator_radius;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.BulletPageIndicator_snap = global::Im.Basket.Client.Droid.Resource.Styleable.BulletPageIndicator_snap;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.BulletPageIndicator_strokeColor = global::Im.Basket.Client.Droid.Resource.Styleable.BulletPageIndicator_strokeColor;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.BulletPageIndicator_strokeWidth = global::Im.Basket.Client.Droid.Resource.Styleable.BulletPageIndicator_strokeWidth;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.NumericStepper = global::Im.Basket.Client.Droid.Resource.Styleable.NumericStepper;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.NumericStepper_android_value = global::Im.Basket.Client.Droid.Resource.Styleable.NumericStepper_android_value;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.NumericStepper_maxValue = global::Im.Basket.Client.Droid.Resource.Styleable.NumericStepper_maxValue;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.NumericStepper_minValue = global::Im.Basket.Client.Droid.Resource.Styleable.NumericStepper_minValue;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.NumericStepper_step = global::Im.Basket.Client.Droid.Resource.Styleable.NumericStepper_step;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PageIndicator = global::Im.Basket.Client.Droid.Resource.Styleable.PageIndicator;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PageIndicator_vpiBulletPageIndicatorStyle = global::Im.Basket.Client.Droid.Resource.Styleable.PageIndicator_vpiBulletPageIndicatorStyle;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PageIndicator_vpiStripPageIndicatorStyle = global::Im.Basket.Client.Droid.Resource.Styleable.PageIndicator_vpiStripPageIndicatorStyle;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PullToRefreshHeader = global::Im.Basket.Client.Droid.Resource.Styleable.PullToRefreshHeader;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PullToRefreshHeader_ptrHeaderBackground = global::Im.Basket.Client.Droid.Resource.Styleable.PullToRefreshHeader_ptrHeaderBackground;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PullToRefreshHeader_ptrHeaderHeight = global::Im.Basket.Client.Droid.Resource.Styleable.PullToRefreshHeader_ptrHeaderHeight;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PullToRefreshHeader_ptrHeaderTitleTextAppearance = global::Im.Basket.Client.Droid.Resource.Styleable.PullToRefreshHeader_ptrHeaderTitleTextAppearance;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PullToRefreshHeader_ptrProgressBarColor = global::Im.Basket.Client.Droid.Resource.Styleable.PullToRefreshHeader_ptrProgressBarColor;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PullToRefreshHeader_ptrProgressBarHeight = global::Im.Basket.Client.Droid.Resource.Styleable.PullToRefreshHeader_ptrProgressBarHeight;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PullToRefreshHeader_ptrProgressBarStyle = global::Im.Basket.Client.Droid.Resource.Styleable.PullToRefreshHeader_ptrProgressBarStyle;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PullToRefreshHeader_ptrPullText = global::Im.Basket.Client.Droid.Resource.Styleable.PullToRefreshHeader_ptrPullText;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PullToRefreshHeader_ptrRefreshingText = global::Im.Basket.Client.Droid.Resource.Styleable.PullToRefreshHeader_ptrRefreshingText;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PullToRefreshHeader_ptrReleaseText = global::Im.Basket.Client.Droid.Resource.Styleable.PullToRefreshHeader_ptrReleaseText;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PullToRefreshView = global::Im.Basket.Client.Droid.Resource.Styleable.PullToRefreshView;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.PullToRefreshView_ptrViewDelegateClass = global::Im.Basket.Client.Droid.Resource.Styleable.PullToRefreshView_ptrViewDelegateClass;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.RoundedButton = global::Im.Basket.Client.Droid.Resource.Styleable.RoundedButton;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.RoundedButton_android_scaleType = global::Im.Basket.Client.Droid.Resource.Styleable.RoundedButton_android_scaleType;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.RoundedButton_contentStyle = global::Im.Basket.Client.Droid.Resource.Styleable.RoundedButton_contentStyle;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.RoundedButton_imageBackground = global::Im.Basket.Client.Droid.Resource.Styleable.RoundedButton_imageBackground;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.RoundedButton_imageSrc = global::Im.Basket.Client.Droid.Resource.Styleable.RoundedButton_imageSrc;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.RoundedButton_isToggle = global::Im.Basket.Client.Droid.Resource.Styleable.RoundedButton_isToggle;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.RoundedButton_subtitle = global::Im.Basket.Client.Droid.Resource.Styleable.RoundedButton_subtitle;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.RoundedButton_subtitleColor = global::Im.Basket.Client.Droid.Resource.Styleable.RoundedButton_subtitleColor;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.RoundedButton_subtitleTextSize = global::Im.Basket.Client.Droid.Resource.Styleable.RoundedButton_subtitleTextSize;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.RoundedButton_title = global::Im.Basket.Client.Droid.Resource.Styleable.RoundedButton_title;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.RoundedButton_titleColor = global::Im.Basket.Client.Droid.Resource.Styleable.RoundedButton_titleColor;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.RoundedButton_titleTextSize = global::Im.Basket.Client.Droid.Resource.Styleable.RoundedButton_titleTextSize;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.SmoothProgressBar = global::Im.Basket.Client.Droid.Resource.Styleable.SmoothProgressBar;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.SmoothProgressBar_spbStyle = global::Im.Basket.Client.Droid.Resource.Styleable.SmoothProgressBar_spbStyle;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.SmoothProgressBar_spb_color = global::Im.Basket.Client.Droid.Resource.Styleable.SmoothProgressBar_spb_color;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.SmoothProgressBar_spb_colors = global::Im.Basket.Client.Droid.Resource.Styleable.SmoothProgressBar_spb_colors;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.SmoothProgressBar_spb_interpolator = global::Im.Basket.Client.Droid.Resource.Styleable.SmoothProgressBar_spb_interpolator;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.SmoothProgressBar_spb_mirror_mode = global::Im.Basket.Client.Droid.Resource.Styleable.SmoothProgressBar_spb_mirror_mode;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.SmoothProgressBar_spb_reversed = global::Im.Basket.Client.Droid.Resource.Styleable.SmoothProgressBar_spb_reversed;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.SmoothProgressBar_spb_sections_count = global::Im.Basket.Client.Droid.Resource.Styleable.SmoothProgressBar_spb_sections_count;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.SmoothProgressBar_spb_speed = global::Im.Basket.Client.Droid.Resource.Styleable.SmoothProgressBar_spb_speed;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.SmoothProgressBar_spb_stroke_separator_length = global::Im.Basket.Client.Droid.Resource.Styleable.SmoothProgressBar_spb_stroke_separator_length;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.SmoothProgressBar_spb_stroke_width = global::Im.Basket.Client.Droid.Resource.Styleable.SmoothProgressBar_spb_stroke_width;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.StripPageIndicator = global::Im.Basket.Client.Droid.Resource.Styleable.StripPageIndicator;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.StripPageIndicator_android_background = global::Im.Basket.Client.Droid.Resource.Styleable.StripPageIndicator_android_background;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.StripPageIndicator_fadeDelay = global::Im.Basket.Client.Droid.Resource.Styleable.StripPageIndicator_fadeDelay;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.StripPageIndicator_fadeLength = global::Im.Basket.Client.Droid.Resource.Styleable.StripPageIndicator_fadeLength;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.StripPageIndicator_fades = global::Im.Basket.Client.Droid.Resource.Styleable.StripPageIndicator_fades;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.StripPageIndicator_selectedColor = global::Im.Basket.Client.Droid.Resource.Styleable.StripPageIndicator_selectedColor;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.ToogleImageButton = global::Im.Basket.Client.Droid.Resource.Styleable.ToogleImageButton;
+			global::Intersoft.Crosslight.Android.Resource.Styleable.ToogleImageButton_checked = global::Im.Basket.Client.Droid.Resource.Styleable.ToogleImageButton_checked;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Im.Basket.Client.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -80,12 +466,88 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f04000f
 			public const int design_snackbar_out = 2130968591;
 			
+			// aapt resource value: 0x7f040010
+			public const int dialog_fade_in = 2130968592;
+			
+			// aapt resource value: 0x7f040011
+			public const int dialog_fade_out = 2130968593;
+			
+			// aapt resource value: 0x7f040012
+			public const int dialog_push_in_down = 2130968594;
+			
+			// aapt resource value: 0x7f040013
+			public const int dialog_push_in_up = 2130968595;
+			
+			// aapt resource value: 0x7f040014
+			public const int dialog_push_out_down = 2130968596;
+			
+			// aapt resource value: 0x7f040015
+			public const int dialog_push_out_up = 2130968597;
+			
+			// aapt resource value: 0x7f040016
+			public const int dialog_slide_in_left = 2130968598;
+			
+			// aapt resource value: 0x7f040017
+			public const int dialog_slide_in_right = 2130968599;
+			
+			// aapt resource value: 0x7f040018
+			public const int dialog_slide_out_left = 2130968600;
+			
+			// aapt resource value: 0x7f040019
+			public const int dialog_slide_out_right = 2130968601;
+			
+			// aapt resource value: 0x7f04001a
+			public const int slide_in_top = 2130968602;
+			
+			// aapt resource value: 0x7f04001b
+			public const int slide_out_top = 2130968603;
+			
+			// aapt resource value: 0x7f04001c
+			public const int toast_enter = 2130968604;
+			
+			// aapt resource value: 0x7f04001d
+			public const int toast_exit = 2130968605;
+			
+			// aapt resource value: 0x7f04001e
+			public const int transition_bottomtop = 2130968606;
+			
+			// aapt resource value: 0x7f04001f
+			public const int transition_fadein = 2130968607;
+			
+			// aapt resource value: 0x7f040020
+			public const int transition_fadeout = 2130968608;
+			
+			// aapt resource value: 0x7f040021
+			public const int transition_leftright = 2130968609;
+			
+			// aapt resource value: 0x7f040022
+			public const int transition_rightleft = 2130968610;
+			
+			// aapt resource value: 0x7f040023
+			public const int transition_topbottom = 2130968611;
+			
 			static Animation()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 			}
 			
 			private Animation()
+			{
+			}
+		}
+		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f0d0000
+			public const int select_image_dialog = 2131558400;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
 			{
 			}
 		}
@@ -309,8 +771,14 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f01001f
 			public const int cardUseCompatPadding = 2130771999;
 			
+			// aapt resource value: 0x7f01015f
+			public const int centered = 2130772319;
+			
 			// aapt resource value: 0x7f0100b0
 			public const int checkboxStyle = 2130772144;
+			
+			// aapt resource value: 0x7f010151
+			public const int @checked = 2130772305;
 			
 			// aapt resource value: 0x7f0100b1
 			public const int checkedTextViewStyle = 2130772145;
@@ -392,6 +860,9 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f010105
 			public const int contentScrim = 2130772229;
+			
+			// aapt resource value: 0x7f010158
+			public const int contentStyle = 2130772312;
 			
 			// aapt resource value: 0x7f0100a4
 			public const int controlBackground = 2130772132;
@@ -498,6 +969,18 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f010115
 			public const int fabSize = 2130772245;
 			
+			// aapt resource value: 0x7f010168
+			public const int fadeDelay = 2130772328;
+			
+			// aapt resource value: 0x7f010169
+			public const int fadeLength = 2130772329;
+			
+			// aapt resource value: 0x7f010167
+			public const int fades = 2130772327;
+			
+			// aapt resource value: 0x7f010160
+			public const int fillColor = 2130772320;
+			
 			// aapt resource value: 0x7f010119
 			public const int foregroundInsidePadding = 2130772249;
 			
@@ -537,8 +1020,14 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f0100d0
 			public const int iconifiedByDefault = 2130772176;
 			
+			// aapt resource value: 0x7f010157
+			public const int imageBackground = 2130772311;
+			
 			// aapt resource value: 0x7f01008a
 			public const int imageButtonStyle = 2130772106;
+			
+			// aapt resource value: 0x7f010156
+			public const int imageSrc = 2130772310;
 			
 			// aapt resource value: 0x7f010038
 			public const int indeterminateProgressStyle = 2130772024;
@@ -551,6 +1040,9 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f010028
 			public const int isLightTheme = 2130772008;
+			
+			// aapt resource value: 0x7f010155
+			public const int isToggle = 2130772309;
 			
 			// aapt resource value: 0x7f01011d
 			public const int itemBackground = 2130772253;
@@ -642,6 +1134,9 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f0100ea
 			public const int maxButtonHeight = 2130772202;
 			
+			// aapt resource value: 0x7f010153
+			public const int maxValue = 2130772307;
+			
 			// aapt resource value: 0x7f0100c5
 			public const int measureWithLargestChild = 2130772165;
 			
@@ -711,6 +1206,9 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f01011a
 			public const int menu = 2130772250;
 			
+			// aapt resource value: 0x7f010152
+			public const int minValue = 2130772306;
+			
 			// aapt resource value: 0x7f010047
 			public const int multiChoiceItemLayout = 2130772039;
 			
@@ -723,6 +1221,9 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f01002a
 			public const int navigationMode = 2130772010;
 			
+			// aapt resource value: 0x7f010162
+			public const int orientation = 2130772322;
+			
 			// aapt resource value: 0x7f0100cd
 			public const int overlapAnchor = 2130772173;
 			
@@ -731,6 +1232,9 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f0100f2
 			public const int paddingStart = 2130772210;
+			
+			// aapt resource value: 0x7f010161
+			public const int pageColor = 2130772321;
 			
 			// aapt resource value: 0x7f010098
 			public const int panelBackground = 2130772120;
@@ -762,6 +1266,39 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f010037
 			public const int progressBarStyle = 2130772023;
 			
+			// aapt resource value: 0x7f01013e
+			public const int ptrHeaderBackground = 2130772286;
+			
+			// aapt resource value: 0x7f01013f
+			public const int ptrHeaderHeight = 2130772287;
+			
+			// aapt resource value: 0x7f01013d
+			public const int ptrHeaderStyle = 2130772285;
+			
+			// aapt resource value: 0x7f010140
+			public const int ptrHeaderTitleTextAppearance = 2130772288;
+			
+			// aapt resource value: 0x7f010141
+			public const int ptrProgressBarColor = 2130772289;
+			
+			// aapt resource value: 0x7f010143
+			public const int ptrProgressBarHeight = 2130772291;
+			
+			// aapt resource value: 0x7f010142
+			public const int ptrProgressBarStyle = 2130772290;
+			
+			// aapt resource value: 0x7f010144
+			public const int ptrPullText = 2130772292;
+			
+			// aapt resource value: 0x7f010145
+			public const int ptrRefreshingText = 2130772293;
+			
+			// aapt resource value: 0x7f010146
+			public const int ptrReleaseText = 2130772294;
+			
+			// aapt resource value: 0x7f01013c
+			public const int ptrViewDelegateClass = 2130772284;
+			
 			// aapt resource value: 0x7f0100da
 			public const int queryBackground = 2130772186;
 			
@@ -770,6 +1307,9 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f0100b3
 			public const int radioButtonStyle = 2130772147;
+			
+			// aapt resource value: 0x7f010163
+			public const int radius = 2130772323;
 			
 			// aapt resource value: 0x7f0100b4
 			public const int ratingBarStyle = 2130772148;
@@ -804,6 +1344,9 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f01007f
 			public const int selectableItemBackgroundBorderless = 2130772095;
 			
+			// aapt resource value: 0x7f01016a
+			public const int selectedColor = 2130772330;
+			
 			// aapt resource value: 0x7f0100c8
 			public const int showAsAction = 2130772168;
 			
@@ -816,8 +1359,41 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f010048
 			public const int singleChoiceItemLayout = 2130772040;
 			
+			// aapt resource value: 0x7f010164
+			public const int snap = 2130772324;
+			
 			// aapt resource value: 0x7f010001
 			public const int spanCount = 2130771969;
+			
+			// aapt resource value: 0x7f010147
+			public const int spbStyle = 2130772295;
+			
+			// aapt resource value: 0x7f010148
+			public const int spb_color = 2130772296;
+			
+			// aapt resource value: 0x7f010150
+			public const int spb_colors = 2130772304;
+			
+			// aapt resource value: 0x7f01014d
+			public const int spb_interpolator = 2130772301;
+			
+			// aapt resource value: 0x7f01014f
+			public const int spb_mirror_mode = 2130772303;
+			
+			// aapt resource value: 0x7f01014e
+			public const int spb_reversed = 2130772302;
+			
+			// aapt resource value: 0x7f01014b
+			public const int spb_sections_count = 2130772299;
+			
+			// aapt resource value: 0x7f01014c
+			public const int spb_speed = 2130772300;
+			
+			// aapt resource value: 0x7f01014a
+			public const int spb_stroke_separator_length = 2130772298;
+			
+			// aapt resource value: 0x7f010149
+			public const int spb_stroke_width = 2130772297;
 			
 			// aapt resource value: 0x7f0100be
 			public const int spinBars = 2130772158;
@@ -846,17 +1422,32 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f010106
 			public const int statusBarScrim = 2130772230;
 			
+			// aapt resource value: 0x7f010154
+			public const int step = 2130772308;
+			
+			// aapt resource value: 0x7f010165
+			public const int strokeColor = 2130772325;
+			
+			// aapt resource value: 0x7f010166
+			public const int strokeWidth = 2130772326;
+			
 			// aapt resource value: 0x7f0100db
 			public const int submitBackground = 2130772187;
 			
 			// aapt resource value: 0x7f01002c
 			public const int subtitle = 2130772012;
 			
+			// aapt resource value: 0x7f01015a
+			public const int subtitleColor = 2130772314;
+			
 			// aapt resource value: 0x7f0100e4
 			public const int subtitleTextAppearance = 2130772196;
 			
 			// aapt resource value: 0x7f0100f1
 			public const int subtitleTextColor = 2130772209;
+			
+			// aapt resource value: 0x7f01015c
+			public const int subtitleTextSize = 2130772316;
 			
 			// aapt resource value: 0x7f01002e
 			public const int subtitleTextStyle = 2130772014;
@@ -966,6 +1557,9 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f010029
 			public const int title = 2130772009;
 			
+			// aapt resource value: 0x7f010159
+			public const int titleColor = 2130772313;
+			
 			// aapt resource value: 0x7f01010a
 			public const int titleEnabled = 2130772234;
 			
@@ -990,6 +1584,9 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f0100f0
 			public const int titleTextColor = 2130772208;
 			
+			// aapt resource value: 0x7f01015b
+			public const int titleTextSize = 2130772315;
+			
 			// aapt resource value: 0x7f01002d
 			public const int titleTextStyle = 2130772013;
 			
@@ -1010,6 +1607,12 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f0100d7
 			public const int voiceIcon = 2130772183;
+			
+			// aapt resource value: 0x7f01015d
+			public const int vpiBulletPageIndicatorStyle = 2130772317;
+			
+			// aapt resource value: 0x7f01015e
+			public const int vpiStripPageIndicatorStyle = 2130772318;
 			
 			// aapt resource value: 0x7f01004c
 			public const int windowActionBar = 2130772044;
@@ -1078,6 +1681,21 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f0c0007
 			public const int abc_config_showMenuShortcutsWhenKeyboardPresent = 2131492871;
 			
+			// aapt resource value: 0x7f0c000a
+			public const int default_bullet_indicator_centered = 2131492874;
+			
+			// aapt resource value: 0x7f0c000b
+			public const int default_bullet_indicator_snap = 2131492875;
+			
+			// aapt resource value: 0x7f0c000c
+			public const int default_strip_indicator_fades = 2131492876;
+			
+			// aapt resource value: 0x7f0c0009
+			public const int spb_default_mirror_mode = 2131492873;
+			
+			// aapt resource value: 0x7f0c0008
+			public const int spb_default_reversed = 2131492872;
+			
 			static Boolean()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -1091,32 +1709,32 @@ namespace Im.Basket.Client.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0b0048
-			public const int abc_background_cache_hint_selector_material_dark = 2131427400;
+			// aapt resource value: 0x7f0b0058
+			public const int abc_background_cache_hint_selector_material_dark = 2131427416;
 			
-			// aapt resource value: 0x7f0b0049
-			public const int abc_background_cache_hint_selector_material_light = 2131427401;
+			// aapt resource value: 0x7f0b0059
+			public const int abc_background_cache_hint_selector_material_light = 2131427417;
 			
-			// aapt resource value: 0x7f0b004a
-			public const int abc_color_highlight_material = 2131427402;
+			// aapt resource value: 0x7f0b005a
+			public const int abc_color_highlight_material = 2131427418;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int abc_input_method_navigation_guard = 2131427332;
 			
-			// aapt resource value: 0x7f0b004b
-			public const int abc_primary_text_disable_only_material_dark = 2131427403;
+			// aapt resource value: 0x7f0b005b
+			public const int abc_primary_text_disable_only_material_dark = 2131427419;
 			
-			// aapt resource value: 0x7f0b004c
-			public const int abc_primary_text_disable_only_material_light = 2131427404;
+			// aapt resource value: 0x7f0b005c
+			public const int abc_primary_text_disable_only_material_light = 2131427420;
 			
-			// aapt resource value: 0x7f0b004d
-			public const int abc_primary_text_material_dark = 2131427405;
+			// aapt resource value: 0x7f0b005d
+			public const int abc_primary_text_material_dark = 2131427421;
 			
-			// aapt resource value: 0x7f0b004e
-			public const int abc_primary_text_material_light = 2131427406;
+			// aapt resource value: 0x7f0b005e
+			public const int abc_primary_text_material_light = 2131427422;
 			
-			// aapt resource value: 0x7f0b004f
-			public const int abc_search_url_text = 2131427407;
+			// aapt resource value: 0x7f0b005f
+			public const int abc_search_url_text = 2131427423;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int abc_search_url_text_normal = 2131427333;
@@ -1127,11 +1745,11 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f0b0007
 			public const int abc_search_url_text_selected = 2131427335;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int abc_secondary_text_material_dark = 2131427408;
+			// aapt resource value: 0x7f0b0060
+			public const int abc_secondary_text_material_dark = 2131427424;
 			
-			// aapt resource value: 0x7f0b0051
-			public const int abc_secondary_text_material_light = 2131427409;
+			// aapt resource value: 0x7f0b0061
+			public const int abc_secondary_text_material_light = 2131427425;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int accent_material_dark = 2131427336;
@@ -1150,6 +1768,9 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f0b000d
 			public const int background_material_light = 2131427341;
+			
+			// aapt resource value: 0x7f0b0048
+			public const int bright_foreground_dark = 2131427400;
 			
 			// aapt resource value: 0x7f0b000e
 			public const int bright_foreground_disabled_material_dark = 2131427342;
@@ -1186,6 +1807,21 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f0b0003
 			public const int cardview_shadow_start_color = 2131427331;
+			
+			// aapt resource value: 0x7f0b0054
+			public const int default_bullet_indicator_fill_color = 2131427412;
+			
+			// aapt resource value: 0x7f0b0055
+			public const int default_bullet_indicator_page_color = 2131427413;
+			
+			// aapt resource value: 0x7f0b0056
+			public const int default_bullet_indicator_stroke_color = 2131427414;
+			
+			// aapt resource value: 0x7f0b0049
+			public const int default_progress_bar_color = 2131427401;
+			
+			// aapt resource value: 0x7f0b0057
+			public const int default_strip_indicator_selected_color = 2131427415;
 			
 			// aapt resource value: 0x7f0b003e
 			public const int design_fab_shadow_end_color = 2131427390;
@@ -1235,6 +1871,9 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f0b001b
 			public const int foreground_material_light = 2131427355;
 			
+			// aapt resource value: 0x7f0b0062
+			public const int gridviewbackgroundselector = 2131427426;
+			
 			// aapt resource value: 0x7f0b001c
 			public const int highlighted_text_material_dark = 2131427356;
 			
@@ -1246,6 +1885,12 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f0b001f
 			public const int hint_foreground_material_light = 2131427359;
+			
+			// aapt resource value: 0x7f0b004a
+			public const int holo_dark_green = 2131427402;
+			
+			// aapt resource value: 0x7f0b0063
+			public const int listviewbackgroundselector = 2131427427;
 			
 			// aapt resource value: 0x7f0b0020
 			public const int material_blue_grey_800 = 2131427360;
@@ -1325,23 +1970,53 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f0b0039
 			public const int secondary_text_disabled_material_light = 2131427385;
 			
+			// aapt resource value: 0x7f0b004b
+			public const int spb_default_color = 2131427403;
+			
 			// aapt resource value: 0x7f0b003a
 			public const int switch_thumb_disabled_material_dark = 2131427386;
 			
 			// aapt resource value: 0x7f0b003b
 			public const int switch_thumb_disabled_material_light = 2131427387;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int switch_thumb_material_dark = 2131427410;
+			// aapt resource value: 0x7f0b0064
+			public const int switch_thumb_material_dark = 2131427428;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int switch_thumb_material_light = 2131427411;
+			// aapt resource value: 0x7f0b0065
+			public const int switch_thumb_material_light = 2131427429;
 			
 			// aapt resource value: 0x7f0b003c
 			public const int switch_thumb_normal_material_dark = 2131427388;
 			
 			// aapt resource value: 0x7f0b003d
 			public const int switch_thumb_normal_material_light = 2131427389;
+			
+			// aapt resource value: 0x7f0b004c
+			public const int vpi__background_holo_dark = 2131427404;
+			
+			// aapt resource value: 0x7f0b004d
+			public const int vpi__background_holo_light = 2131427405;
+			
+			// aapt resource value: 0x7f0b0050
+			public const int vpi__bright_foreground_disabled_holo_dark = 2131427408;
+			
+			// aapt resource value: 0x7f0b0051
+			public const int vpi__bright_foreground_disabled_holo_light = 2131427409;
+			
+			// aapt resource value: 0x7f0b004e
+			public const int vpi__bright_foreground_holo_dark = 2131427406;
+			
+			// aapt resource value: 0x7f0b004f
+			public const int vpi__bright_foreground_holo_light = 2131427407;
+			
+			// aapt resource value: 0x7f0b0052
+			public const int vpi__bright_foreground_inverse_holo_dark = 2131427410;
+			
+			// aapt resource value: 0x7f0b0053
+			public const int vpi__bright_foreground_inverse_holo_light = 2131427411;
+			
+			// aapt resource value: 0x7f0b0066
+			public const int vpi__dark_theme = 2131427430;
 			
 			static Color()
 			{
@@ -1566,6 +2241,12 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f06000b
 			public const int cardview_default_radius = 2131099659;
 			
+			// aapt resource value: 0x7f060077
+			public const int default_bullet_indicator_radius = 2131099767;
+			
+			// aapt resource value: 0x7f060078
+			public const int default_bullet_indicator_stroke_width = 2131099768;
+			
 			// aapt resource value: 0x7f06005f
 			public const int design_appbar_elevation = 2131099743;
 			
@@ -1703,6 +2384,15 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f060056
 			public const int notification_subtext_size = 2131099734;
+			
+			// aapt resource value: 0x7f060076
+			public const int ptr_progress_bar_stroke_width = 2131099766;
+			
+			// aapt resource value: 0x7f060074
+			public const int spb_default_stroke_separator_length = 2131099764;
+			
+			// aapt resource value: 0x7f060075
+			public const int spb_default_stroke_width = 2131099765;
 			
 			static Dimension()
 			{
@@ -1943,265 +2633,316 @@ namespace Im.Basket.Client.Droid
 			public const int abc_textfield_search_material = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int design_fab_background = 2130837579;
+			public const int btn_check_off_focused_holo_dark = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int design_snackbar_background = 2130837580;
+			public const int btn_check_on_pressed_holo_dark = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int ic_audiotrack = 2130837581;
+			public const int design_fab_background = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int ic_audiotrack_light = 2130837582;
+			public const int design_snackbar_background = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int ic_bluetooth_grey = 2130837583;
+			public const int ic_audiotrack = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int ic_bluetooth_white = 2130837584;
+			public const int ic_audiotrack_light = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int ic_cast_dark = 2130837585;
+			public const int ic_bluetooth_grey = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int ic_cast_disabled_light = 2130837586;
+			public const int ic_bluetooth_white = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int ic_cast_grey = 2130837587;
+			public const int ic_cast_dark = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int ic_cast_light = 2130837588;
+			public const int ic_cast_disabled_light = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int ic_cast_off_light = 2130837589;
+			public const int ic_cast_grey = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int ic_cast_on_0_light = 2130837590;
+			public const int ic_cast_light = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int ic_cast_on_1_light = 2130837591;
+			public const int ic_cast_off_light = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int ic_cast_on_2_light = 2130837592;
+			public const int ic_cast_on_0_light = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int ic_cast_on_light = 2130837593;
+			public const int ic_cast_on_1_light = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int ic_cast_white = 2130837594;
+			public const int ic_cast_on_2_light = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int ic_close_dark = 2130837595;
+			public const int ic_cast_on_light = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int ic_close_light = 2130837596;
+			public const int ic_cast_white = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_collapse = 2130837597;
+			public const int ic_close_dark = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_collapse_00000 = 2130837598;
+			public const int ic_close_light = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_collapse_00001 = 2130837599;
+			public const int ic_collapse = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int ic_collapse_00002 = 2130837600;
+			public const int ic_collapse_00000 = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int ic_collapse_00003 = 2130837601;
+			public const int ic_collapse_00001 = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ic_collapse_00004 = 2130837602;
+			public const int ic_collapse_00002 = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_collapse_00005 = 2130837603;
+			public const int ic_collapse_00003 = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_collapse_00006 = 2130837604;
+			public const int ic_collapse_00004 = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_collapse_00007 = 2130837605;
+			public const int ic_collapse_00005 = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_collapse_00008 = 2130837606;
+			public const int ic_collapse_00006 = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_collapse_00009 = 2130837607;
+			public const int ic_collapse_00007 = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_collapse_00010 = 2130837608;
+			public const int ic_collapse_00008 = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_collapse_00011 = 2130837609;
+			public const int ic_collapse_00009 = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_collapse_00012 = 2130837610;
+			public const int ic_collapse_00010 = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_collapse_00013 = 2130837611;
+			public const int ic_collapse_00011 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_collapse_00014 = 2130837612;
+			public const int ic_collapse_00012 = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_collapse_00015 = 2130837613;
+			public const int ic_collapse_00013 = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_expand = 2130837614;
+			public const int ic_collapse_00014 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_expand_00000 = 2130837615;
+			public const int ic_collapse_00015 = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_expand_00001 = 2130837616;
+			public const int ic_drawer = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_expand_00002 = 2130837617;
+			public const int ic_expand = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_expand_00003 = 2130837618;
+			public const int ic_expand_00000 = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_expand_00004 = 2130837619;
+			public const int ic_expand_00001 = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_expand_00005 = 2130837620;
+			public const int ic_expand_00002 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_expand_00006 = 2130837621;
+			public const int ic_expand_00003 = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_expand_00007 = 2130837622;
+			public const int ic_expand_00004 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_expand_00008 = 2130837623;
+			public const int ic_expand_00005 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_expand_00009 = 2130837624;
+			public const int ic_expand_00006 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_expand_00010 = 2130837625;
+			public const int ic_expand_00007 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_expand_00011 = 2130837626;
+			public const int ic_expand_00008 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_expand_00012 = 2130837627;
+			public const int ic_expand_00009 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_expand_00013 = 2130837628;
+			public const int ic_expand_00010 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_expand_00014 = 2130837629;
+			public const int ic_expand_00011 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_expand_00015 = 2130837630;
+			public const int ic_expand_00012 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_media_pause = 2130837631;
+			public const int ic_expand_00013 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_media_play = 2130837632;
+			public const int ic_expand_00014 = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_media_route_disabled_mono_dark = 2130837633;
+			public const int ic_expand_00015 = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_media_route_off_mono_dark = 2130837634;
+			public const int ic_media_pause = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_media_route_on_0_mono_dark = 2130837635;
+			public const int ic_media_play = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_media_route_on_1_mono_dark = 2130837636;
+			public const int ic_media_route_disabled_mono_dark = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_media_route_on_2_mono_dark = 2130837637;
+			public const int ic_media_route_off_mono_dark = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_media_route_on_mono_dark = 2130837638;
+			public const int ic_media_route_on_0_mono_dark = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_pause_dark = 2130837639;
+			public const int ic_media_route_on_1_mono_dark = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_pause_light = 2130837640;
+			public const int ic_media_route_on_2_mono_dark = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_play_dark = 2130837641;
+			public const int ic_media_route_on_mono_dark = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_play_light = 2130837642;
+			public const int ic_pause_dark = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_speaker_dark = 2130837643;
+			public const int ic_pause_light = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_speaker_group_dark = 2130837644;
+			public const int ic_play_dark = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_speaker_group_light = 2130837645;
+			public const int ic_play_light = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_speaker_light = 2130837646;
+			public const int ic_speaker_dark = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_tv_dark = 2130837647;
+			public const int ic_speaker_group_dark = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_tv_light = 2130837648;
+			public const int ic_speaker_group_light = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int icon = 2130837649;
+			public const int ic_speaker_light = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int mr_dialog_material_background_dark = 2130837650;
+			public const int ic_tv_dark = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int mr_dialog_material_background_light = 2130837651;
+			public const int ic_tv_light = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int mr_ic_audiotrack_light = 2130837652;
+			public const int icon = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int mr_ic_cast_dark = 2130837653;
+			public const int leftdrawershadow = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int mr_ic_cast_light = 2130837654;
+			public const int mr_dialog_material_background_dark = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int mr_ic_close_dark = 2130837655;
+			public const int mr_dialog_material_background_light = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int mr_ic_close_light = 2130837656;
+			public const int mr_ic_audiotrack_light = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837657;
+			public const int mr_ic_cast_dark = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int mr_ic_media_route_connecting_mono_light = 2130837658;
+			public const int mr_ic_cast_light = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int mr_ic_media_route_mono_dark = 2130837659;
+			public const int mr_ic_close_dark = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int mr_ic_media_route_mono_light = 2130837660;
+			public const int mr_ic_close_light = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int mr_ic_pause_dark = 2130837661;
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int mr_ic_pause_light = 2130837662;
+			public const int mr_ic_media_route_connecting_mono_light = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int mr_ic_play_dark = 2130837663;
+			public const int mr_ic_media_route_mono_dark = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int mr_ic_play_light = 2130837664;
+			public const int mr_ic_media_route_mono_light = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int notification_template_icon_bg = 2130837665;
+			public const int mr_ic_pause_dark = 2130837665;
+			
+			// aapt resource value: 0x7f0200a2
+			public const int mr_ic_pause_light = 2130837666;
+			
+			// aapt resource value: 0x7f0200a3
+			public const int mr_ic_play_dark = 2130837667;
+			
+			// aapt resource value: 0x7f0200a4
+			public const int mr_ic_play_light = 2130837668;
+			
+			// aapt resource value: 0x7f0200b2
+			public const int notification_template_icon_bg = 2130837682;
+			
+			// aapt resource value: 0x7f0200a5
+			public const int rightdrawershadow = 2130837669;
+			
+			// aapt resource value: 0x7f0200a6
+			public const int roundedcorner_checked = 2130837670;
+			
+			// aapt resource value: 0x7f0200a7
+			public const int roundedcorner_default = 2130837671;
+			
+			// aapt resource value: 0x7f0200a8
+			public const int roundedcorner_pressed = 2130837672;
+			
+			// aapt resource value: 0x7f0200a9
+			public const int roundedselector = 2130837673;
+			
+			// aapt resource value: 0x7f0200aa
+			public const int toast_frame_holo = 2130837674;
+			
+			// aapt resource value: 0x7f0200ab
+			public const int vpi__tab_indicator = 2130837675;
+			
+			// aapt resource value: 0x7f0200ac
+			public const int vpi__tab_selected_focused_holo = 2130837676;
+			
+			// aapt resource value: 0x7f0200ad
+			public const int vpi__tab_selected_holo = 2130837677;
+			
+			// aapt resource value: 0x7f0200ae
+			public const int vpi__tab_selected_pressed_holo = 2130837678;
+			
+			// aapt resource value: 0x7f0200af
+			public const int vpi__tab_unselected_focused_holo = 2130837679;
+			
+			// aapt resource value: 0x7f0200b0
+			public const int vpi__tab_unselected_holo = 2130837680;
+			
+			// aapt resource value: 0x7f0200b1
+			public const int vpi__tab_unselected_pressed_holo = 2130837681;
 			
 			static Drawable()
 			{
@@ -2216,35 +2957,221 @@ namespace Im.Basket.Client.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f07008b
-			public const int action0 = 2131165323;
+			// aapt resource value: 0x7f070077
+			public const int BulletPageIndicator = 2131165303;
 			
-			// aapt resource value: 0x7f07005a
-			public const int action_bar = 2131165274;
+			// aapt resource value: 0x7f070090
+			public const int ButtonContainer = 2131165328;
+			
+			// aapt resource value: 0x7f070078
+			public const int ButtonWidget = 2131165304;
+			
+			// aapt resource value: 0x7f070079
+			public const int CheckBoxWidget = 2131165305;
+			
+			// aapt resource value: 0x7f07007d
+			public const int ChildNavigationDetail = 2131165309;
+			
+			// aapt resource value: 0x7f07007b
+			public const int ChildNavigationImage = 2131165307;
+			
+			// aapt resource value: 0x7f07007a
+			public const int ChildNavigationLayout = 2131165306;
+			
+			// aapt resource value: 0x7f07007c
+			public const int ChildNavigationText = 2131165308;
+			
+			// aapt resource value: 0x7f07008e
+			public const int ContentContainer = 2131165326;
+			
+			// aapt resource value: 0x7f07008f
+			public const int ContentSeparator = 2131165327;
+			
+			// aapt resource value: 0x7f0700e9
+			public const int ControlsPlaceholder = 2131165417;
+			
+			// aapt resource value: 0x7f07007e
+			public const int DatePickerWidget = 2131165310;
+			
+			// aapt resource value: 0x7f07007f
+			public const int DateTimePickerDateWidget = 2131165311;
+			
+			// aapt resource value: 0x7f070081
+			public const int DateTimePickerTextView = 2131165313;
+			
+			// aapt resource value: 0x7f070080
+			public const int DateTimePickerTimeWidget = 2131165312;
+			
+			// aapt resource value: 0x7f070092
+			public const int DialogFirstSeparator = 2131165330;
+			
+			// aapt resource value: 0x7f070091
+			public const int DialogNegativeButton = 2131165329;
+			
+			// aapt resource value: 0x7f070093
+			public const int DialogNeutralButton = 2131165331;
+			
+			// aapt resource value: 0x7f070095
+			public const int DialogPositiveButton = 2131165333;
+			
+			// aapt resource value: 0x7f07008b
+			public const int DialogRoot = 2131165323;
+			
+			// aapt resource value: 0x7f070094
+			public const int DialogSecondSeparator = 2131165332;
+			
+			// aapt resource value: 0x7f070099
+			public const int EditorContainer = 2131165337;
+			
+			// aapt resource value: 0x7f070096
+			public const int FloatingLayout = 2131165334;
+			
+			// aapt resource value: 0x7f07009e
+			public const int FooterLayout = 2131165342;
+			
+			// aapt resource value: 0x7f07009f
+			public const int FooterText = 2131165343;
+			
+			// aapt resource value: 0x7f07009d
+			public const int FormContainer = 2131165341;
+			
+			// aapt resource value: 0x7f070098
+			public const int FormPlaceholder = 2131165336;
+			
+			// aapt resource value: 0x7f070097
+			public const int FormScrollView = 2131165335;
+			
+			// aapt resource value: 0x7f0700a1
+			public const int GridView = 2131165345;
+			
+			// aapt resource value: 0x7f07009a
+			public const int HeaderLayout = 2131165338;
+			
+			// aapt resource value: 0x7f07009c
+			public const int HeaderSeparator = 2131165340;
+			
+			// aapt resource value: 0x7f07009b
+			public const int HeaderText = 2131165339;
+			
+			// aapt resource value: 0x7f0700a5
+			public const int HyperlinkDetail = 2131165349;
+			
+			// aapt resource value: 0x7f0700a3
+			public const int HyperlinkImage = 2131165347;
+			
+			// aapt resource value: 0x7f0700a2
+			public const int HyperlinkLayout = 2131165346;
+			
+			// aapt resource value: 0x7f0700a4
+			public const int HyperlinkText = 2131165348;
+			
+			// aapt resource value: 0x7f0700e4
+			public const int ImageContainer = 2131165412;
+			
+			// aapt resource value: 0x7f0700e8
+			public const int ImagePlaceholder = 2131165416;
+			
+			// aapt resource value: 0x7f0700e3
+			public const int ImageTextView = 2131165411;
+			
+			// aapt resource value: 0x7f0700e5
+			public const int ImageView = 2131165413;
+			
+			// aapt resource value: 0x7f0700f3
+			public const int InnerLayout = 2131165427;
+			
+			// aapt resource value: 0x7f0700ea
+			public const int InternalSeekBar = 2131165418;
+			
+			// aapt resource value: 0x7f0700e2
+			public const int NumericStepper = 2131165410;
+			
+			// aapt resource value: 0x7f0700fb
+			public const int PageIndicatorContainer = 2131165435;
+			
+			// aapt resource value: 0x7f0700f9
+			public const int PagerTabStrip = 2131165433;
+			
+			// aapt resource value: 0x7f0700eb
+			public const int SelectionWidget = 2131165419;
+			
+			// aapt resource value: 0x7f0700ed
+			public const int SpinnerWidget = 2131165421;
+			
+			// aapt resource value: 0x7f0700ee
+			public const int StripPageIndicator = 2131165422;
+			
+			// aapt resource value: 0x7f0700e7
+			public const int SubtitleTextView = 2131165415;
+			
+			// aapt resource value: 0x7f0700ef
+			public const int Switch = 2131165423;
+			
+			// aapt resource value: 0x7f0700f1
+			public const int TabContainer = 2131165425;
+			
+			// aapt resource value: 0x7f0700f5
+			public const int TabIcon = 2131165429;
+			
+			// aapt resource value: 0x7f0700f7
+			public const int TabPageIndicator = 2131165431;
+			
+			// aapt resource value: 0x7f0700f6
+			public const int TabTitle = 2131165430;
+			
+			// aapt resource value: 0x7f070076
+			public const int Text1 = 2131165302;
+			
+			// aapt resource value: 0x7f0700ec
+			public const int Text2 = 2131165420;
+			
+			// aapt resource value: 0x7f0700f2
+			public const int TimePickerWidget = 2131165426;
+			
+			// aapt resource value: 0x7f07008c
+			public const int TitleContainer = 2131165324;
+			
+			// aapt resource value: 0x7f07008d
+			public const int TitleText = 2131165325;
+			
+			// aapt resource value: 0x7f0700e6
+			public const int TitleTextView = 2131165414;
+			
+			// aapt resource value: 0x7f0700f8
+			public const int ViewPager = 2131165432;
+			
+			// aapt resource value: 0x7f0700fa
+			public const int ViewSlider = 2131165434;
+			
+			// aapt resource value: 0x7f0700d2
+			public const int action0 = 2131165394;
+			
+			// aapt resource value: 0x7f070066
+			public const int action_bar = 2131165286;
 			
 			// aapt resource value: 0x7f070001
 			public const int action_bar_activity_content = 2131165185;
 			
-			// aapt resource value: 0x7f070059
-			public const int action_bar_container = 2131165273;
+			// aapt resource value: 0x7f070065
+			public const int action_bar_container = 2131165285;
 			
-			// aapt resource value: 0x7f070055
-			public const int action_bar_root = 2131165269;
+			// aapt resource value: 0x7f070061
+			public const int action_bar_root = 2131165281;
 			
 			// aapt resource value: 0x7f070002
 			public const int action_bar_spinner = 2131165186;
 			
-			// aapt resource value: 0x7f07003b
-			public const int action_bar_subtitle = 2131165243;
+			// aapt resource value: 0x7f070049
+			public const int action_bar_subtitle = 2131165257;
 			
-			// aapt resource value: 0x7f07003a
-			public const int action_bar_title = 2131165242;
+			// aapt resource value: 0x7f070048
+			public const int action_bar_title = 2131165256;
 			
-			// aapt resource value: 0x7f07005b
-			public const int action_context_bar = 2131165275;
+			// aapt resource value: 0x7f070067
+			public const int action_context_bar = 2131165287;
 			
-			// aapt resource value: 0x7f07008f
-			public const int action_divider = 2131165327;
+			// aapt resource value: 0x7f0700d6
+			public const int action_divider = 2131165398;
 			
 			// aapt resource value: 0x7f070003
 			public const int action_menu_divider = 2131165187;
@@ -2252,269 +3179,341 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f070004
 			public const int action_menu_presenter = 2131165188;
 			
-			// aapt resource value: 0x7f070057
-			public const int action_mode_bar = 2131165271;
+			// aapt resource value: 0x7f070063
+			public const int action_mode_bar = 2131165283;
 			
-			// aapt resource value: 0x7f070056
-			public const int action_mode_bar_stub = 2131165270;
-			
-			// aapt resource value: 0x7f07003c
-			public const int action_mode_close_button = 2131165244;
-			
-			// aapt resource value: 0x7f07003d
-			public const int activity_chooser_view_content = 2131165245;
-			
-			// aapt resource value: 0x7f070049
-			public const int alertTitle = 2131165257;
-			
-			// aapt resource value: 0x7f07001e
-			public const int always = 2131165214;
-			
-			// aapt resource value: 0x7f07001b
-			public const int beginning = 2131165211;
-			
-			// aapt resource value: 0x7f07002a
-			public const int bottom = 2131165226;
-			
-			// aapt resource value: 0x7f070044
-			public const int buttonPanel = 2131165252;
-			
-			// aapt resource value: 0x7f07008c
-			public const int cancel_action = 2131165324;
-			
-			// aapt resource value: 0x7f07002b
-			public const int center = 2131165227;
-			
-			// aapt resource value: 0x7f07002c
-			public const int center_horizontal = 2131165228;
-			
-			// aapt resource value: 0x7f07002d
-			public const int center_vertical = 2131165229;
-			
-			// aapt resource value: 0x7f070052
-			public const int checkbox = 2131165266;
-			
-			// aapt resource value: 0x7f070092
-			public const int chronometer = 2131165330;
-			
-			// aapt resource value: 0x7f070033
-			public const int clip_horizontal = 2131165235;
-			
-			// aapt resource value: 0x7f070034
-			public const int clip_vertical = 2131165236;
-			
-			// aapt resource value: 0x7f07001f
-			public const int collapseActionView = 2131165215;
+			// aapt resource value: 0x7f070062
+			public const int action_mode_bar_stub = 2131165282;
 			
 			// aapt resource value: 0x7f07004a
-			public const int contentPanel = 2131165258;
+			public const int action_mode_close_button = 2131165258;
+			
+			// aapt resource value: 0x7f07004b
+			public const int activity_chooser_view_content = 2131165259;
+			
+			// aapt resource value: 0x7f070055
+			public const int alertTitle = 2131165269;
+			
+			// aapt resource value: 0x7f070021
+			public const int always = 2131165217;
+			
+			// aapt resource value: 0x7f07001e
+			public const int beginning = 2131165214;
+			
+			// aapt resource value: 0x7f07002d
+			public const int bottom = 2131165229;
 			
 			// aapt resource value: 0x7f070050
-			public const int custom = 2131165264;
+			public const int buttonPanel = 2131165264;
 			
-			// aapt resource value: 0x7f07004f
-			public const int customPanel = 2131165263;
-			
-			// aapt resource value: 0x7f070058
-			public const int decor_content_parent = 2131165272;
-			
-			// aapt resource value: 0x7f070040
-			public const int default_activity_button = 2131165248;
-			
-			// aapt resource value: 0x7f07006a
-			public const int design_bottom_sheet = 2131165290;
-			
-			// aapt resource value: 0x7f070071
-			public const int design_menu_item_action_area = 2131165297;
-			
-			// aapt resource value: 0x7f070070
-			public const int design_menu_item_action_area_stub = 2131165296;
-			
-			// aapt resource value: 0x7f07006f
-			public const int design_menu_item_text = 2131165295;
-			
-			// aapt resource value: 0x7f07006e
-			public const int design_navigation_view = 2131165294;
-			
-			// aapt resource value: 0x7f07000e
-			public const int disableHome = 2131165198;
-			
-			// aapt resource value: 0x7f07005c
-			public const int edit_query = 2131165276;
-			
-			// aapt resource value: 0x7f07001c
-			public const int end = 2131165212;
-			
-			// aapt resource value: 0x7f070097
-			public const int end_padder = 2131165335;
-			
-			// aapt resource value: 0x7f070023
-			public const int enterAlways = 2131165219;
-			
-			// aapt resource value: 0x7f070024
-			public const int enterAlwaysCollapsed = 2131165220;
-			
-			// aapt resource value: 0x7f070025
-			public const int exitUntilCollapsed = 2131165221;
-			
-			// aapt resource value: 0x7f07003e
-			public const int expand_activities_button = 2131165246;
-			
-			// aapt resource value: 0x7f070051
-			public const int expanded_menu = 2131165265;
-			
-			// aapt resource value: 0x7f070035
-			public const int fill = 2131165237;
-			
-			// aapt resource value: 0x7f070036
-			public const int fill_horizontal = 2131165238;
+			// aapt resource value: 0x7f0700d3
+			public const int cancel_action = 2131165395;
 			
 			// aapt resource value: 0x7f07002e
-			public const int fill_vertical = 2131165230;
+			public const int center = 2131165230;
+			
+			// aapt resource value: 0x7f0700b1
+			public const int center_frame = 2131165361;
+			
+			// aapt resource value: 0x7f07002f
+			public const int center_horizontal = 2131165231;
+			
+			// aapt resource value: 0x7f070030
+			public const int center_vertical = 2131165232;
+			
+			// aapt resource value: 0x7f07005e
+			public const int checkbox = 2131165278;
+			
+			// aapt resource value: 0x7f0700d9
+			public const int chronometer = 2131165401;
+			
+			// aapt resource value: 0x7f070036
+			public const int clip_horizontal = 2131165238;
+			
+			// aapt resource value: 0x7f070037
+			public const int clip_vertical = 2131165239;
+			
+			// aapt resource value: 0x7f070022
+			public const int collapseActionView = 2131165218;
+			
+			// aapt resource value: 0x7f070056
+			public const int contentPanel = 2131165270;
+			
+			// aapt resource value: 0x7f07005c
+			public const int custom = 2131165276;
+			
+			// aapt resource value: 0x7f07005b
+			public const int customPanel = 2131165275;
+			
+			// aapt resource value: 0x7f070064
+			public const int decor_content_parent = 2131165284;
+			
+			// aapt resource value: 0x7f0700e0
+			public const int decrease_button = 2131165408;
+			
+			// aapt resource value: 0x7f07004d
+			public const int default_activity_button = 2131165261;
+			
+			// aapt resource value: 0x7f070083
+			public const int design_bottom_sheet = 2131165315;
+			
+			// aapt resource value: 0x7f07008a
+			public const int design_menu_item_action_area = 2131165322;
+			
+			// aapt resource value: 0x7f070089
+			public const int design_menu_item_action_area_stub = 2131165321;
+			
+			// aapt resource value: 0x7f070088
+			public const int design_menu_item_text = 2131165320;
+			
+			// aapt resource value: 0x7f070087
+			public const int design_navigation_view = 2131165319;
+			
+			// aapt resource value: 0x7f0700af
+			public const int detailFrame = 2131165359;
+			
+			// aapt resource value: 0x7f070011
+			public const int disableHome = 2131165201;
+			
+			// aapt resource value: 0x7f0700ce
+			public const int drawer_layout = 2131165390;
+			
+			// aapt resource value: 0x7f070068
+			public const int edit_query = 2131165288;
+			
+			// aapt resource value: 0x7f07001f
+			public const int end = 2131165215;
+			
+			// aapt resource value: 0x7f0700de
+			public const int end_padder = 2131165406;
+			
+			// aapt resource value: 0x7f070026
+			public const int enterAlways = 2131165222;
+			
+			// aapt resource value: 0x7f070027
+			public const int enterAlwaysCollapsed = 2131165223;
+			
+			// aapt resource value: 0x7f070028
+			public const int exitUntilCollapsed = 2131165224;
+			
+			// aapt resource value: 0x7f07004c
+			public const int expand_activities_button = 2131165260;
+			
+			// aapt resource value: 0x7f07005d
+			public const int expanded_menu = 2131165277;
 			
 			// aapt resource value: 0x7f070038
-			public const int @fixed = 2131165240;
+			public const int fill = 2131165240;
+			
+			// aapt resource value: 0x7f070039
+			public const int fill_horizontal = 2131165241;
+			
+			// aapt resource value: 0x7f070031
+			public const int fill_vertical = 2131165233;
+			
+			// aapt resource value: 0x7f07003b
+			public const int @fixed = 2131165243;
+			
+			// aapt resource value: 0x7f0700a0
+			public const int fragmentActivityLayout = 2131165344;
+			
+			// aapt resource value: 0x7f0700ac
+			public const int fragmentBody = 2131165356;
+			
+			// aapt resource value: 0x7f0700ad
+			public const int fragmentFooter = 2131165357;
+			
+			// aapt resource value: 0x7f0700ab
+			public const int fragmentHeader = 2131165355;
 			
 			// aapt resource value: 0x7f070005
 			public const int home = 2131165189;
 			
-			// aapt resource value: 0x7f07000f
-			public const int homeAsUp = 2131165199;
+			// aapt resource value: 0x7f070012
+			public const int homeAsUp = 2131165202;
 			
-			// aapt resource value: 0x7f070042
-			public const int icon = 2131165250;
+			// aapt resource value: 0x7f070046
+			public const int horizontal = 2131165254;
 			
-			// aapt resource value: 0x7f070020
-			public const int ifRoom = 2131165216;
+			// aapt resource value: 0x7f07004f
+			public const int icon = 2131165263;
 			
-			// aapt resource value: 0x7f07003f
-			public const int image = 2131165247;
+			// aapt resource value: 0x7f070023
+			public const int ifRoom = 2131165219;
 			
-			// aapt resource value: 0x7f070096
-			public const int info = 2131165334;
+			// aapt resource value: 0x7f070043
+			public const int image = 2131165251;
+			
+			// aapt resource value: 0x7f0700df
+			public const int increase_button = 2131165407;
+			
+			// aapt resource value: 0x7f0700dd
+			public const int info = 2131165405;
+			
+			// aapt resource value: 0x7f07003d
+			public const int inside = 2131165245;
 			
 			// aapt resource value: 0x7f070000
 			public const int item_touch_helper_previous_elevation = 2131165184;
 			
-			// aapt resource value: 0x7f07002f
-			public const int left = 2131165231;
+			// aapt resource value: 0x7f070032
+			public const int left = 2131165234;
 			
-			// aapt resource value: 0x7f070090
-			public const int line1 = 2131165328;
+			// aapt resource value: 0x7f0700b0
+			public const int left_frame = 2131165360;
 			
-			// aapt resource value: 0x7f070094
-			public const int line3 = 2131165332;
+			// aapt resource value: 0x7f0700d0
+			public const int left_navdrawer = 2131165392;
 			
-			// aapt resource value: 0x7f07000b
-			public const int listMode = 2131165195;
+			// aapt resource value: 0x7f0700d7
+			public const int line1 = 2131165399;
 			
-			// aapt resource value: 0x7f070041
-			public const int list_item = 2131165249;
+			// aapt resource value: 0x7f0700db
+			public const int line3 = 2131165403;
 			
-			// aapt resource value: 0x7f07008e
-			public const int media_actions = 2131165326;
+			// aapt resource value: 0x7f0700a7
+			public const int listContainer = 2131165351;
 			
-			// aapt resource value: 0x7f07001d
-			public const int middle = 2131165213;
+			// aapt resource value: 0x7f07000e
+			public const int listMode = 2131165198;
 			
-			// aapt resource value: 0x7f070037
-			public const int mini = 2131165239;
+			// aapt resource value: 0x7f0700a8
+			public const int listViewFooter = 2131165352;
 			
-			// aapt resource value: 0x7f07007d
-			public const int mr_art = 2131165309;
+			// aapt resource value: 0x7f0700a9
+			public const int listViewHeader = 2131165353;
 			
-			// aapt resource value: 0x7f070072
-			public const int mr_chooser_list = 2131165298;
+			// aapt resource value: 0x7f0700aa
+			public const int listViewProgressbar = 2131165354;
 			
-			// aapt resource value: 0x7f070075
-			public const int mr_chooser_route_desc = 2131165301;
+			// aapt resource value: 0x7f07004e
+			public const int list_item = 2131165262;
 			
-			// aapt resource value: 0x7f070073
-			public const int mr_chooser_route_icon = 2131165299;
+			// aapt resource value: 0x7f0700cf
+			public const int maincontent_navdrawer = 2131165391;
 			
-			// aapt resource value: 0x7f070074
-			public const int mr_chooser_route_name = 2131165300;
+			// aapt resource value: 0x7f0700ae
+			public const int masterFrame = 2131165358;
 			
-			// aapt resource value: 0x7f07007a
-			public const int mr_close = 2131165306;
+			// aapt resource value: 0x7f0700d5
+			public const int media_actions = 2131165397;
 			
-			// aapt resource value: 0x7f070080
-			public const int mr_control_divider = 2131165312;
+			// aapt resource value: 0x7f0700b4
+			public const int message_box = 2131165364;
+			
+			// aapt resource value: 0x7f070020
+			public const int middle = 2131165216;
+			
+			// aapt resource value: 0x7f07003a
+			public const int mini = 2131165242;
+			
+			// aapt resource value: 0x7f0700c0
+			public const int mr_art = 2131165376;
+			
+			// aapt resource value: 0x7f0700b5
+			public const int mr_chooser_list = 2131165365;
+			
+			// aapt resource value: 0x7f0700b8
+			public const int mr_chooser_route_desc = 2131165368;
+			
+			// aapt resource value: 0x7f0700b6
+			public const int mr_chooser_route_icon = 2131165366;
+			
+			// aapt resource value: 0x7f0700b7
+			public const int mr_chooser_route_name = 2131165367;
+			
+			// aapt resource value: 0x7f0700bd
+			public const int mr_close = 2131165373;
+			
+			// aapt resource value: 0x7f0700c3
+			public const int mr_control_divider = 2131165379;
+			
+			// aapt resource value: 0x7f0700c9
+			public const int mr_control_play_pause = 2131165385;
+			
+			// aapt resource value: 0x7f0700cc
+			public const int mr_control_subtitle = 2131165388;
+			
+			// aapt resource value: 0x7f0700cb
+			public const int mr_control_title = 2131165387;
+			
+			// aapt resource value: 0x7f0700ca
+			public const int mr_control_title_container = 2131165386;
+			
+			// aapt resource value: 0x7f0700be
+			public const int mr_custom_control = 2131165374;
+			
+			// aapt resource value: 0x7f0700bf
+			public const int mr_default_control = 2131165375;
+			
+			// aapt resource value: 0x7f0700ba
+			public const int mr_dialog_area = 2131165370;
+			
+			// aapt resource value: 0x7f0700b9
+			public const int mr_expandable_area = 2131165369;
+			
+			// aapt resource value: 0x7f0700cd
+			public const int mr_group_expand_collapse = 2131165389;
+			
+			// aapt resource value: 0x7f0700c1
+			public const int mr_media_main_control = 2131165377;
+			
+			// aapt resource value: 0x7f0700bc
+			public const int mr_name = 2131165372;
+			
+			// aapt resource value: 0x7f0700c2
+			public const int mr_playback_control = 2131165378;
+			
+			// aapt resource value: 0x7f0700bb
+			public const int mr_title_bar = 2131165371;
+			
+			// aapt resource value: 0x7f0700c4
+			public const int mr_volume_control = 2131165380;
+			
+			// aapt resource value: 0x7f0700c5
+			public const int mr_volume_group_list = 2131165381;
+			
+			// aapt resource value: 0x7f0700c7
+			public const int mr_volume_item_icon = 2131165383;
+			
+			// aapt resource value: 0x7f0700c8
+			public const int mr_volume_slider = 2131165384;
+			
+			// aapt resource value: 0x7f070019
+			public const int multiply = 2131165209;
 			
 			// aapt resource value: 0x7f070086
-			public const int mr_control_play_pause = 2131165318;
+			public const int navigation_header_container = 2131165318;
 			
-			// aapt resource value: 0x7f070089
-			public const int mr_control_subtitle = 2131165321;
+			// aapt resource value: 0x7f070024
+			public const int never = 2131165220;
 			
-			// aapt resource value: 0x7f070088
-			public const int mr_control_title = 2131165320;
+			// aapt resource value: 0x7f070013
+			public const int none = 2131165203;
 			
-			// aapt resource value: 0x7f070087
-			public const int mr_control_title_container = 2131165319;
+			// aapt resource value: 0x7f07000f
+			public const int normal = 2131165199;
 			
-			// aapt resource value: 0x7f07007b
-			public const int mr_custom_control = 2131165307;
+			// aapt resource value: 0x7f0700e1
+			public const int numeric_box = 2131165409;
 			
-			// aapt resource value: 0x7f07007c
-			public const int mr_default_control = 2131165308;
+			// aapt resource value: 0x7f07003e
+			public const int outside = 2131165246;
 			
-			// aapt resource value: 0x7f070077
-			public const int mr_dialog_area = 2131165303;
+			// aapt resource value: 0x7f07002b
+			public const int parallax = 2131165227;
 			
-			// aapt resource value: 0x7f070076
-			public const int mr_expandable_area = 2131165302;
+			// aapt resource value: 0x7f070052
+			public const int parentPanel = 2131165266;
 			
-			// aapt resource value: 0x7f07008a
-			public const int mr_group_expand_collapse = 2131165322;
+			// aapt resource value: 0x7f07002c
+			public const int pin = 2131165228;
 			
-			// aapt resource value: 0x7f07007e
-			public const int mr_media_main_control = 2131165310;
+			// aapt resource value: 0x7f0700a6
+			public const int progressContainer = 2131165350;
 			
-			// aapt resource value: 0x7f070079
-			public const int mr_name = 2131165305;
-			
-			// aapt resource value: 0x7f07007f
-			public const int mr_playback_control = 2131165311;
-			
-			// aapt resource value: 0x7f070078
-			public const int mr_title_bar = 2131165304;
-			
-			// aapt resource value: 0x7f070081
-			public const int mr_volume_control = 2131165313;
-			
-			// aapt resource value: 0x7f070082
-			public const int mr_volume_group_list = 2131165314;
-			
-			// aapt resource value: 0x7f070084
-			public const int mr_volume_item_icon = 2131165316;
-			
-			// aapt resource value: 0x7f070085
-			public const int mr_volume_slider = 2131165317;
-			
-			// aapt resource value: 0x7f070016
-			public const int multiply = 2131165206;
-			
-			// aapt resource value: 0x7f07006d
-			public const int navigation_header_container = 2131165293;
-			
-			// aapt resource value: 0x7f070021
-			public const int never = 2131165217;
-			
-			// aapt resource value: 0x7f070010
-			public const int none = 2131165200;
-			
-			// aapt resource value: 0x7f07000c
-			public const int normal = 2131165196;
-			
-			// aapt resource value: 0x7f070028
-			public const int parallax = 2131165224;
-			
-			// aapt resource value: 0x7f070046
-			public const int parentPanel = 2131165254;
-			
-			// aapt resource value: 0x7f070029
-			public const int pin = 2131165225;
+			// aapt resource value: 0x7f070075
+			public const int progress_bar = 2131165301;
 			
 			// aapt resource value: 0x7f070006
 			public const int progress_circular = 2131165190;
@@ -2522,161 +3521,197 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f070007
 			public const int progress_horizontal = 2131165191;
 			
-			// aapt resource value: 0x7f070054
-			public const int radio = 2131165268;
+			// aapt resource value: 0x7f07000b
+			public const int ptr_content = 2131165195;
 			
-			// aapt resource value: 0x7f070030
-			public const int right = 2131165232;
+			// aapt resource value: 0x7f07000d
+			public const int ptr_progress = 2131165197;
 			
-			// aapt resource value: 0x7f070017
-			public const int screen = 2131165207;
-			
-			// aapt resource value: 0x7f070026
-			public const int scroll = 2131165222;
-			
-			// aapt resource value: 0x7f07004e
-			public const int scrollIndicatorDown = 2131165262;
-			
-			// aapt resource value: 0x7f07004b
-			public const int scrollIndicatorUp = 2131165259;
-			
-			// aapt resource value: 0x7f07004c
-			public const int scrollView = 2131165260;
-			
-			// aapt resource value: 0x7f070039
-			public const int scrollable = 2131165241;
-			
-			// aapt resource value: 0x7f07005e
-			public const int search_badge = 2131165278;
-			
-			// aapt resource value: 0x7f07005d
-			public const int search_bar = 2131165277;
-			
-			// aapt resource value: 0x7f07005f
-			public const int search_button = 2131165279;
-			
-			// aapt resource value: 0x7f070064
-			public const int search_close_btn = 2131165284;
+			// aapt resource value: 0x7f07000c
+			public const int ptr_text = 2131165196;
 			
 			// aapt resource value: 0x7f070060
-			public const int search_edit_frame = 2131165280;
+			public const int radio = 2131165280;
 			
-			// aapt resource value: 0x7f070066
-			public const int search_go_btn = 2131165286;
+			// aapt resource value: 0x7f070033
+			public const int right = 2131165235;
 			
-			// aapt resource value: 0x7f070061
-			public const int search_mag_icon = 2131165281;
+			// aapt resource value: 0x7f0700b3
+			public const int right_button = 2131165363;
 			
-			// aapt resource value: 0x7f070062
-			public const int search_plate = 2131165282;
+			// aapt resource value: 0x7f0700b2
+			public const int right_frame = 2131165362;
 			
-			// aapt resource value: 0x7f070063
-			public const int search_src_text = 2131165283;
+			// aapt resource value: 0x7f0700d1
+			public const int right_navdrawer = 2131165393;
 			
-			// aapt resource value: 0x7f070067
-			public const int search_voice_btn = 2131165287;
+			// aapt resource value: 0x7f07001a
+			public const int screen = 2131165210;
 			
-			// aapt resource value: 0x7f070068
-			public const int select_dialog_listview = 2131165288;
+			// aapt resource value: 0x7f070029
+			public const int scroll = 2131165225;
 			
-			// aapt resource value: 0x7f070053
-			public const int shortcut = 2131165267;
+			// aapt resource value: 0x7f07005a
+			public const int scrollIndicatorDown = 2131165274;
 			
-			// aapt resource value: 0x7f070011
-			public const int showCustom = 2131165201;
+			// aapt resource value: 0x7f070057
+			public const int scrollIndicatorUp = 2131165271;
 			
-			// aapt resource value: 0x7f070012
-			public const int showHome = 2131165202;
+			// aapt resource value: 0x7f070058
+			public const int scrollView = 2131165272;
 			
-			// aapt resource value: 0x7f070013
-			public const int showTitle = 2131165203;
+			// aapt resource value: 0x7f07003c
+			public const int scrollable = 2131165244;
 			
-			// aapt resource value: 0x7f070098
-			public const int sliding_tabs = 2131165336;
+			// aapt resource value: 0x7f07006a
+			public const int search_badge = 2131165290;
 			
-			// aapt resource value: 0x7f07006c
-			public const int snackbar_action = 2131165292;
+			// aapt resource value: 0x7f070069
+			public const int search_bar = 2131165289;
 			
 			// aapt resource value: 0x7f07006b
-			public const int snackbar_text = 2131165291;
+			public const int search_button = 2131165291;
 			
-			// aapt resource value: 0x7f070027
-			public const int snap = 2131165223;
+			// aapt resource value: 0x7f070070
+			public const int search_close_btn = 2131165296;
 			
-			// aapt resource value: 0x7f070045
-			public const int spacer = 2131165253;
+			// aapt resource value: 0x7f07006c
+			public const int search_edit_frame = 2131165292;
+			
+			// aapt resource value: 0x7f070072
+			public const int search_go_btn = 2131165298;
+			
+			// aapt resource value: 0x7f07006d
+			public const int search_mag_icon = 2131165293;
+			
+			// aapt resource value: 0x7f07006e
+			public const int search_plate = 2131165294;
+			
+			// aapt resource value: 0x7f07006f
+			public const int search_src_text = 2131165295;
+			
+			// aapt resource value: 0x7f070073
+			public const int search_voice_btn = 2131165299;
+			
+			// aapt resource value: 0x7f070074
+			public const int select_dialog_listview = 2131165300;
+			
+			// aapt resource value: 0x7f07005f
+			public const int shortcut = 2131165279;
+			
+			// aapt resource value: 0x7f070014
+			public const int showCustom = 2131165204;
+			
+			// aapt resource value: 0x7f070015
+			public const int showHome = 2131165205;
+			
+			// aapt resource value: 0x7f070016
+			public const int showTitle = 2131165206;
+			
+			// aapt resource value: 0x7f0700f0
+			public const int sliding_tabs = 2131165424;
+			
+			// aapt resource value: 0x7f070085
+			public const int snackbar_action = 2131165317;
+			
+			// aapt resource value: 0x7f070084
+			public const int snackbar_text = 2131165316;
+			
+			// aapt resource value: 0x7f07002a
+			public const int snap = 2131165226;
+			
+			// aapt resource value: 0x7f070051
+			public const int spacer = 2131165265;
+			
+			// aapt resource value: 0x7f07003f
+			public const int spb_interpolator_accelerate = 2131165247;
+			
+			// aapt resource value: 0x7f070040
+			public const int spb_interpolator_acceleratedecelerate = 2131165248;
+			
+			// aapt resource value: 0x7f070041
+			public const int spb_interpolator_decelerate = 2131165249;
+			
+			// aapt resource value: 0x7f070042
+			public const int spb_interpolator_linear = 2131165250;
 			
 			// aapt resource value: 0x7f070008
 			public const int split_action_bar = 2131165192;
 			
-			// aapt resource value: 0x7f070018
-			public const int src_atop = 2131165208;
+			// aapt resource value: 0x7f07001b
+			public const int src_atop = 2131165211;
 			
-			// aapt resource value: 0x7f070019
-			public const int src_in = 2131165209;
+			// aapt resource value: 0x7f07001c
+			public const int src_in = 2131165212;
 			
-			// aapt resource value: 0x7f07001a
-			public const int src_over = 2131165210;
+			// aapt resource value: 0x7f07001d
+			public const int src_over = 2131165213;
 			
-			// aapt resource value: 0x7f070031
-			public const int start = 2131165233;
+			// aapt resource value: 0x7f070034
+			public const int start = 2131165236;
 			
-			// aapt resource value: 0x7f07008d
-			public const int status_bar_latest_event_content = 2131165325;
+			// aapt resource value: 0x7f0700d4
+			public const int status_bar_latest_event_content = 2131165396;
 			
-			// aapt resource value: 0x7f070065
-			public const int submit_area = 2131165285;
+			// aapt resource value: 0x7f070071
+			public const int submit_area = 2131165297;
 			
-			// aapt resource value: 0x7f07000d
-			public const int tabMode = 2131165197;
+			// aapt resource value: 0x7f070044
+			public const int subtitle = 2131165252;
 			
-			// aapt resource value: 0x7f070095
-			public const int text = 2131165333;
+			// aapt resource value: 0x7f070010
+			public const int tabMode = 2131165200;
 			
-			// aapt resource value: 0x7f070093
-			public const int text2 = 2131165331;
+			// aapt resource value: 0x7f0700dc
+			public const int text = 2131165404;
 			
-			// aapt resource value: 0x7f07004d
-			public const int textSpacerNoButtons = 2131165261;
+			// aapt resource value: 0x7f0700da
+			public const int text2 = 2131165402;
 			
-			// aapt resource value: 0x7f070091
-			public const int time = 2131165329;
+			// aapt resource value: 0x7f070059
+			public const int textSpacerNoButtons = 2131165273;
 			
-			// aapt resource value: 0x7f070043
-			public const int title = 2131165251;
+			// aapt resource value: 0x7f0700d8
+			public const int time = 2131165400;
 			
-			// aapt resource value: 0x7f070048
-			public const int title_template = 2131165256;
+			// aapt resource value: 0x7f070045
+			public const int title = 2131165253;
 			
-			// aapt resource value: 0x7f070099
-			public const int toolbar = 2131165337;
+			// aapt resource value: 0x7f070054
+			public const int title_template = 2131165268;
 			
-			// aapt resource value: 0x7f070032
-			public const int top = 2131165234;
+			// aapt resource value: 0x7f0700f4
+			public const int toolbar = 2131165428;
 			
-			// aapt resource value: 0x7f070047
-			public const int topPanel = 2131165255;
+			// aapt resource value: 0x7f070035
+			public const int top = 2131165237;
 			
-			// aapt resource value: 0x7f070069
-			public const int touch_outside = 2131165289;
+			// aapt resource value: 0x7f070053
+			public const int topPanel = 2131165267;
+			
+			// aapt resource value: 0x7f070082
+			public const int touch_outside = 2131165314;
 			
 			// aapt resource value: 0x7f070009
 			public const int up = 2131165193;
 			
-			// aapt resource value: 0x7f070014
-			public const int useLogo = 2131165204;
+			// aapt resource value: 0x7f070017
+			public const int useLogo = 2131165207;
+			
+			// aapt resource value: 0x7f070047
+			public const int vertical = 2131165255;
 			
 			// aapt resource value: 0x7f07000a
 			public const int view_offset_helper = 2131165194;
 			
-			// aapt resource value: 0x7f070083
-			public const int volume_item_container = 2131165315;
+			// aapt resource value: 0x7f0700c6
+			public const int volume_item_container = 2131165382;
 			
-			// aapt resource value: 0x7f070022
-			public const int withText = 2131165218;
+			// aapt resource value: 0x7f070025
+			public const int withText = 2131165221;
 			
-			// aapt resource value: 0x7f070015
-			public const int wrap_content = 2131165205;
+			// aapt resource value: 0x7f070018
+			public const int wrap_content = 2131165208;
 			
 			static Id()
 			{
@@ -2706,6 +3741,15 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f090006
 			public const int cancel_button_image_alpha = 2131296262;
 			
+			// aapt resource value: 0x7f09000c
+			public const int default_bullet_indicator_orientation = 2131296268;
+			
+			// aapt resource value: 0x7f09000d
+			public const int default_strip_indicator_fade_delay = 2131296269;
+			
+			// aapt resource value: 0x7f09000e
+			public const int default_strip_indicator_fade_length = 2131296270;
+			
 			// aapt resource value: 0x7f090008
 			public const int design_snackbar_text_max_lines = 2131296264;
 			
@@ -2717,6 +3761,12 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f090002
 			public const int mr_controller_volume_group_list_fade_out_duration_ms = 2131296258;
+			
+			// aapt resource value: 0x7f09000b
+			public const int spb_default_interpolator = 2131296267;
+			
+			// aapt resource value: 0x7f09000a
+			public const int spb_default_sections_count = 2131296266;
 			
 			// aapt resource value: 0x7f090007
 			public const int status_bar_notification_info_maxnum = 2131296263;
@@ -2735,10 +3785,16 @@ namespace Im.Basket.Client.Droid
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int mr_fast_out_slow_in = 2131034112;
+			public const int accelerate_quad = 2131034112;
 			
 			// aapt resource value: 0x7f050001
-			public const int mr_linear_out_slow_in = 2131034113;
+			public const int decelerate_quad = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int mr_fast_out_slow_in = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public const int mr_linear_out_slow_in = 2131034115;
 			
 			static Interpolator()
 			{
@@ -2829,100 +3885,310 @@ namespace Im.Basket.Client.Droid
 			public const int abc_select_dialog_material = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int design_bottom_sheet_dialog = 2130903065;
+			public const int activitylargeindicator = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int design_layout_snackbar = 2130903066;
+			public const int activitysmallindicator = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int design_layout_snackbar_include = 2130903067;
+			public const int activitytranslucentindicator = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int design_layout_tab_icon = 2130903068;
+			public const int bulletpageindicator = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int design_layout_tab_text = 2130903069;
+			public const int buttonwidget = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int design_menu_item_action_area = 2130903070;
+			public const int checkboxwidget = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int design_navigation_item = 2130903071;
+			public const int childnavigationwidget = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int design_navigation_item_header = 2130903072;
+			public const int datepickerwidget = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int design_navigation_item_separator = 2130903073;
+			public const int datetimepickerlayout = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int design_navigation_item_subheader = 2130903074;
+			public const int datetimepickerwidget = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int design_navigation_menu = 2130903075;
+			public const int default_header = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int design_navigation_menu_item = 2130903076;
+			public const int design_bottom_sheet_dialog = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int mr_chooser_dialog = 2130903077;
+			public const int design_layout_snackbar = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int mr_chooser_list_item = 2130903078;
+			public const int design_layout_snackbar_include = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int mr_controller_material_dialog_b = 2130903079;
+			public const int design_layout_tab_icon = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int mr_controller_volume_item = 2130903080;
+			public const int design_layout_tab_text = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int mr_playback_control = 2130903081;
+			public const int design_menu_item_action_area = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int mr_volume_control = 2130903082;
+			public const int design_navigation_item = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int notification_media_action = 2130903083;
+			public const int design_navigation_item_header = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int notification_media_cancel_action = 2130903084;
+			public const int design_navigation_item_separator = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int notification_template_big_media = 2130903085;
+			public const int design_navigation_item_subheader = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int notification_template_big_media_narrow = 2130903086;
+			public const int design_navigation_menu = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int notification_template_lines = 2130903087;
+			public const int design_navigation_menu_item = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int notification_template_media = 2130903088;
+			public const int dialoglayout = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int notification_template_part_chronometer = 2130903089;
+			public const int dialoglayout_edge = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int notification_template_part_time = 2130903090;
+			public const int dialoglayout_fullscreen = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int select_dialog_item_material = 2130903091;
+			public const int form = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int select_dialog_multichoice_material = 2130903092;
+			public const int formlayout = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int select_dialog_singlechoice_material = 2130903093;
+			public const int formlayoutdetailonly = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int support_simple_spinner_dropdown_item = 2130903094;
+			public const int formlayoutleftdetail = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int Tabbar = 2130903095;
+			public const int formlayoutrightdetail = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int Toolbar = 2130903096;
+			public const int formlayoutrowdetail = 2130903096;
+			
+			// aapt resource value: 0x7f030039
+			public const int formsectionlayout = 2130903097;
+			
+			// aapt resource value: 0x7f03003a
+			public const int fragmentactivitylayout = 2130903098;
+			
+			// aapt resource value: 0x7f03003b
+			public const int gridcontent = 2130903099;
+			
+			// aapt resource value: 0x7f03003c
+			public const int hyperlinkwidget = 2130903100;
+			
+			// aapt resource value: 0x7f03003d
+			public const int imagepickerwidget = 2130903101;
+			
+			// aapt resource value: 0x7f03003e
+			public const int imageviewwidget = 2130903102;
+			
+			// aapt resource value: 0x7f03003f
+			public const int listgroupsectionheaderlayout = 2130903103;
+			
+			// aapt resource value: 0x7f030040
+			public const int listgroupsectionlayout = 2130903104;
+			
+			// aapt resource value: 0x7f030041
+			public const int listviewfooterlayout = 2130903105;
+			
+			// aapt resource value: 0x7f030042
+			public const int listviewheaderlayout = 2130903106;
+			
+			// aapt resource value: 0x7f030043
+			public const int listviewprogressbarlayout = 2130903107;
+			
+			// aapt resource value: 0x7f030044
+			public const int listviewwidgetlayout = 2130903108;
+			
+			// aapt resource value: 0x7f030045
+			public const int maincontainer = 2130903109;
+			
+			// aapt resource value: 0x7f030046
+			public const int masterdetailfragmentlayout = 2130903110;
+			
+			// aapt resource value: 0x7f030047
+			public const int messageinputviewlayout = 2130903111;
+			
+			// aapt resource value: 0x7f030048
+			public const int mr_chooser_dialog = 2130903112;
+			
+			// aapt resource value: 0x7f030049
+			public const int mr_chooser_list_item = 2130903113;
+			
+			// aapt resource value: 0x7f03004a
+			public const int mr_controller_material_dialog_b = 2130903114;
+			
+			// aapt resource value: 0x7f03004b
+			public const int mr_controller_volume_item = 2130903115;
+			
+			// aapt resource value: 0x7f03004c
+			public const int mr_playback_control = 2130903116;
+			
+			// aapt resource value: 0x7f03004d
+			public const int mr_volume_control = 2130903117;
+			
+			// aapt resource value: 0x7f03004e
+			public const int navigationdrawerlayout = 2130903118;
+			
+			// aapt resource value: 0x7f03004f
+			public const int notification_media_action = 2130903119;
+			
+			// aapt resource value: 0x7f030050
+			public const int notification_media_cancel_action = 2130903120;
+			
+			// aapt resource value: 0x7f030051
+			public const int notification_template_big_media = 2130903121;
+			
+			// aapt resource value: 0x7f030052
+			public const int notification_template_big_media_narrow = 2130903122;
+			
+			// aapt resource value: 0x7f030053
+			public const int notification_template_lines = 2130903123;
+			
+			// aapt resource value: 0x7f030054
+			public const int notification_template_media = 2130903124;
+			
+			// aapt resource value: 0x7f030055
+			public const int notification_template_part_chronometer = 2130903125;
+			
+			// aapt resource value: 0x7f030056
+			public const int notification_template_part_time = 2130903126;
+			
+			// aapt resource value: 0x7f030057
+			public const int numericstepperlayout = 2130903127;
+			
+			// aapt resource value: 0x7f030058
+			public const int numericstepperwidget = 2130903128;
+			
+			// aapt resource value: 0x7f030059
+			public const int radiobuttonwidget = 2130903129;
+			
+			// aapt resource value: 0x7f03005a
+			public const int roundedbuttonlayout = 2130903130;
+			
+			// aapt resource value: 0x7f03005b
+			public const int sectionimageswithfieldslayout = 2130903131;
+			
+			// aapt resource value: 0x7f03005c
+			public const int sectionlayout = 2130903132;
+			
+			// aapt resource value: 0x7f03005d
+			public const int seekbarwidget = 2130903133;
+			
+			// aapt resource value: 0x7f03005e
+			public const int select_dialog_item_material = 2130903134;
+			
+			// aapt resource value: 0x7f03005f
+			public const int select_dialog_multichoice_material = 2130903135;
+			
+			// aapt resource value: 0x7f030060
+			public const int select_dialog_singlechoice_material = 2130903136;
+			
+			// aapt resource value: 0x7f030061
+			public const int selectionwidget = 2130903137;
+			
+			// aapt resource value: 0x7f030062
+			public const int simplegriditem = 2130903138;
+			
+			// aapt resource value: 0x7f030063
+			public const int simpleimageitem = 2130903139;
+			
+			// aapt resource value: 0x7f030064
+			public const int simplelistviewwidget1 = 2130903140;
+			
+			// aapt resource value: 0x7f030065
+			public const int simplelistviewwidget2 = 2130903141;
+			
+			// aapt resource value: 0x7f030066
+			public const int simplelistviewwidgetimage = 2130903142;
+			
+			// aapt resource value: 0x7f030067
+			public const int spinnerdropdownitemlayout = 2130903143;
+			
+			// aapt resource value: 0x7f030068
+			public const int spinnerlayout = 2130903144;
+			
+			// aapt resource value: 0x7f030069
+			public const int spinnerwidget = 2130903145;
+			
+			// aapt resource value: 0x7f03006a
+			public const int strippageindicator = 2130903146;
+			
+			// aapt resource value: 0x7f03006b
+			public const int support_simple_spinner_dropdown_item = 2130903147;
+			
+			// aapt resource value: 0x7f03006c
+			public const int switchwidget = 2130903148;
+			
+			// aapt resource value: 0x7f03006d
+			public const int Tabbar = 2130903149;
+			
+			// aapt resource value: 0x7f03006e
+			public const int tabcontainer = 2130903150;
+			
+			// aapt resource value: 0x7f03006f
+			public const int tabfragmentlayout = 2130903151;
+			
+			// aapt resource value: 0x7f030070
+			public const int tablecellleftdetail = 2130903152;
+			
+			// aapt resource value: 0x7f030071
+			public const int tablecellrightdetail = 2130903153;
+			
+			// aapt resource value: 0x7f030072
+			public const int tablecellsubtitle = 2130903154;
+			
+			// aapt resource value: 0x7f030073
+			public const int tablecellsubtitlewithimage = 2130903155;
+			
+			// aapt resource value: 0x7f030074
+			public const int textfieldview = 2130903156;
+			
+			// aapt resource value: 0x7f030075
+			public const int timepickerwidget = 2130903157;
+			
+			// aapt resource value: 0x7f030076
+			public const int toast = 2130903158;
+			
+			// aapt resource value: 0x7f030077
+			public const int toastlayout = 2130903159;
+			
+			// aapt resource value: 0x7f030078
+			public const int toastshadow = 2130903160;
+			
+			// aapt resource value: 0x7f030079
+			public const int toastshape = 2130903161;
+			
+			// aapt resource value: 0x7f03007a
+			public const int Toolbar = 2130903162;
+			
+			// aapt resource value: 0x7f03007b
+			public const int viewpagerindicatortab = 2130903163;
+			
+			// aapt resource value: 0x7f03007c
+			public const int viewpagerwithtab = 2130903164;
+			
+			// aapt resource value: 0x7f03007d
+			public const int viewpagerwithtabstrip = 2130903165;
+			
+			// aapt resource value: 0x7f03007e
+			public const int viewslider = 2130903166;
 			
 			static Layout()
 			{
@@ -2936,6 +4202,48 @@ namespace Im.Basket.Client.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f080027
+			public const int Add = 2131230759;
+			
+			// aapt resource value: 0x7f080028
+			public const int Cancel = 2131230760;
+			
+			// aapt resource value: 0x7f080029
+			public const int CheckAll = 2131230761;
+			
+			// aapt resource value: 0x7f08002a
+			public const int ChooseFromGallery = 2131230762;
+			
+			// aapt resource value: 0x7f08002b
+			public const int CloseDrawer = 2131230763;
+			
+			// aapt resource value: 0x7f08002c
+			public const int Delete = 2131230764;
+			
+			// aapt resource value: 0x7f08002d
+			public const int DeleteImage = 2131230765;
+			
+			// aapt resource value: 0x7f08002e
+			public const int More = 2131230766;
+			
+			// aapt resource value: 0x7f08002f
+			public const int OK = 2131230767;
+			
+			// aapt resource value: 0x7f080030
+			public const int OpenDrawer = 2131230768;
+			
+			// aapt resource value: 0x7f080031
+			public const int Save = 2131230769;
+			
+			// aapt resource value: 0x7f080032
+			public const int SelectImage = 2131230770;
+			
+			// aapt resource value: 0x7f080033
+			public const int TakePhoto = 2131230771;
+			
+			// aapt resource value: 0x7f080034
+			public const int UncheckAll = 2131230772;
 			
 			// aapt resource value: 0x7f08000f
 			public const int abc_action_bar_home_description = 2131230735;
@@ -3048,6 +4356,18 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f08000e
 			public const int mr_user_route_category_name = 2131230734;
 			
+			// aapt resource value: 0x7f080035
+			public const int pull_to_refresh_pull_label = 2131230773;
+			
+			// aapt resource value: 0x7f080037
+			public const int pull_to_refresh_refreshing_label = 2131230775;
+			
+			// aapt resource value: 0x7f080036
+			public const int pull_to_refresh_release_label = 2131230774;
+			
+			// aapt resource value: 0x7f080026
+			public const int spb_default_speed = 2131230758;
+			
 			// aapt resource value: 0x7f080022
 			public const int status_bar_notification_info_overflow = 2131230754;
 			
@@ -3079,8 +4399,8 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f0a015a
 			public const int Animation_Design_BottomSheetDialog = 2131362138;
 			
-			// aapt resource value: 0x7f0a0174
-			public const int AppCompatDialogStyle = 2131362164;
+			// aapt resource value: 0x7f0a0183
+			public const int AppCompatDialogStyle = 2131362179;
 			
 			// aapt resource value: 0x7f0a00a5
 			public const int Base_AlertDialog_AppCompat = 2131361957;
@@ -3514,6 +4834,9 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f0a015b
 			public const int Base_Widget_Design_TabLayout = 2131362139;
 			
+			// aapt resource value: 0x7f0a017f
+			public const int BulletPageIndicator = 2131362175;
+			
 			// aapt resource value: 0x7f0a0017
 			public const int CardView = 2131361815;
 			
@@ -3523,11 +4846,20 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f0a001a
 			public const int CardView_Light = 2131361818;
 			
-			// aapt resource value: 0x7f0a0172
-			public const int MainTheme = 2131362162;
-			
 			// aapt resource value: 0x7f0a0173
-			public const int MainTheme_Base = 2131362163;
+			public const int GridItem = 2131362163;
+			
+			// aapt resource value: 0x7f0a0172
+			public const int ListItem = 2131362162;
+			
+			// aapt resource value: 0x7f0a0181
+			public const int MainTheme = 2131362177;
+			
+			// aapt resource value: 0x7f0a0182
+			public const int MainTheme_Base = 2131362178;
+			
+			// aapt resource value: 0x7f0a017e
+			public const int PageIndicator = 2131362174;
 			
 			// aapt resource value: 0x7f0a0032
 			public const int Platform_AppCompat = 2131361842;
@@ -3600,6 +4932,12 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f0a0050
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131361872;
+			
+			// aapt resource value: 0x7f0a0175
+			public const int SmoothProgressBar = 2131362165;
+			
+			// aapt resource value: 0x7f0a0180
+			public const int StripPageIndicator = 2131362176;
 			
 			// aapt resource value: 0x7f0a00d1
 			public const int TextAppearance_AppCompat = 2131362001;
@@ -3733,6 +5071,9 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f0a00fc
 			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131362044;
 			
+			// aapt resource value: 0x7f0a0176
+			public const int TextAppearance_Custom_PtrHeader_Title = 2131362166;
+			
 			// aapt resource value: 0x7f0a015c
 			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131362140;
 			
@@ -3753,6 +5094,9 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f0a0162
 			public const int TextAppearance_Design_Tab = 2131362146;
+			
+			// aapt resource value: 0x7f0a0174
+			public const int TextAppearance_Small = 2131362164;
 			
 			// aapt resource value: 0x7f0a003e
 			public const int TextAppearance_StatusBar_EventContent = 2131361854;
@@ -3777,6 +5121,9 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f0a00ff
 			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131362047;
+			
+			// aapt resource value: 0x7f0a0177
+			public const int TextViewStyle = 2131362167;
 			
 			// aapt resource value: 0x7f0a0100
 			public const int Theme_AppCompat = 2131362048;
@@ -3859,6 +5206,9 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f0a0168
 			public const int Theme_Design_NoActionBar = 2131362152;
 			
+			// aapt resource value: 0x7f0a0178
+			public const int Theme_Holo_CustomPtrHeader = 2131362168;
+			
 			// aapt resource value: 0x7f0a0000
 			public const int Theme_MediaRouter = 2131361792;
 			
@@ -3870,6 +5220,15 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f0a0003
 			public const int Theme_MediaRouter_LightControlPanel = 2131361795;
+			
+			// aapt resource value: 0x7f0a017d
+			public const int Theme_PageIndicatorDefaults = 2131362173;
+			
+			// aapt resource value: 0x7f0a0179
+			public const int Theme_SmoothProgressBarDefaults = 2131362169;
+			
+			// aapt resource value: 0x7f0a017c
+			public const int ThemeHoloLightDockEdge = 2131362172;
 			
 			// aapt resource value: 0x7f0a010e
 			public const int ThemeOverlay_AppCompat = 2131362062;
@@ -4096,6 +5455,9 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0x7f0a0158
 			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131362136;
 			
+			// aapt resource value: 0x7f0a017b
+			public const int Widget_Custom_PtrHeader = 2131362171;
+			
 			// aapt resource value: 0x7f0a0169
 			public const int Widget_Design_AppBarLayout = 2131362153;
 			
@@ -4182,6 +5544,9 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0x7f0a0016
 			public const int Widget_MediaRouter_MediaRouteButton = 2131361814;
+			
+			// aapt resource value: 0x7f0a017a
+			public const int Widget_ProgressBar_PullToRefresh = 2131362170;
 			
 			static Style()
 			{
@@ -4886,6 +6251,40 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 0
 			public const int BottomSheetBehavior_Params_behavior_peekHeight = 0;
 			
+			public static int[] BulletPageIndicator = new int[] {
+					2130772319,
+					2130772320,
+					2130772321,
+					2130772322,
+					2130772323,
+					2130772324,
+					2130772325,
+					2130772326};
+			
+			// aapt resource value: 0
+			public const int BulletPageIndicator_centered = 0;
+			
+			// aapt resource value: 1
+			public const int BulletPageIndicator_fillColor = 1;
+			
+			// aapt resource value: 3
+			public const int BulletPageIndicator_orientation = 3;
+			
+			// aapt resource value: 2
+			public const int BulletPageIndicator_pageColor = 2;
+			
+			// aapt resource value: 4
+			public const int BulletPageIndicator_radius = 4;
+			
+			// aapt resource value: 5
+			public const int BulletPageIndicator_snap = 5;
+			
+			// aapt resource value: 6
+			public const int BulletPageIndicator_strokeColor = 6;
+			
+			// aapt resource value: 7
+			public const int BulletPageIndicator_strokeWidth = 7;
+			
 			public static int[] ButtonBarLayout = new int[] {
 					2130772154};
 			
@@ -5408,6 +6807,34 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 4
 			public const int NavigationView_menu = 4;
 			
+			public static int[] NumericStepper = new int[] {
+					16842788,
+					2130772306,
+					2130772307,
+					2130772308};
+			
+			// aapt resource value: 0
+			public const int NumericStepper_android_value = 0;
+			
+			// aapt resource value: 2
+			public const int NumericStepper_maxValue = 2;
+			
+			// aapt resource value: 1
+			public const int NumericStepper_minValue = 1;
+			
+			// aapt resource value: 3
+			public const int NumericStepper_step = 3;
+			
+			public static int[] PageIndicator = new int[] {
+					2130772317,
+					2130772318};
+			
+			// aapt resource value: 0
+			public const int PageIndicator_vpiBulletPageIndicatorStyle = 0;
+			
+			// aapt resource value: 1
+			public const int PageIndicator_vpiStripPageIndicatorStyle = 1;
+			
 			public static int[] PopupWindow = new int[] {
 					16843126,
 					2130772173};
@@ -5423,6 +6850,50 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
+			
+			public static int[] PullToRefreshHeader = new int[] {
+					2130772286,
+					2130772287,
+					2130772288,
+					2130772289,
+					2130772290,
+					2130772291,
+					2130772292,
+					2130772293,
+					2130772294};
+			
+			// aapt resource value: 0
+			public const int PullToRefreshHeader_ptrHeaderBackground = 0;
+			
+			// aapt resource value: 1
+			public const int PullToRefreshHeader_ptrHeaderHeight = 1;
+			
+			// aapt resource value: 2
+			public const int PullToRefreshHeader_ptrHeaderTitleTextAppearance = 2;
+			
+			// aapt resource value: 3
+			public const int PullToRefreshHeader_ptrProgressBarColor = 3;
+			
+			// aapt resource value: 5
+			public const int PullToRefreshHeader_ptrProgressBarHeight = 5;
+			
+			// aapt resource value: 4
+			public const int PullToRefreshHeader_ptrProgressBarStyle = 4;
+			
+			// aapt resource value: 6
+			public const int PullToRefreshHeader_ptrPullText = 6;
+			
+			// aapt resource value: 7
+			public const int PullToRefreshHeader_ptrRefreshingText = 7;
+			
+			// aapt resource value: 8
+			public const int PullToRefreshHeader_ptrReleaseText = 8;
+			
+			public static int[] PullToRefreshView = new int[] {
+					2130772284};
+			
+			// aapt resource value: 0
+			public const int PullToRefreshView_ptrViewDelegateClass = 0;
 			
 			public static int[] RecyclerView = new int[] {
 					16842948,
@@ -5445,6 +6916,52 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 4
 			public const int RecyclerView_stackFromEnd = 4;
+			
+			public static int[] RoundedButton = new int[] {
+					16843037,
+					2130772009,
+					2130772012,
+					2130772309,
+					2130772310,
+					2130772311,
+					2130772312,
+					2130772313,
+					2130772314,
+					2130772315,
+					2130772316};
+			
+			// aapt resource value: 0
+			public const int RoundedButton_android_scaleType = 0;
+			
+			// aapt resource value: 6
+			public const int RoundedButton_contentStyle = 6;
+			
+			// aapt resource value: 5
+			public const int RoundedButton_imageBackground = 5;
+			
+			// aapt resource value: 4
+			public const int RoundedButton_imageSrc = 4;
+			
+			// aapt resource value: 3
+			public const int RoundedButton_isToggle = 3;
+			
+			// aapt resource value: 2
+			public const int RoundedButton_subtitle = 2;
+			
+			// aapt resource value: 8
+			public const int RoundedButton_subtitleColor = 8;
+			
+			// aapt resource value: 10
+			public const int RoundedButton_subtitleTextSize = 10;
+			
+			// aapt resource value: 1
+			public const int RoundedButton_title = 1;
+			
+			// aapt resource value: 7
+			public const int RoundedButton_titleColor = 7;
+			
+			// aapt resource value: 9
+			public const int RoundedButton_titleTextSize = 9;
 			
 			public static int[] ScrimInsetsFrameLayout = new int[] {
 					2130772256};
@@ -5528,6 +7045,48 @@ namespace Im.Basket.Client.Droid
 			// aapt resource value: 12
 			public const int SearchView_voiceIcon = 12;
 			
+			public static int[] SmoothProgressBar = new int[] {
+					2130772295,
+					2130772296,
+					2130772297,
+					2130772298,
+					2130772299,
+					2130772300,
+					2130772301,
+					2130772302,
+					2130772303,
+					2130772304};
+			
+			// aapt resource value: 0
+			public const int SmoothProgressBar_spbStyle = 0;
+			
+			// aapt resource value: 1
+			public const int SmoothProgressBar_spb_color = 1;
+			
+			// aapt resource value: 9
+			public const int SmoothProgressBar_spb_colors = 9;
+			
+			// aapt resource value: 6
+			public const int SmoothProgressBar_spb_interpolator = 6;
+			
+			// aapt resource value: 8
+			public const int SmoothProgressBar_spb_mirror_mode = 8;
+			
+			// aapt resource value: 7
+			public const int SmoothProgressBar_spb_reversed = 7;
+			
+			// aapt resource value: 4
+			public const int SmoothProgressBar_spb_sections_count = 4;
+			
+			// aapt resource value: 5
+			public const int SmoothProgressBar_spb_speed = 5;
+			
+			// aapt resource value: 3
+			public const int SmoothProgressBar_spb_stroke_separator_length = 3;
+			
+			// aapt resource value: 2
+			public const int SmoothProgressBar_spb_stroke_width = 2;
+			
 			public static int[] SnackbarLayout = new int[] {
 					16843039,
 					2130772032,
@@ -5563,6 +7122,28 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 4
 			public const int Spinner_popupTheme = 4;
+			
+			public static int[] StripPageIndicator = new int[] {
+					16842964,
+					2130772327,
+					2130772328,
+					2130772329,
+					2130772330};
+			
+			// aapt resource value: 0
+			public const int StripPageIndicator_android_background = 0;
+			
+			// aapt resource value: 2
+			public const int StripPageIndicator_fadeDelay = 2;
+			
+			// aapt resource value: 3
+			public const int StripPageIndicator_fadeLength = 3;
+			
+			// aapt resource value: 1
+			public const int StripPageIndicator_fades = 1;
+			
+			// aapt resource value: 4
+			public const int StripPageIndicator_selectedColor = 4;
 			
 			public static int[] SwitchCompat = new int[] {
 					16843044,
@@ -5769,6 +7350,12 @@ namespace Im.Basket.Client.Droid
 			
 			// aapt resource value: 2
 			public const int TextInputLayout_hintTextAppearance = 2;
+			
+			public static int[] ToogleImageButton = new int[] {
+					2130772305};
+			
+			// aapt resource value: 0
+			public const int ToogleImageButton_checked = 0;
 			
 			public static int[] Toolbar = new int[] {
 					16842927,
