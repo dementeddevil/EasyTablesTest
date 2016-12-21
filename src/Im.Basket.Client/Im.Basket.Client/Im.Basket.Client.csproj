@@ -51,6 +51,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DirectlineClient.cs" />
     <Compile Include="ViewModels\TableViewModel.cs" />
     <Compile Include="ViewModels\TodoListViewModel.cs" />
     <Compile Include="Views\CheckBox.xaml.cs">
