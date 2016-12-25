@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "562423358534",
-    "firebase_url": "https://im-basket-35c6e.firebaseio.com",
-    "project_id": "im-basket-35c6e",
-    "storage_bucket": "im-basket-35c6e.appspot.com"
+    "project_number": "119628819537",
+    "firebase_url": "https://zen-tracker-c03ae.firebaseio.com",
+    "project_id": "zen-tracker-c03ae",
+    "storage_bucket": "zen-tracker-c03ae.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:562423358534:android:a9b0ede008240468",
+        "mobilesdk_app_id": "1:119628819537:android:9421befa985bd932",
         "android_client_info": {
-          "package_name": "com.zenglobal.imbasket"
+          "package_name": "com.zendesignsoftware.tracker"
         }
       },
       "oauth_client": [
         {
-          "client_id": "562423358534-2t1gp0394omq5srjlqtvdabb791ri4cq.apps.googleusercontent.com",
+          "client_id": "119628819537-3bj3teinp170eg8jclvpr2f3p5uhnljt.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCED0z2nA-3umtZ_ryH0tN3uzQN3qKwZNc"
+          "current_key": "AIzaSyC5vcrQZ_QWOplr-xatp3d1Pt31X7OEIac"
         }
       ],
       "services": {
