@@ -6,31 +6,29 @@ namespace Zen.Tracker.Client.Views
     public partial class CheckBox : ContentView
     {
         public static readonly BindableProperty FontSizeProperty =
-             BindableProperty.Create<CheckBox, double>(
-                 checkbox => checkbox.FontSize,
-                 Device.GetNamedSize(NamedSize.Default, typeof(Label)),
-                 propertyChanged: (bindable, oldValue, newValue) =>
-                 {
-                     CheckBox checkbox = (CheckBox)bindable;
-                     checkbox.checkBoxLabel.FontSize = newValue;
-                 });
+            BindableProperty.Create(
+                "FontSize", typeof(double), typeof(CheckBox),
+                Device.GetNamedSize(NamedSize.Default, typeof(Label)),                
+                propertyChanged: (bindable, oldValue, newValue) =>
+                {
+                    CheckBox checkbox = (CheckBox)bindable;
+                    checkbox.CheckBoxLabel.FontSize = (double)newValue;
+                });
 
         public static readonly BindableProperty IsCheckedProperty =
-            BindableProperty.Create<CheckBox, bool>(
-                checkbox => checkbox.IsChecked,
+            BindableProperty.Create(
+                "IsChecked", typeof(bool), typeof(CheckBox),
                 false,
                 propertyChanged: (bindable, oldValue, newValue) =>
                 {
+                    var boolValue = (bool) newValue;
+
                     // Set the graphic.
                     CheckBox checkbox = (CheckBox)bindable;
-                    checkbox.checkBoxLabel.Text = newValue ? "\u2714" : "\u25FB";
+                    checkbox.CheckBoxLabel.Text = boolValue ? "\u2714" : "\u25FB";
 
                     // Fire the event.
-                    EventHandler<bool> eventHandler = checkbox.CheckedChanged;
-                    if (eventHandler != null)
-                    {
-                        eventHandler(checkbox, newValue);
-                    }
+                    checkbox.CheckedChanged?.Invoke(checkbox, boolValue);
                 });
 
         public event EventHandler<bool> CheckedChanged;
@@ -54,7 +52,7 @@ namespace Zen.Tracker.Client.Views
         }
 
         // TapGestureRecognizer handler.
-        void OnCheckBoxTapped(object sender, EventArgs args)
+        private void OnCheckBoxTapped(object sender, EventArgs args)
         {
             IsChecked = !IsChecked;
         }
