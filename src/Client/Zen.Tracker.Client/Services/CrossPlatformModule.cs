@@ -12,11 +12,11 @@ namespace Zen.Tracker.Client.Services
         protected override void Load(ContainerBuilder builder)
         {
             // Register bot connector
-            builder.RegisterType<BotConnectorDirectLineAPIV30>()
-                .As<IBotConnectorDirectLineAPIV30>()
-                .WithParameter(
-                    "credentials",
-                    new TokenCredentials(""));
+            //builder.RegisterType<BotConnectorDirectLineAPIV30>()
+            //    .As<IBotConnectorDirectLineAPIV30>()
+            //    .WithParameter(
+            //        "credentials",
+            //        new TokenCredentials(""));
 
             // Register mobile service client
             var mobileServiceClient = (EasyMobileServiceClient)EasyMobileServiceClient.Create();

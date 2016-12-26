@@ -8,9 +8,6 @@ namespace Zen.Tracker.Client.Droid.Services
     {
         protected override void Load(ContainerBuilder builder)
         {
-            // Register our platform-specific authentication provider
-            builder.RegisterInstance(Application.Current)
-                .As<IAuthenticate>();
         }
     }
 }

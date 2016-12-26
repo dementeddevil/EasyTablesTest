@@ -3,8 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Zen.Tracker.Client.MainPage">
 
-  <Label Text="Welcome to Xamarin Forms!"
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="20" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+    <Button x:Name="loginButton"
+            Text="Login"
+            Clicked="LoginButton_OnClicked"
+            Grid.Row="0"
+            Grid.Column="0" />
+
+    <Button x:Name="logoutButton"
+            Text="Logout"
+            Clicked="LogoutButton_OnClicked"
+            Grid.Row="0"
+            Grid.Column="1" />
+
+    <Label Text="Welcome to Xamarin Forms!"
            VerticalOptions="Center"
-           HorizontalOptions="Center" />
+           HorizontalOptions="Center"
+           Grid.Row="1"
+           Grid.ColumnSpan="2" />
+  </Grid>
 
 </ContentPage>
