@@ -9,6 +9,7 @@ using Zen.Tracker.Server.Site.Models;
 
 namespace Zen.Tracker.Server.Site.Controllers
 {
+    [Authorize]
     public class TodoItemController : TableController<TodoItem>
     {
         protected override void Initialize(HttpControllerContext controllerContext)

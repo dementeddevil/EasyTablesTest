@@ -1,23 +1,15 @@
-﻿using Autofac;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace Zen.Tracker.Client
 {
-    public partial class App : Application
+    public partial class TrackerApplication : Application
     {
-        public App()
+        public TrackerApplication()
         {
             InitializeComponent();
 
-            // Setup autofac container
-            var builder = new ContainerBuilder();
-            builder.RegisterModule<CoreModule>();
-            Container = builder.Build();
-
             MainPage = new MainPage();
         }
-
-        public ILifetimeScope Container { get; }
 
         protected override void OnStart()
         {

@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "119628819537",
-    "firebase_url": "https://zen-tracker-c03ae.firebaseio.com",
-    "project_id": "zen-tracker-c03ae",
-    "storage_bucket": "zen-tracker-c03ae.appspot.com"
+    "project_number": "379304893141",
+    "firebase_url": "https://zen-tracker-998b5.firebaseio.com",
+    "project_id": "zen-tracker-998b5",
+    "storage_bucket": "zen-tracker-998b5.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:119628819537:android:9421befa985bd932",
+        "mobilesdk_app_id": "1:379304893141:android:9421befa985bd932",
         "android_client_info": {
           "package_name": "com.zendesignsoftware.tracker"
         }
       },
       "oauth_client": [
         {
-          "client_id": "119628819537-3bj3teinp170eg8jclvpr2f3p5uhnljt.apps.googleusercontent.com",
+          "client_id": "379304893141-r75kkh22memf9mi873od0pittmtdj3tp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC5vcrQZ_QWOplr-xatp3d1Pt31X7OEIac"
+          "current_key": "AIzaSyAn-q89ynI_9lmJMaaPgjRNQ6igT_VCIjQ"
         }
       ],
       "services": {

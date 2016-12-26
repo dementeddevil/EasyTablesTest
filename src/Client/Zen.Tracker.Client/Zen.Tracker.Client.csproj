@@ -2,7 +2,7 @@
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3C804929-E5EC-41C8-A93A-5B640A1041BB}</ProjectGuid>
@@ -11,8 +11,8 @@
     <RootNamespace>Zen.Tracker.Client</RootNamespace>
     <AssemblyName>Zen.Tracker.Client</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile44</TargetFrameworkProfile>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;OFFLINE_SYNC_ENABLED</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -35,10 +35,46 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
+    <Compile Include="TrackerApplication.xaml.cs">
+      <DependentUpon>TrackerApplication.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CoreModule.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\BotConnectorDirectLineAPIV30.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Conversations.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\ConversationsExtensions.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\IBotConnectorDirectLineAPIV30.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\IConversations.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\ITokens.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\Activity.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\ActivitySet.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\AnimationCard.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\Attachment.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\AudioCard.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\CardAction.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\CardImage.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\ChannelAccount.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\Conversation.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\ConversationAccount.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\Entity.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\Error.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\ErrorResponse.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\Fact.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\GeoCoordinates.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\HeroCard.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\MediaUrl.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\Mention.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\Place.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\ReceiptCard.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\ReceiptItem.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\ResourceResponse.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\SigninCard.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\Thing.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\ThumbnailCard.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\ThumbnailUrl.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Models\VideoCard.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\Tokens.cs" />
+    <Compile Include="Bot Connector - Direct Line API - v3.0\TokensExtensions.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Services\CrossPlatformModule.cs" />
     <Compile Include="Entities\AzureDataTable.cs" />
     <Compile Include="Entities\AzureDataTableClient.cs" />
     <Compile Include="Entities\AzureDataTableClientBuilder.cs" />
@@ -51,7 +87,11 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CommonServiceRegistrar.cs" />
     <Compile Include="Services\DirectlineClient.cs" />
+    <Compile Include="Services\FakeCrossPlatformModule.cs" />
+    <Compile Include="Services\IAuthenticate.cs" />
+    <Compile Include="Services\TodoItemManager.cs" />
     <Compile Include="ViewModels\TableViewModel.cs" />
     <Compile Include="ViewModels\TodoListViewModel.cs" />
     <Compile Include="Views\CheckBox.xaml.cs">
@@ -66,26 +106,56 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="App.xaml">
+    <EmbeddedResource Include="TrackerApplication.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\TodoListView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CheckBox.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Autofac.Extras.CommonServiceLocator, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Autofac.Extras.CommonServiceLocator.4.0.0\lib\portable40-net40+sl5+win8+wp8+wpa81\Autofac.Extras.CommonServiceLocator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Azure.Mobile, Version=1.0.6036.40637, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\AppService.Helpers.1.0.4\lib\Azure.Mobile.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Azure.Mobile.Forms, Version=1.0.6025.25770, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\AppService.Helpers.Forms.1.0.1\lib\Azure.Mobile.Forms.dll</HintPath>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.3.0.19026, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\MvvmLightLibs.5.3.0.0\lib\portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10\GalaSoft.MvvmLight.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.3.0.19032, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\MvvmLightLibs.5.3.0.0\lib\portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10\GalaSoft.MvvmLight.Extras.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.Rest.ClientRuntime.2.3.4\lib\netstandard1.1\Microsoft.Rest.ClientRuntime.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.WindowsAzure.Mobile, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -101,27 +171,23 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="SQLitePCLRaw.batteries_green, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a84b7dcfb1391f7f, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\SQLitePCLRaw.bundle_green.1.1.1\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+      <HintPath>..\..\..\packages\SQLitePCLRaw.bundle_green.1.1.1\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="SQLitePCLRaw.batteries_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\SQLitePCLRaw.bundle_green.1.1.1\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+      <HintPath>..\..\..\packages\SQLitePCLRaw.bundle_green.1.1.1\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="SQLitePCLRaw.core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\SQLitePCLRaw.core.1.1.1\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+      <HintPath>..\..\..\packages\SQLitePCLRaw.core.1.1.1\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Net.Http, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net45+win8\System.Net.Http.Extensions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Net.Http.Extensions, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Extensions.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Net.Http.Primitives, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net45+win8\System.Net.Http.Primitives.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -136,18 +202,6 @@
       <HintPath>..\..\..\packages\Xamarin.Forms.2.3.3.175\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
       <Private>True</Private>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\TodoListView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\CheckBox.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -5,20 +5,15 @@ using System.ComponentModel;
 using System.Threading;
 using System.Threading.Tasks;
 using AppServiceHelpers.Models;
+using GalaSoft.MvvmLight;
 using Xamarin.Forms;
 using Zen.Tracker.Client.Entities;
 
 namespace Zen.Tracker.Client.ViewModels
 {
-    public class TableViewModel<TEntity>
+    public class TableViewModel<TEntity> : ViewModelBase
         where TEntity : EntityData
     {
-        public const string TitlePropertyName = "Title";
-        public const string SubtitlePropertyName = "Subtitle";
-        public const string IconPropertyName = "Icon";
-        public const string IsBusyPropertyName = "IsBusy";
-        public const string CanLoadMorePropertyName = "CanLoadMore";
-
         private readonly IAzureDataTableClient _client;
         private readonly IAzureDataTable<TEntity> _table;
         private ObservableCollection<TEntity> _items = new ObservableCollection<TEntity>();
@@ -30,8 +25,6 @@ namespace Zen.Tracker.Client.ViewModels
         private string _icon;
         private bool _isBusy;
         private CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
-
-        public event PropertyChangedEventHandler PropertyChanged;
 
         public TableViewModel(IAzureDataTableClient client)
         {
@@ -48,7 +41,7 @@ namespace Zen.Tracker.Client.ViewModels
             set
             {
                 _items = value;
-                OnPropertyChanged("items");
+                RaisePropertyChanged();
             }
         }
 
@@ -64,7 +57,7 @@ namespace Zen.Tracker.Client.ViewModels
             }
             set
             {
-                SetProperty(ref _title, value, "Title");
+                Set(ref _title, value);
             }
         }
 
@@ -76,7 +69,7 @@ namespace Zen.Tracker.Client.ViewModels
             }
             set
             {
-                SetProperty(ref _subTitle, value, "Subtitle");
+                Set(ref _subTitle, value);
             }
         }
 
@@ -88,7 +81,7 @@ namespace Zen.Tracker.Client.ViewModels
             }
             set
             {
-                SetProperty(ref _icon, value, "Icon");
+                Set(ref _icon, value);
             }
         }
 
@@ -100,7 +93,7 @@ namespace Zen.Tracker.Client.ViewModels
             }
             private set
             {
-                SetProperty(ref _isBusy, value, "IsBusy");
+                Set(ref _isBusy, value);
             }
         }
 
@@ -112,7 +105,7 @@ namespace Zen.Tracker.Client.ViewModels
             }
             set
             {
-                SetProperty(ref _canLoadMore, value, "CanLoadMore");
+                Set(ref _canLoadMore, value);
             }
         }
 
@@ -173,32 +166,6 @@ namespace Zen.Tracker.Client.ViewModels
         {
             _cancellationTokenSource.Cancel();
             _cancellationTokenSource = new CancellationTokenSource();
-        }
-
-        protected void SetProperty<TPropertyType>(ref TPropertyType backingStore, TPropertyType value, string propertyName, Action onChanged = null)
-        {
-            // Skip if unchanged
-            if (EqualityComparer<TPropertyType>.Default.Equals(backingStore, value))
-            {
-                return;
-            }
-
-            // Update backing store and raise events
-            backingStore = value;
-            if (onChanged != null)
-            {
-                onChanged();
-            }
-            OnPropertyChanged(propertyName);
-        }
-
-        public void OnPropertyChanged(string propertyName)
-        {
-            // ISSUE: reference to a compiler-generated field
-            if (PropertyChanged == null)
-                return;
-            // ISSUE: reference to a compiler-generated field
-            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

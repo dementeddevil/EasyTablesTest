@@ -1,8 +1,7 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using AppServiceHelpers;
-using Zen.Tracker.Client.Entities;
+using Zen.Tracker.Client.Droid.Services;
 
 namespace Zen.Tracker.Client.Droid
 {
@@ -17,15 +16,11 @@ namespace Zen.Tracker.Client.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 
-            var azureClient = EasyMobileServiceClient.Create();
-            azureClient.Initialize("http://zen-tracker-site.azurewebsites.net");
-            azureClient.RegisterTable<TodoItem>();
-            azureClient.FinalizeSchema();
+            PlatformServiceRegistrar.RegisterServices();
 
-            LoadApplication(new App());
+            LoadApplication(new AndroidTrackerApplication());
         }
     }
 }

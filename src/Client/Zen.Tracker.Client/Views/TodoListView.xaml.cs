@@ -43,8 +43,8 @@ namespace Zen.Tracker.Client.Views
         {
             base.OnAppearing();
 
-            //App.TodoManager.TodoViewModel.TodoItems = await App.TodoManager.GetTasksAsync();
-            //listViewTasks.ItemsSource = App.TodoManager.TodoViewModel.TodoItems;
+            //TrackerApplication.TodoManager.TodoViewModel.TodoItems = await TrackerApplication.TodoManager.GetTasksAsync();
+            //listViewTasks.ItemsSource = TrackerApplication.TodoManager.TodoViewModel.TodoItems;
         }
 
         // Open item page only when the label is clicked.
@@ -52,7 +52,7 @@ namespace Zen.Tracker.Client.Views
         {
             //if (e.SelectedItem != null)
             //{
-            //    if (!App.TodoManager.CheckBoxClicked)
+            //    if (!TrackerApplication.TodoManager.CheckBoxClicked)
             //    {
             //        var todoItem = e.SelectedItem as ToDoItem;
             //        var todoPage = new ToDoItemXaml();
@@ -61,7 +61,7 @@ namespace Zen.Tracker.Client.Views
             //    }
             //    else
             //    {
-            //        App.TodoManager.CheckBoxClicked = false;
+            //        TrackerApplication.TodoManager.CheckBoxClicked = false;
             //        ((ListView)sender).SelectedItem = null;
             //    }
             //}
@@ -80,7 +80,7 @@ namespace Zen.Tracker.Client.Views
                     item.CompletedAt = DateTimeOffset.UtcNow;
                 }
 
-                //await App.TodoManager.SaveTaskAsync(item);
+                //await TrackerApplication.TodoManager.SaveTaskAsync(item);
             }
         }
 
@@ -93,8 +93,8 @@ namespace Zen.Tracker.Client.Views
             if (_firstTime)
             {
                 _firstTime = false;
-                //App.TodoManager.Device.DeviceWidth = width;
-                //App.TodoManager.Device.DeviceHeight = height;
+                //TrackerApplication.TodoManager.Device.DeviceWidth = width;
+                //TrackerApplication.TodoManager.Device.DeviceHeight = height;
             }
         }
 
