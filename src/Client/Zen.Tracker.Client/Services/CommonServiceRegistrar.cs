@@ -5,7 +5,7 @@ using Microsoft.Practices.ServiceLocation;
 
 namespace Zen.Tracker.Client.Services
 {
-    public class CommonServiceRegistrar
+    public static class CommonServiceRegistrar
     {
         static CommonServiceRegistrar()
         {

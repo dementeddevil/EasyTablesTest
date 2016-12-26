@@ -3,13 +3,13 @@ using Zen.Tracker.Client.Services;
 
 namespace Zen.Tracker.Client.Droid.Services
 {
-    public class PlatformServiceRegistrar : CommonServiceRegistrar
+    public static class PlatformServiceRegistrar
     {
-        public static void RegisterServices()
+        public static void RegisterServices(ContainerBuilder platformContainerBuilder)
         {
-            var platformContainerBuilder = new ContainerBuilder();
+            platformContainerBuilder = platformContainerBuilder ?? new ContainerBuilder();
             platformContainerBuilder.RegisterModule<PlatformSpecificModule>();
-            RegisterServices(platformContainerBuilder);
+            CommonServiceRegistrar.RegisterServices(platformContainerBuilder);
         }
     }
 }

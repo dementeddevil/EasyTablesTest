@@ -1,12 +1,17 @@
-﻿using Android.App;
+﻿using System.Threading.Tasks;
+using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Autofac;
+using Microsoft.Practices.ServiceLocation;
+using Microsoft.WindowsAzure.MobileServices;
 using Zen.Tracker.Client.Droid.Services;
+using Zen.Tracker.Client.Services;
 
 namespace Zen.Tracker.Client.Droid
 {
     [Activity(Label = "Zen.Tracker.Client", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity, IAuthenticate
     {
         protected override void OnCreate(Bundle bundle)
         {
@@ -18,9 +23,18 @@ namespace Zen.Tracker.Client.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 
-            PlatformServiceRegistrar.RegisterServices();
+            var containerBuilder = new ContainerBuilder();
+            containerBuilder.RegisterInstance(this).As<IAuthenticate>();
+            PlatformServiceRegistrar.RegisterServices(containerBuilder);
 
             LoadApplication(new AndroidTrackerApplication());
+        }
+
+        public async Task<bool> AuthenticateAsync()
+        {
+            var mobileServiceClient = ServiceLocator.Current.GetInstance<IMobileServiceClient>();
+            var user = await mobileServiceClient.LoginAsync(this, MobileServiceAuthenticationProvider.Google).ConfigureAwait(false);
+            return user != null;
         }
     }
 }
