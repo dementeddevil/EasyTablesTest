@@ -1,65 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Microsoft.VisualBasic;
+using AppServiceHelpers.Abstractions;
 using Microsoft.WindowsAzure.MobileServices;
-using Zen.Tracker.Client.Entities;
-
-#if OFFLINE_SYNC_ENABLED
-using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
 using Microsoft.WindowsAzure.MobileServices.Sync;
-#endif
+using Zen.Tracker.Client.Entities;
 
 namespace Zen.Tracker.Client.Services
 {
-    public partial class TodoItemManager
+    public class TodoItemManager : ITodoItemManager
     {
-#if OFFLINE_SYNC_ENABLED
-        private readonly IMobileServiceSyncTable<TodoItem> _todoTable;
-#else
-        private readonly IMobileServiceTable<TodoItem> _todoTable;
-#endif
-
-        private TodoItemManager()
+        private TodoItemManager(IEasyMobileServiceClient mobileServiceClient)
         {
-            CurrentClient = new MobileServiceClient(Constants.ApplicationURL);
-
-#if OFFLINE_SYNC_ENABLED
-            var store = new MobileServiceSQLiteStore("localstore.db");
-            store.DefineTable<TodoItem>();
-
-            //Initializes the SyncContext using the default IMobileServiceSyncHandler.
-            CurrentClient.SyncContext.InitializeAsync(store);
-            _todoTable = CurrentClient.GetSyncTable<TodoItem>();
-#else
-            _todoTable = CurrentClient.GetTable<TodoItem>();
-#endif
+            TodoItemTable = mobileServiceClient.Table<TodoItem>();
         }
 
-        public static TodoItemManager DefaultManager { get; private set; } = new TodoItemManager();
-
-        public MobileServiceClient CurrentClient { get; }
-
-        public bool IsOfflineEnabled => _todoTable is IMobileServiceSyncTable<TodoItem>;
+        private ITableDataStore<TodoItem> TodoItemTable { get; }
 
         public async Task<ObservableCollection<TodoItem>> GetTodoItemsAsync(bool syncItems = false)
         {
             try
             {
-#if OFFLINE_SYNC_ENABLED
                 if (syncItems)
                 {
                     await SyncAsync().ConfigureAwait(false);
                 }
-#endif
 
-                IEnumerable<TodoItem> items = await _todoTable
-                    .Where(todoItem => !todoItem.Complete)
-                    .ToEnumerableAsync()
+                var items = await TodoItemTable
+                    .WhereAsync(todoItem => !todoItem.Complete)
                     .ConfigureAwait(false);
 
                 return new ObservableCollection<TodoItem>(items);
@@ -80,27 +49,21 @@ namespace Zen.Tracker.Client.Services
         {
             if (item.Id == null)
             {
-                await _todoTable.InsertAsync(item).ConfigureAwait(false);
+                await TodoItemTable.AddAsync(item).ConfigureAwait(false);
             }
             else
             {
-                await _todoTable.UpdateAsync(item).ConfigureAwait(false);
+                await TodoItemTable.UpdateAsync(item).ConfigureAwait(false);
             }
         }
 
-#if OFFLINE_SYNC_ENABLED
         public async Task SyncAsync()
         {
             ReadOnlyCollection<MobileServiceTableOperationError> syncErrors = null;
 
             try
             {
-                await this.CurrentClient.SyncContext.PushAsync().ConfigureAwait(false);
-                await _todoTable.PullAsync(
-                    //The first parameter is a query name that is used internally by the client SDK to implement incremental sync.
-                    //Use a different query name for each unique query in your program
-                    "allTodoItems",
-                    _todoTable.CreateQuery()).ConfigureAwait(false);
+                await TodoItemTable.Sync().ConfigureAwait(false);
             }
             catch (MobileServicePushFailedException exc)
             {
@@ -131,6 +94,5 @@ namespace Zen.Tracker.Client.Services
                 }
             }
         }
-#endif
     }
 }

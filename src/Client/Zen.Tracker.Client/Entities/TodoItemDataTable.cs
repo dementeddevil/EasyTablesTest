@@ -1,12 +1,15 @@
-﻿using Microsoft.WindowsAzure.MobileServices;
-using Microsoft.WindowsAzure.MobileServices.Sync;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Linq;
+using AppServiceHelpers.Tables;
 
 namespace Zen.Tracker.Client.Entities
 {
-    public class TodoItemDataTable : AzureDataTable<TodoItem>
+    public class TodoItemDataTable : BaseTableDataStore<TodoItem>
     {
-        protected override IMobileServiceTableQuery<TodoItem> GetAllOrderBy(IMobileServiceSyncTable<TodoItem> table)
+        public override async Task<IEnumerable<TodoItem>> GetItemsAsync()
         {
+            var table = await base.GetItemsAsync().ConfigureAwait(false);
             return table
                 .OrderByDescending(c => c.DueAt)
                 .ThenByDescending(c => c.UpdatedAt);

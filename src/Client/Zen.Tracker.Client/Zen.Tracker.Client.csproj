@@ -35,6 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Entities\TableDataStoreExtensions.cs" />
+    <Compile Include="Services\ITodoItemManager.cs" />
     <Compile Include="TrackerApplication.xaml.cs">
       <DependentUpon>TrackerApplication.xaml</DependentUpon>
     </Compile>
@@ -75,12 +77,6 @@
     <Compile Include="Bot Connector - Direct Line API - v3.0\TokensExtensions.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Services\CrossPlatformModule.cs" />
-    <Compile Include="Entities\AzureDataTable.cs" />
-    <Compile Include="Entities\AzureDataTableClient.cs" />
-    <Compile Include="Entities\AzureDataTableClientBuilder.cs" />
-    <Compile Include="Entities\AzureDataTableExtensions.cs" />
-    <Compile Include="Entities\IAzureDataTable.cs" />
-    <Compile Include="Entities\IAzureDataTableClient.cs" />
     <Compile Include="Entities\TodoItem.cs" />
     <Compile Include="Entities\TodoItemDataTable.cs" />
     <Compile Include="MainPage.xaml.cs">

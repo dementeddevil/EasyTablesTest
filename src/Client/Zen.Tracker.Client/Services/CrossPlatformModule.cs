@@ -1,7 +1,9 @@
 ﻿using AppServiceHelpers;
 using Autofac;
 using Microsoft.Rest;
+using Microsoft.WindowsAzure.MobileServices;
 using Zen.Tracker.Client.Entities;
+using Zen.Tracker.Client.ViewModels;
 
 namespace Zen.Tracker.Client.Services
 {
@@ -16,18 +18,27 @@ namespace Zen.Tracker.Client.Services
                     "credentials",
                     new TokenCredentials(""));
 
-            // Register data services
-            builder
-                .WithTableClient(Constants.ApplicationURL)
-                .AddTable<TodoItem, TodoItemDataTable>()
-                .BuildAsync();
-
             // Register mobile service client
-            var azureClient = EasyMobileServiceClient.Create();
-            azureClient.Initialize(Constants.ApplicationURL);
-            azureClient.RegisterTable<TodoItem>();
-            azureClient.FinalizeSchema();
-            builder.RegisterInstance(azureClient);
+            var mobileServiceClient = (EasyMobileServiceClient)EasyMobileServiceClient.Create();
+            mobileServiceClient.Initialize(Constants.ApplicationURL);
+            RegisterSchemaTables(mobileServiceClient);
+            mobileServiceClient.FinalizeSchema();
+            builder.RegisterInstance(mobileServiceClient)
+                .SingleInstance();
+            builder.RegisterInstance(mobileServiceClient.MobileService)
+                .As<IMobileServiceClient>()
+                .SingleInstance();
+
+            // Register core services
+            builder.RegisterType<TodoItemManager>().As<ITodoItemManager>().SingleInstance();
+
+            // Register view models
+            builder.RegisterType<TodoListViewModel>().AsSelf();
+        }
+
+        private void RegisterSchemaTables(EasyMobileServiceClient mobileServiceClient)
+        {
+            mobileServiceClient.RegisterTable<TodoItem, TodoItemDataTable>();
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Threading;
 using System.Threading.Tasks;
+using AppServiceHelpers.Abstractions;
 using AppServiceHelpers.Models;
 using GalaSoft.MvvmLight;
 using Xamarin.Forms;
@@ -14,8 +15,8 @@ namespace Zen.Tracker.Client.ViewModels
     public class TableViewModel<TEntity> : ViewModelBase
         where TEntity : EntityData
     {
-        private readonly IAzureDataTableClient _client;
-        private readonly IAzureDataTable<TEntity> _table;
+        private readonly IEasyMobileServiceClient _client;
+        private readonly ITableDataStore<TEntity> _table;
         private ObservableCollection<TEntity> _items = new ObservableCollection<TEntity>();
         private string _title = string.Empty;
         private string _subTitle = string.Empty;
@@ -26,7 +27,7 @@ namespace Zen.Tracker.Client.ViewModels
         private bool _isBusy;
         private CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
 
-        public TableViewModel(IAzureDataTableClient client)
+        public TableViewModel(IEasyMobileServiceClient client)
         {
             _client = client;
             _table = client.Table<TEntity>();
@@ -111,17 +112,17 @@ namespace Zen.Tracker.Client.ViewModels
 
         public Task AddItemAsync(TEntity item)
         {
-            return _table.AddAsync(item, _cancellationTokenSource.Token);
+            return _table.AddAsync(item);
         }
 
         public Task DeleteItemAsync(TEntity item)
         {
-            return _table.DeleteAsync(item, _cancellationTokenSource.Token);
+            return _table.DeleteAsync(item);
         }
 
         public Task UpdateItemAsync(TEntity item)
         {
-            return _table.UpdateAsync(item, _cancellationTokenSource.Token);
+            return _table.UpdateAsync(item);
         }
 
         private async Task ExecuteRefreshCommand()
@@ -134,7 +135,7 @@ namespace Zen.Tracker.Client.ViewModels
             try
             {
                 var cancellationToken = _cancellationTokenSource.Token;
-                var items = await _table.GetAllAsync(cancellationToken).ConfigureAwait(true);
+                var items = await _table.GetItemsAsync().ConfigureAwait(true);
                 if (!cancellationToken.IsCancellationRequested)
                 {
                     Items.Clear();
