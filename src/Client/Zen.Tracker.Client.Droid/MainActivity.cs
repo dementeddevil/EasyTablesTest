@@ -2,6 +2,7 @@
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Android.Webkit;
 using Autofac;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.WindowsAzure.MobileServices;
@@ -30,11 +31,18 @@ namespace Zen.Tracker.Client.Droid
             LoadApplication(new AndroidTrackerApplication());
         }
 
-        public async Task<bool> AuthenticateAsync()
+        public async Task<bool> LoginAsync()
         {
             var mobileServiceClient = ServiceLocator.Current.GetInstance<IMobileServiceClient>();
             var user = await mobileServiceClient.LoginAsync(this, MobileServiceAuthenticationProvider.Google).ConfigureAwait(false);
             return user != null;
+        }
+
+        public async Task LogoutAsync()
+        {
+            CookieManager.Instance.RemoveAllCookie();
+            var mobileServiceClient = ServiceLocator.Current.GetInstance<IMobileServiceClient>();
+            await mobileServiceClient.LogoutAsync().ConfigureAwait(false);
         }
     }
 }
