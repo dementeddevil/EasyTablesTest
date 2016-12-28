@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Azure.Mobile.Server.Tables;
 
-namespace Zen.Tracker.Server.Site.DataObjects
+namespace Zen.Tracker.Server.Storage.Entities
 {
     public class TodoItem : ITableData
     {

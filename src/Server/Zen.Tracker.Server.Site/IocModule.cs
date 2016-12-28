@@ -3,6 +3,7 @@ using System.Web.Http;
 using Autofac;
 using Microsoft.ApplicationInsights;
 using Microsoft.Azure.Mobile.Server.Notifications;
+using Zen.Tracker.Server.Site.Services;
 
 namespace Zen.Tracker.Server.Site
 {
@@ -24,6 +25,10 @@ namespace Zen.Tracker.Server.Site
                     InstrumentationKey = ConfigurationManager.AppSettings["InstrumentationKey"]
                 };
             builder.RegisterInstance(tc);
+
+            // Add our custom services
+            builder.RegisterType<UserConversationStore>()
+                .As<IUserConversationStore>();
 
             // Ensure push client is added to IoC container
             var pushClient = new PushClient(_httpConfig);

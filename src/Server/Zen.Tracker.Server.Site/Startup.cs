@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Owin;
 using Zen.Tracker.Server.Site;
+using Zen.Tracker.Server.Storage;
 
 [assembly: OwinStartup(typeof(Startup))]
 
@@ -71,6 +72,7 @@ namespace Zen.Tracker.Server.Site
             app.UseAutofacWebApi(httpConfig);
             app.UseWebApi(httpConfig);
 
+            // Initialise database (including execution of any pending schema migrations)
             Database.SetInitializer(new MobileServiceInitializer());
         }
     }

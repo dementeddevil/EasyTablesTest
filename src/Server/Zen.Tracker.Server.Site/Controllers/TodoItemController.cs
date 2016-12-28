@@ -4,8 +4,8 @@ using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.OData;
 using Microsoft.Azure.Mobile.Server;
-using Zen.Tracker.Server.Site.DataObjects;
-using Zen.Tracker.Server.Site.Models;
+using Zen.Tracker.Server.Storage.Entities;
+using Zen.Tracker.Server.Storage.Models;
 
 namespace Zen.Tracker.Server.Site.Controllers
 {
