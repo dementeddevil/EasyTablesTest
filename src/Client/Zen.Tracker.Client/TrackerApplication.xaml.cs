@@ -12,12 +12,12 @@ namespace Zen.Tracker.Client
             MainPage = new SplashView();
         }
 
-        protected void ShowLoginView()
+        public void ShowLoginView()
         {
             MainPage = new LoginView();
         }
 
-        protected void ShowMainView()
+        public void ShowMainView()
         {
             MainPage = new MainPage();
         }

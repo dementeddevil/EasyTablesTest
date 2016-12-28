@@ -51,10 +51,12 @@ namespace Zen.Tracker.Client.Droid
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 
             var containerBuilder = new ContainerBuilder();
+            var application = new AndroidTrackerApplication();
+            containerBuilder.RegisterInstance(application).As<TrackerApplication>();
             containerBuilder.RegisterInstance(this).As<IAuthenticate>();
             PlatformServiceRegistrar.RegisterServices(containerBuilder);
 
-            LoadApplication(new AndroidTrackerApplication());
+            LoadApplication(application);
 
             var signInOptions = new GoogleSignInOptions
                 .Builder(GoogleSignInOptions.DefaultSignIn)
@@ -93,7 +95,10 @@ namespace Zen.Tracker.Client.Droid
         {
             CookieManager.Instance.RemoveAllCookie();
             var mobileServiceClient = ServiceLocator.Current.GetInstance<IMobileServiceClient>();
-            await mobileServiceClient.LogoutAsync().ConfigureAwait(false);
+            await mobileServiceClient.LogoutAsync().ConfigureAwait(true);
+
+            var app = ServiceLocator.Current.GetInstance<TrackerApplication>();
+            app.ShowLoginView();
         }
 
         private void InitiateLogin(bool showLoginUI)
@@ -114,7 +119,7 @@ namespace Zen.Tracker.Client.Droid
             else
             {
                 var signin = Auth.GoogleSignInApi.SilentSignIn(_googleApiClient);
-                var signinResult = await signin.AsAsync<GoogleSignInResult>().ConfigureAwait(false);
+                var signinResult = await signin.AsAsync<GoogleSignInResult>().ConfigureAwait(true);
                 HandleSignInResult(signinResult);
             }
         }
@@ -138,6 +143,12 @@ namespace Zen.Tracker.Client.Droid
                 {
                     _googleApiClient.Disconnect();
                     _loginTask.TrySetResult(false);
+
+                    if (!_showLoginUI)
+                    {
+                        var app = ServiceLocator.Current.GetInstance<TrackerApplication>();
+                        app.ShowLoginView();
+                    }
                     return;
                 }
 
@@ -148,10 +159,12 @@ namespace Zen.Tracker.Client.Droid
                 var mobileServiceClient = ServiceLocator.Current.GetInstance<IMobileServiceClient>();
                 var user = await mobileServiceClient
                     .LoginAsync(MobileServiceAuthenticationProvider.Google, token)
-                    .ConfigureAwait(false);
+                    .ConfigureAwait(true);
                 if (user != null)
                 {
                     // Consider the user signed in
+                    var app = ServiceLocator.Current.GetInstance<TrackerApplication>();
+                    app.ShowMainView();
                 }
 
                 _loginTask.TrySetResult(user != null);

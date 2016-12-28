@@ -5,19 +5,13 @@
 
   <Grid>
     <Grid.RowDefinitions>
-      <RowDefinition Height="20" />
+      <RowDefinition Height="Auto" />
       <RowDefinition Height="*" />
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="*" />
       <ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
-
-    <Button x:Name="loginButton"
-            Text="Login"
-            Clicked="LoginButton_OnClicked"
-            Grid.Row="0"
-            Grid.Column="0" />
 
     <Button x:Name="logoutButton"
             Text="Logout"

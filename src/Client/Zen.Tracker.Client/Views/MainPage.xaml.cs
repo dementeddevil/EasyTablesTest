@@ -12,18 +12,6 @@ namespace Zen.Tracker.Client
             InitializeComponent();
         }
 
-        private async void LoginButton_OnClicked(object sender, EventArgs e)
-        {
-            try
-            {
-                var authenticator = ServiceLocator.Current.GetInstance<IAuthenticate>();
-                await authenticator.LoginAsync().ConfigureAwait(true);
-            }
-            catch (Exception exception)
-            {
-            }
-        }
-
         private async void LogoutButton_OnClicked(object sender, EventArgs e)
         {
             try

@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using Microsoft.Practices.ServiceLocation;
 using Xamarin.Forms;
+using Zen.Tracker.Client.Services;
 
 namespace Zen.Tracker.Client.Views
 {
@@ -13,6 +10,18 @@ namespace Zen.Tracker.Client.Views
         public LoginView()
         {
             InitializeComponent();
+        }
+
+        private async void LoginButton_OnClicked(object sender, EventArgs e)
+        {
+            try
+            {
+                var authenticator = ServiceLocator.Current.GetInstance<IAuthenticate>();
+                await authenticator.LoginAsync().ConfigureAwait(true);
+            }
+            catch (Exception exception)
+            {
+            }
         }
     }
 }
