@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using Zen.Tracker.Client.Views;
 
 namespace Zen.Tracker.Client
 {
@@ -8,6 +9,16 @@ namespace Zen.Tracker.Client
         {
             InitializeComponent();
 
+            MainPage = new SplashView();
+        }
+
+        protected void ShowLoginView()
+        {
+            MainPage = new LoginView();
+        }
+
+        protected void ShowMainView()
+        {
             MainPage = new MainPage();
         }
 

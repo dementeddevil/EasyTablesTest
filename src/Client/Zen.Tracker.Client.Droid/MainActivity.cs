@@ -1,7 +1,9 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Android.Accounts;
 using Android.App;
+using Android.Content;
 using Android.Content.PM;
 using Android.Gms.Auth.Api;
 using Android.Gms.Auth.Api.SignIn;
@@ -9,6 +11,7 @@ using Android.Gms.Common;
 using Android.Gms.Common.Apis;
 using Android.Gms.Plus;
 using Android.OS;
+using Android.Provider;
 using Android.Webkit;
 using Autofac;
 using Microsoft.Practices.ServiceLocation;
@@ -30,7 +33,12 @@ namespace Zen.Tracker.Client.Droid
         GoogleApiClient.IConnectionCallbacks,
         GoogleApiClient.IOnConnectionFailedListener
     {
+        private const int SignInRequestCode = 55511;
+
         private GoogleApiClient _googleApiClient;
+        private bool _isConnecting;
+        private bool _showLoginUI;
+        private TaskCompletionSource<bool> _loginTask;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -48,19 +56,22 @@ namespace Zen.Tracker.Client.Droid
 
             LoadApplication(new AndroidTrackerApplication());
 
+            var signInOptions = new GoogleSignInOptions
+                .Builder(GoogleSignInOptions.DefaultSignIn)
+                .RequestIdToken("379304893141-r75kkh22memf9mi873od0pittmtdj3tp.apps.googleusercontent.com")
+                .Build();
+
             _googleApiClient = new GoogleApiClient.Builder(this)
                 .AddConnectionCallbacks(this)
                 .AddOnConnectionFailedListener(this)
-                .UseDefaultAccount()
-                .AddApi(Auth.GOOGLE_SIGN_IN_API)
-                .AddScope(new Scope(Scopes.Profile))
+                .AddApi(Auth.GOOGLE_SIGN_IN_API, signInOptions)
                 .Build();
         }
 
         protected override void OnStart()
         {
             base.OnStart();
-            _googleApiClient.Connect();
+            InitiateLogin(false);
         }
 
         protected override void OnStop()
@@ -69,18 +80,13 @@ namespace Zen.Tracker.Client.Droid
             base.OnStop();
         }
 
-        public async Task<bool> LoginAsync()
+        public Task<bool> LoginAsync()
         {
-            // Get the auth token
-            var token = await GetLoginAuthTokenAsync().ConfigureAwait(false); 
-            var tokenObject = new JObject(token);
-
-            // Get the mobile service client object
-            var mobileServiceClient = ServiceLocator.Current.GetInstance<IMobileServiceClient>();
-            var user = await mobileServiceClient
-                .LoginAsync(MobileServiceAuthenticationProvider.Google, tokenObject)
-                .ConfigureAwait(false);
-            return user != null;
+            if (!_isConnecting)
+            {
+                InitiateLogin(true);
+            }
+            return _loginTask.Task;
         }
 
         public async Task LogoutAsync()
@@ -90,21 +96,75 @@ namespace Zen.Tracker.Client.Droid
             await mobileServiceClient.LogoutAsync().ConfigureAwait(false);
         }
 
-        public async Task<string> GetLoginAuthTokenAsync()
+        private void InitiateLogin(bool showLoginUI)
         {
-//            GoogleApiClient.Build()
-            return string.Empty;
+            _loginTask = new TaskCompletionSource<bool>();
+            _isConnecting = true;
+            _showLoginUI = showLoginUI;
+            _googleApiClient.Connect();
         }
 
         public async void OnConnected(Bundle connectionHint)
         {
-            var signin = Auth.GoogleSignInApi.SilentSignIn(_googleApiClient);
-            await signin.AsAsync().ConfigureAwait(false);
-            var result = (GoogleSignInResult) signin.Get();
-            if (result != null)
+            if (_showLoginUI)
             {
-                result.SignInAccount.IdToken
+                var intent = Auth.GoogleSignInApi.GetSignInIntent(_googleApiClient);
+                StartActivityForResult(intent, SignInRequestCode);
             }
+            else
+            {
+                var signin = Auth.GoogleSignInApi.SilentSignIn(_googleApiClient);
+                var signinResult = await signin.AsAsync<GoogleSignInResult>().ConfigureAwait(false);
+                HandleSignInResult(signinResult);
+            }
+        }
+
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+            if (requestCode == SignInRequestCode)
+            {
+                var signinResult = Auth.GoogleSignInApi.GetSignInResultFromIntent(data);
+                HandleSignInResult(signinResult);
+            }
+
+            base.OnActivityResult(requestCode, resultCode, data);
+        }
+
+        private async void HandleSignInResult(GoogleSignInResult signInResult)
+        {
+            try
+            {
+                if (signInResult == null || !signInResult.IsSuccess || signInResult.SignInAccount == null)
+                {
+                    _googleApiClient.Disconnect();
+                    _loginTask.TrySetResult(false);
+                    return;
+                }
+
+                // Get the token and pass to base class
+                var idToken = signInResult.SignInAccount.IdToken;
+                var token = new JObject { { "id_token", idToken } };
+
+                var mobileServiceClient = ServiceLocator.Current.GetInstance<IMobileServiceClient>();
+                var user = await mobileServiceClient
+                    .LoginAsync(MobileServiceAuthenticationProvider.Google, token)
+                    .ConfigureAwait(false);
+                if (user != null)
+                {
+                    // Consider the user signed in
+                }
+
+                _loginTask.TrySetResult(user != null);
+            }
+            catch (Exception exception)
+            {
+                _loginTask.TrySetException(exception);
+            }
+            finally
+            {
+                _isConnecting = false;
+            }
+
         }
 
         public void OnConnectionSuspended(int cause)
@@ -114,7 +174,9 @@ namespace Zen.Tracker.Client.Droid
 
         public void OnConnectionFailed(ConnectionResult result)
         {
-            throw new System.NotImplementedException();
+            var connectionException = new Exception(
+                $"Login failed: {result.ErrorMessage}, Code: {result.ErrorCode}");
+            _loginTask.TrySetException(connectionException);
         }
     }
 }
