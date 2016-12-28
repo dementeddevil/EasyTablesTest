@@ -1,4 +1,5 @@
 ﻿using AppServiceHelpers;
+using AppServiceHelpers.Abstractions;
 using Autofac;
 using Microsoft.Rest;
 using Microsoft.WindowsAzure.MobileServices;
@@ -24,13 +25,14 @@ namespace Zen.Tracker.Client.Services
             RegisterSchemaTables(mobileServiceClient);
             mobileServiceClient.FinalizeSchema();
             builder.RegisterInstance(mobileServiceClient)
+                .As<IEasyMobileServiceClient>()
                 .SingleInstance();
             builder.RegisterInstance(mobileServiceClient.MobileService)
                 .As<IMobileServiceClient>()
                 .SingleInstance();
 
             // Register core services
-            builder.RegisterType<TodoItemManager>().As<ITodoItemManager>().SingleInstance();
+            builder.RegisterType<TodoItemManager>().As<ITodoItemManager>();//.SingleInstance();
 
             // Register view models
             builder.RegisterType<TodoListViewModel>().AsSelf();

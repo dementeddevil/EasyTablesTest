@@ -19,7 +19,8 @@ namespace Zen.Tracker.Client
 
         public void ShowMainView()
         {
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new TodoListView();
         }
 
         protected override void OnStart()

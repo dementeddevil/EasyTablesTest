@@ -6,7 +6,7 @@
              Title="Todo List">
   <ContentPage.Content>
     <StackLayout Orientation="Horizontal" Padding="20,0,0,0" >
-      <ListView x:Name="listViewTasks" ItemSelected="OnItemSelected">
+      <ListView x:Name="listViewTasks" ItemSelected="OnItemSelected" ItemsSource="{Binding Items}">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>

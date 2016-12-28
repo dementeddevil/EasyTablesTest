@@ -1,6 +1,10 @@
 ﻿using System;
+using AppServiceHelpers.Abstractions;
+using Microsoft.Practices.ServiceLocation;
 using Xamarin.Forms;
 using Zen.Tracker.Client.Entities;
+using Zen.Tracker.Client.Services;
+using Zen.Tracker.Client.ViewModels;
 
 namespace Zen.Tracker.Client.Views
 {
@@ -11,29 +15,42 @@ namespace Zen.Tracker.Client.Views
             InitializeComponent();
             InitializeToolBars();
         }
+
         private void InitializeToolBars()
         {
             string addIcon = null;
             string refreshIcon = null;
-
             if (Device.OS == TargetPlatform.WinPhone)
             {
                 addIcon = "Toolkit.Content/ApplicationBar.Add.png";
                 refreshIcon = "Toolkit.Content/ApplicationBar.Refresh.png";
             }
-            var addToolButton = new ToolbarItem("Add", addIcon, () =>
+            else if (Device.OS == TargetPlatform.Android)
             {
-                var todoItem = new TodoItem();
-                var todoPage = new TodoListView();
-                //todoPage.BindingContext = todoItem;
-                Navigation.PushAsync(todoPage);
-            }, 0, 0);
+                addIcon = "ic_add_black_36dp.png";
+                refreshIcon = "ic_refresh_black_36dp.png";
+            }
 
-            var refreshToolButton = new ToolbarItem("Refresh", refreshIcon, () =>
-            {
-                OnAppearing();
+            var addToolButton =
+                new ToolbarItem(
+                    "Add",
+                    addIcon,
+                    () =>
+                    {
+                        var todoItem = new TodoItem();
+                        var todoPage = new TodoListView();
+                        //todoPage.BindingContext = todoItem;
+                        Navigation.PushAsync(todoPage);
+                    });
 
-            }, 0, 0);
+            var refreshToolButton =
+                new ToolbarItem(
+                    "Refresh",
+                    refreshIcon,
+                    () =>
+                    {
+                        OnAppearing();
+                    });
 
             ToolbarItems.Add(addToolButton);
             ToolbarItems.Add(refreshToolButton);
@@ -43,6 +60,7 @@ namespace Zen.Tracker.Client.Views
         {
             base.OnAppearing();
 
+            this.BindingContext = ServiceLocator.Current.GetInstance<TodoListViewModel>();
             //TrackerApplication.TodoManager.TodoViewModel.TodoItems = await TrackerApplication.TodoManager.GetTasksAsync();
             //listViewTasks.ItemsSource = TrackerApplication.TodoManager.TodoViewModel.TodoItems;
         }
