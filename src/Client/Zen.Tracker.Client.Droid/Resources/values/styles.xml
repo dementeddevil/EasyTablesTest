@@ -2,7 +2,7 @@
 <resources>
   <style name="MainTheme" parent="MainTheme.Base">
   </style>
-  <style name="MainTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+  <style name="MainTheme.Base" parent="Theme.AppCompat.Light">
     <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette -->
     <!-- colorPrimary is used for the default action bar background -->
     <item name="colorPrimary">@color/primary</item>
