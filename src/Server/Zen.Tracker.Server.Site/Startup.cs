@@ -38,6 +38,9 @@ namespace Zen.Tracker.Server.Site
                     NullValueHandling = NullValueHandling.Ignore,
                 };
 
+            // Enable swagger support
+            SwaggerConfig.Register(httpConfig);
+
             // Create autofac container (it may need to update the HTTP configuration)
             var builder = new ContainerBuilder();
             builder.RegisterModule(new IocModule(httpConfig));
