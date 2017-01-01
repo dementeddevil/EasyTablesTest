@@ -5,28 +5,27 @@ using Zen.Tracker.Client.Services;
 
 namespace Zen.Tracker.Client.Views
 {
-    public partial class LoginView : ContentPage
+    public partial class LoginView : AsyncContentPage
     {
         public LoginView()
         {
             InitializeComponent();
         }
 
-        private async void LoginButton_OnClicked(object sender, EventArgs e)
+        private void LoginButton_OnClicked(object sender, EventArgs e)
         {
-            try
-            {
-                var authenticator = ServiceLocator.Current.GetInstance<IAuthenticate>();
-                var result = await authenticator.LoginAsync(true).ConfigureAwait(true);
-                if (result)
+            ExecuteAsyncHandler(
+                async () =>
                 {
-                    Navigation.InsertPageBefore(new MainPage(), this);
-                    await Navigation.PopAsync(true).ConfigureAwait(true);
-                }
-            }
-            catch (Exception exception)
-            {
-            }
+                    var authenticator = ServiceLocator.Current.GetInstance<IAuthenticate>();
+                    var result = await authenticator.LoginAsync(true).ConfigureAwait(true);
+                    if (result)
+                    {
+                        Navigation.InsertPageBefore(new MainPage(), this);
+                        await Navigation.PopAsync(true).ConfigureAwait(true);
+                    }
+                },
+                exception => $"Login failed: {exception.Message}");
         }
     }
 }

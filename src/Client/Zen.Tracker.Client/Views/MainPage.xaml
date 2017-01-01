@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Zen.Tracker.Client.MainPage">
+<views:AsyncContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                        xmlns:views="clr-namespace:Zen.Tracker.Client.Views;assembly=Zen.Tracker.Client"
+                        x:Class="Zen.Tracker.Client.Views.MainPage">
 
   <Grid>
     <Grid.RowDefinitions>
@@ -26,4 +27,4 @@
            Grid.ColumnSpan="2" />
   </Grid>
 
-</ContentPage>
+</views:AsyncContentPage>

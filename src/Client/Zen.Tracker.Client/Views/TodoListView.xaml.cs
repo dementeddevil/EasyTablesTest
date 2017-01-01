@@ -8,7 +8,7 @@ using Zen.Tracker.Client.ViewModels;
 
 namespace Zen.Tracker.Client.Views
 {
-    public partial class TodoListView : ContentPage
+    public partial class TodoListView : AsyncContentPage
     {
         private class ActivityIndicatorScope : IDisposable
         {
@@ -176,33 +176,27 @@ namespace Zen.Tracker.Client.Views
             }
         }
 
-        private async void OnRefresh(object sender, EventArgs e)
+        private void OnRefresh(object sender, EventArgs e)
         {
-            var list = (ListView)sender;
-            Exception error = null;
-            try
-            {
-                await RefreshItems(false, true).ConfigureAwait(true);
-            }
-            catch (Exception ex)
-            {
-                error = ex;
-            }
-            finally
-            {
-                list.EndRefresh();
-            }
-
-            if (error != null)
-            {
-                await DisplayAlert("Refresh Error", "Couldn't refresh data (" + error.Message + ")", "OK")
-                    .ConfigureAwait(false);
-            }
+            ExecuteAsyncHandler(
+                async () =>
+                {
+                    var list = (ListView)sender;
+                    try
+                    {
+                        await RefreshItems(false, true).ConfigureAwait(true);
+                    }
+                    finally
+                    {
+                        list.EndRefresh();
+                    }
+                },
+                exception => $"Refresh failed: {exception.Message}");
         }
 
         private async void OnComplete(object sender, EventArgs e)
         {
-            var mi = ((MenuItem)sender);
+            var mi = (MenuItem)sender;
             var todo = mi.CommandParameter as TodoItem;
             await CompleteItem(todo).ConfigureAwait(true);
         }

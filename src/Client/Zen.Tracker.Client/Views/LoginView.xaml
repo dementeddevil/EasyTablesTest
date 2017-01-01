@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Zen.Tracker.Client.Views.LoginView">
+<views:AsyncContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                        xmlns:views="clr-namespace:Zen.Tracker.Client.Views;assembly=Zen.Tracker.Client"
+                        x:Class="Zen.Tracker.Client.Views.LoginView">
   <Button x:Name="loginButton"
           Text="Login"
           Clicked="LoginButton_OnClicked"
           VerticalOptions="Center"
           HorizontalOptions="Center" />
-</ContentPage>
+</views:AsyncContentPage>
