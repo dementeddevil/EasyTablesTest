@@ -227,7 +227,7 @@ namespace Zen.Tracker.Client.Views
             {
                 todoList.ItemsSource = await _todoItemManager
                     .GetTodoItemsAsync(syncItems)
-                    .ConfigureAwait(false);
+                    .ConfigureAwait(true);
             }
         }
     }

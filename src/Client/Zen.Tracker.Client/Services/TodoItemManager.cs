@@ -24,7 +24,7 @@ namespace Zen.Tracker.Client.Services
             {
                 if (syncItems)
                 {
-                    await SyncAsync().ConfigureAwait(false);
+                    await SyncAsync().ConfigureAwait(true);
                 }
 
                 var items = await TodoItemTable
