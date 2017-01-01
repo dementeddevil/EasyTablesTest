@@ -8,7 +8,13 @@ namespace Zen.Tracker.Server.Storage.Models
 {
     public class MobileServiceContext : DbContext
     {
-        private const string ConnectionStringName = "Name=MS_TableConnectionString";
+#if DEBUG
+        private const string ConnectionStringName =
+            @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ZenTracker;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+#else
+        private const string ConnectionStringName =
+            "Name=MS_TableConnectionString";
+#endif
 
         public MobileServiceContext() : base(ConnectionStringName)
         {
@@ -29,7 +35,6 @@ namespace Zen.Tracker.Server.Storage.Models
             modelBuilder.Conventions.Add(
                 new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(
                     "ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
-
         }
     }
 }

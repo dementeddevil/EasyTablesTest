@@ -24,5 +24,7 @@ namespace Zen.Tracker.Server.Storage.Entities
         public DateTimeOffset? DueAt { get; set; }
 
         public DateTimeOffset? CompletedAt { get; set; }
+
+        public string UserId { get; set; }
     }
 }

@@ -7,12 +7,16 @@ using Microsoft.Bot.Connector;
 
 namespace Zen.Tracker.Server.Site.Controllers
 {
+    /// <summary>
+    /// <c>Messages</c> endpoint deals with reception of messages from client
+    /// and passing on to bot framework.
+    /// </summary>
+    /// <seealso cref="System.Web.Http.ApiController" />
     [BotAuthentication]
     [Route("api/messages")]
     public class MessagesController : ApiController
     {
         /// <summary>
-        /// POST: api/Messages
         /// Receive a message from a user and reply to it
         /// </summary>
         public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
@@ -25,14 +29,14 @@ namespace Zen.Tracker.Server.Site.Controllers
 
                 // return our reply to the user
                 var reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
-                await connector.Conversations.ReplyToActivityAsync(reply);
+                await connector.Conversations.ReplyToActivityAsync(reply).ConfigureAwait(true);
             }
             else
             {
                 var reply = HandleSystemMessage(activity);
                 if (reply != null)
                 {
-                    await connector.Conversations.ReplyToActivityAsync(reply);
+                    await connector.Conversations.ReplyToActivityAsync(reply).ConfigureAwait(true);
                 }
             }
 

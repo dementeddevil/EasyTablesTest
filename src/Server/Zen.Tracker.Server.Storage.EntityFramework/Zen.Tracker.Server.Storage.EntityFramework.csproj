@@ -89,6 +89,10 @@
     <Compile Include="Migrations\201612282004458_InitialVersion.Designer.cs">
       <DependentUpon>201612282004458_InitialVersion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701012113474_TodoItemUserScoping.cs" />
+    <Compile Include="Migrations\201701012113474_TodoItemUserScoping.Designer.cs">
+      <DependentUpon>201701012113474_TodoItemUserScoping.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MobileServiceInitializer.cs" />
     <Compile Include="Models\MobileServiceContext.cs" />
@@ -103,6 +107,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201612282004458_InitialVersion.resx">
       <DependentUpon>201612282004458_InitialVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701012113474_TodoItemUserScoping.resx">
+      <DependentUpon>201701012113474_TodoItemUserScoping.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

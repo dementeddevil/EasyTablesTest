@@ -8,6 +8,7 @@ using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;
+using System.Web.Http.Description;
 using Microsoft.Bot.Connector.DirectLine;
 using Microsoft.Bot.Connector.DirectLine.Models;
 using Microsoft.Rest;
@@ -15,20 +16,38 @@ using Zen.Tracker.Server.Site.Services;
 
 namespace Zen.Tracker.Server.Site.Controllers
 {
+    /// <summary>
+    /// <c>Conversation</c> endpoint is used to retrieve the conversation id
+    /// and access token necessary to interact with the tracker bot.
+    /// </summary>
+    /// <seealso cref="System.Web.Http.ApiController" />
     [Authorize]
     [Route("api/conversation")]
     public class ConversationController : ApiController
     {
         private readonly IUserConversationStore _userConversationStore;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ConversationController"/> class.
+        /// </summary>
+        /// <param name="userConversationStore">The user conversation store.</param>
         public ConversationController(IUserConversationStore userConversationStore)
         {
             _userConversationStore = userConversationStore;
         }
 
+        /// <summary>
+        /// Gets the bot conversation for the currently logged on user.
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token.</param>
+        /// <returns>
+        /// A <see cref="Conversation"/> representing both the conversation identifier
+        /// and an appropriate access token for the client to use when interacting with it
+        /// </returns>
+        /// <response code="200">OK</response>
         [HttpGet]
-        [Route]
-        public async Task<IHttpActionResult> GetConversation(CancellationToken cancellationToken)
+        [ResponseType(typeof(Conversation))]
+        public async Task<HttpResponseMessage> GetConversation(CancellationToken cancellationToken)
         {
             var directlineSecret = ConfigurationManager.AppSettings["MicrosoftAppPassword"];
             using (var client = new DirectLineClient(directlineSecret))
@@ -61,7 +80,7 @@ namespace Zen.Tracker.Server.Site.Controllers
                         }
 
                         // Return to caller
-                        return Json(conversation);
+                        return Request.CreateResponse(HttpStatusCode.OK, conversation);
                     }
                 }
 
@@ -78,7 +97,7 @@ namespace Zen.Tracker.Server.Site.Controllers
                         .ConfigureAwait(true);
 
                     // Return to caller
-                    return Json(conversation);
+                    return Request.CreateResponse(HttpStatusCode.OK, conversation);
                 }
             }
         }

@@ -59,7 +59,7 @@ namespace Zen.Tracker.Server.Site
 
             // Setup mobile app configuration settings
             var mobileAppConfig = new MobileAppConfiguration()
-                .MapApiControllers()
+                //.MapApiControllers()
                 .AddMobileAppHomeController()
                 .AddPushNotifications()
                 .AddTables(
