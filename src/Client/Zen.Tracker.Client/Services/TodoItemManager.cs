@@ -11,7 +11,7 @@ namespace Zen.Tracker.Client.Services
 {
     public class TodoItemManager : ITodoItemManager
     {
-        private TodoItemManager(IEasyMobileServiceClient mobileServiceClient)
+        public TodoItemManager(IEasyMobileServiceClient mobileServiceClient)
         {
             TodoItemTable = mobileServiceClient.Table<TodoItem>();
         }

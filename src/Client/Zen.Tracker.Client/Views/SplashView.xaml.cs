@@ -21,7 +21,7 @@ namespace Zen.Tracker.Client.Views
                     var result = await authenticate.LoginAsync(false).ConfigureAwait(true);
                     if (result)
                     {
-                        Navigation.InsertPageBefore(new MainPage(), this);
+                        Navigation.InsertPageBefore(new TodoListView(), this);
                     }
                     else
                     {

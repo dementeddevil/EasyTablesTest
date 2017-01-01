@@ -21,23 +21,20 @@ namespace Zen.Tracker.Client.Services
         /// <param name="platformContainerBuilder">The platform specific container builder.</param>
         /// <param name="registerFakes">if set to <c>true</c> then register fakes cross-platform services.</param>
         public static void RegisterServices(
-            ContainerBuilder platformContainerBuilder = null,
-            bool registerFakes = false)
+            ContainerBuilder platformContainerBuilder = null, bool registerFakes = false)
         {
-            var builder = new ContainerBuilder();
+            platformContainerBuilder = platformContainerBuilder ?? new ContainerBuilder();
 
             if (ViewModelBase.IsInDesignModeStatic || registerFakes)
             {
-                builder.RegisterModule<FakeCrossPlatformModule>();
+                platformContainerBuilder.RegisterModule<FakeCrossPlatformModule>();
             }
             else
             {
-                builder.RegisterModule<CrossPlatformModule>();
+                platformContainerBuilder.RegisterModule<CrossPlatformModule>();
             }
 
-            var container = builder.Build();
-            platformContainerBuilder?.Update(container);
-
+            var container = platformContainerBuilder.Build();
             ServiceLocator.SetLocatorProvider(() => new AutofacServiceLocator(container));
         }
     }
