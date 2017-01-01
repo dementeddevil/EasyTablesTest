@@ -4,8 +4,15 @@ using Swashbuckle.Application;
 
 namespace Zen.Tracker.Server.Site
 {
+    /// <summary>
+    /// <c>SwaggerConfig</c> encapsulates swagger setup logic
+    /// </summary>
     public class SwaggerConfig
     {
+        /// <summary>
+        /// Registers the swagger integration for use with the specified HTTP configuration .
+        /// </summary>
+        /// <param name="httpConfiguration">The HTTP configuration.</param>
         public static void Register(HttpConfiguration httpConfiguration)
         {
             httpConfiguration

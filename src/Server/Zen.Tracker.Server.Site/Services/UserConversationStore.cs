@@ -7,12 +7,18 @@ using Zen.Tracker.Server.Storage.Models;
 
 namespace Zen.Tracker.Server.Site.Services
 {
+    /// <summary>
+    /// <c>UserConversationStore</c> implements the user-to-conversation store interface.
+    /// </summary>
+    /// <seealso cref="Zen.Tracker.Server.Site.Services.IUserConversationStore" />
     public class UserConversationStore : IUserConversationStore
     {
-        public UserConversationStore()
-        {
-        }
-
+        /// <summary>
+        /// Gets the conversation id for the specified user.
+        /// </summary>
+        /// <param name="userId">The user identifier.</param>
+        /// <param name="cancellationToken">The cancellation token.</param>
+        /// <returns></returns>
         public async Task<string> GetConversationByUserIdAsync(string userId, CancellationToken cancellationToken)
         {
             using (var context = new MobileServiceContext())
@@ -24,6 +30,13 @@ namespace Zen.Tracker.Server.Site.Services
             }
         }
 
+        /// <summary>
+        /// Sets the conversation identifier for the specified user.
+        /// </summary>
+        /// <param name="userId">The user identifier.</param>
+        /// <param name="conversationId">The conversation identifier.</param>
+        /// <param name="cancellationToken">The cancellation token.</param>
+        /// <returns></returns>
         public async Task SetConversationIdAsync(string userId, string conversationId, CancellationToken cancellationToken)
         {
             using (var context = new MobileServiceContext())
