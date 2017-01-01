@@ -79,6 +79,7 @@
     <Compile Include="Services\CrossPlatformModule.cs" />
     <Compile Include="Entities\TodoItem.cs" />
     <Compile Include="Entities\TodoItemDataTable.cs" />
+    <Compile Include="Views\AsyncContentPage.cs" />
     <Compile Include="Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>

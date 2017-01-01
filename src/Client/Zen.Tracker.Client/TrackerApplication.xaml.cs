@@ -9,18 +9,7 @@ namespace Zen.Tracker.Client
         {
             InitializeComponent();
 
-            MainPage = new SplashView();
-        }
-
-        public void ShowLoginView()
-        {
-            MainPage = new LoginView();
-        }
-
-        public void ShowMainView()
-        {
-            //MainPage = new MainPage();
-            MainPage = new TodoListView();
+            MainPage = new NavigationPage(new SplashView());
         }
 
         protected override void OnStart()

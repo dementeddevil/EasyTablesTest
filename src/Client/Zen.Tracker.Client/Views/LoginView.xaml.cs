@@ -17,7 +17,12 @@ namespace Zen.Tracker.Client.Views
             try
             {
                 var authenticator = ServiceLocator.Current.GetInstance<IAuthenticate>();
-                await authenticator.LoginAsync().ConfigureAwait(true);
+                var result = await authenticator.LoginAsync(true).ConfigureAwait(true);
+                if (result)
+                {
+                    Navigation.InsertPageBefore(new MainPage(), this);
+                    await Navigation.PopAsync(true).ConfigureAwait(true);
+                }
             }
             catch (Exception exception)
             {

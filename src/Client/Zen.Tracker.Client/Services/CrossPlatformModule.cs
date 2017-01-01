@@ -24,12 +24,8 @@ namespace Zen.Tracker.Client.Services
             mobileServiceClient.Initialize(Constants.ApplicationURL);
             RegisterSchemaTables(mobileServiceClient);
             mobileServiceClient.FinalizeSchema();
-            builder.RegisterInstance(mobileServiceClient)
-                .As<IEasyMobileServiceClient>()
-                .SingleInstance();
-            builder.RegisterInstance(mobileServiceClient.MobileService)
-                .As<IMobileServiceClient>()
-                .SingleInstance();
+            builder.RegisterInstance(mobileServiceClient).As<IEasyMobileServiceClient>();
+            builder.RegisterInstance(mobileServiceClient.MobileService).As<IMobileServiceClient>();
 
             // Register core services
             builder.RegisterType<TodoItemManager>().As<ITodoItemManager>();//.SingleInstance();
