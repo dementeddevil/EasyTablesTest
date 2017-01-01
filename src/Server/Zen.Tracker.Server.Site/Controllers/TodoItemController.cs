@@ -14,11 +14,15 @@ using Zen.Tracker.Server.Storage.Models;
 
 namespace Zen.Tracker.Server.Site.Controllers
 {
+    /// <summary>
+    /// <c>TodoItem</c> endpoint exposes CRUD operations for todo items.
+    /// </summary>
+    /// <seealso cref="TableController{TodoItem}" />
     [Authorize]
     public class TodoItemController : TableController<TodoItem>
     {
         /// <summary>
-        /// Gets all todo items
+        /// Gets all todo items associated with the current user
         /// </summary>
         /// <returns></returns>
         [HttpGet]
